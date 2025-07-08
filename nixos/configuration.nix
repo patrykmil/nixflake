@@ -16,6 +16,7 @@
     "nix-command"
     "flakes"
   ];
+  programs.command-not-found.enable = false;
 
   system.stateVersion = "25.05";
 }

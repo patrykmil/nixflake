@@ -18,5 +18,9 @@
   };
 
   programs.fzf.enableFishIntegration = true;
-  programs.zoxide.enableFishIntegration = true;
+
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
 }
