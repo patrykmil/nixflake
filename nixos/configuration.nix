@@ -2,13 +2,19 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  user,
+  ...
+}:
 
 {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./packages.nix
+    ./modules
   ];
 
   nix.settings.experimental-features = [
@@ -94,18 +100,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.ptrk = {
-    isNormalUser = true;
-    description = "ptrk";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [
-    ];
-  };
 
   # Install firefox.
   programs.firefox.enable = true;
