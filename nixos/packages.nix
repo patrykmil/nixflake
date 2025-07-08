@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     wezterm
     git
+    fzf
     zoxide
     eza
     helix

@@ -5,5 +5,6 @@
     ./wezterm.nix
     ./bat/bat.nix
     ./git.nix
+    ./fish.nix
   ];
 }
