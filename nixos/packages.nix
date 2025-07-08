@@ -14,7 +14,7 @@
     bat
     kdePackages.kate
     vscode
-
+    firefox
     home-manager
   ];
 }
