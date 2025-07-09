@@ -9,6 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
   };
 
   outputs =
@@ -16,6 +17,7 @@
       self,
       nixpkgs,
       home-manager,
+      distro-grub-themes,
       ...
     }@inputs:
 
@@ -30,7 +32,10 @@
         specialArgs = {
           inherit user;
         };
-        modules = [ ./nixos/configuration.nix ];
+        modules = [
+          ./nixos/configuration.nix
+          distro-grub-themes.nixosModules.${system}.default
+        ];
       };
 
       homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {

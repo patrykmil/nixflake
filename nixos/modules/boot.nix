@@ -1,4 +1,10 @@
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   boot.loader = {
     grub = {
       enable = true;
@@ -11,5 +17,10 @@
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot";
     };
+  };
+
+  distro-grub-themes = {
+    enable = true;
+    theme = "nixos";
   };
 }
