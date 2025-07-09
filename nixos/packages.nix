@@ -17,4 +17,8 @@
     firefox
     home-manager
   ];
+
+  fonts.packages = with pkgs; [
+    meslo-lg
+  ];
 }
