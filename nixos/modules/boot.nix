@@ -5,7 +5,7 @@
       efiSupport = true;
       useOSProber = true;
       device = "nodev";
-      default = "Windows Boot Manager (on /dev/sda1)";
+      default = "saved";
     };
     efi = {
       canTouchEfiVariables = true;
