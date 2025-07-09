@@ -8,5 +8,6 @@
     ./desktop.nix
     ./audio.nix
     ./nvidia.nix
+    ./firewall.nix
   ];
 }
