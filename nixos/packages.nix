@@ -31,5 +31,6 @@
 
   fonts.packages = with pkgs; [
     meslo-lg
+    meslo-lgs-nf
   ];
 }
