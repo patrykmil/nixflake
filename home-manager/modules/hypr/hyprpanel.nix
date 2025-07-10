@@ -9,7 +9,7 @@
         };
       };
       layouts = {
-        "0" = {
+        "DP-2" = {
           left = [
             "dashboard"
             "workspaces"
@@ -23,8 +23,8 @@
             "notifications"
           ];
         };
-        "1" = {
-          right = [
+        "HDMI-A-1" = {
+          middle = [
             "workspaces"
             "windowtitle"
           ];
