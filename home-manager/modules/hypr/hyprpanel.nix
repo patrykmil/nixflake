@@ -158,7 +158,7 @@
       };
       dashboard = {
         shortcuts = {
-          enabled = false;
+          enabled = true;
         };
         controls = {
           enabled = true;
@@ -167,8 +167,32 @@
           enabled = false;
         };
         powermenu = {
-          confirmation = true;
+          confirmation = false;
           avatar.image = "/home/ptrk/flakes/home-manager/modules/hypr/nix.png";
+        };
+        directories = {
+          left = {
+            directory1 = {
+              command = "dolphin Downloads/";
+            };
+            directory2 = {
+              command = "dolphin Videos/";
+            };
+            directory3 = {
+              command = "dolphin Projects/";
+            };
+          };
+          right = {
+            directory1 = {
+              command = "dolphin Documents/";
+            };
+            directory2 = {
+              command = "dolphin Pictures/";
+            };
+            directory3 = {
+              command = "dolphin .";
+            };
+          };
         };
       };
       transition = "crossfade";
