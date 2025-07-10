@@ -7,7 +7,7 @@
 
 let
   customTheme = ./pmndrs.tmTheme;
-  themeName = "Poimandres";
+  themeName = "pmndrs";
 in
 {
   home.file.".config/bat/themes/pmndrs.tmTheme".source = customTheme;
