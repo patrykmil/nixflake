@@ -16,6 +16,16 @@
     vscode
     firefox
     home-manager
+    hyprland
+    hypridle
+    hyprpanel
+    xdg-desktop-portal-hyprland
+    xdg-utils
+    wl-clipboard
+    mako
+    grim
+    slurp
+    wofi
     kitty
   ];
 

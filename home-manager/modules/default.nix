@@ -6,7 +6,7 @@
     ./bat/bat.nix
     ./git.nix
     ./fish.nix
-    ./numlock.nix
     ./kdeconnect.nix
+    ./hypr
   ];
 }
