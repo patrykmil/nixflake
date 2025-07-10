@@ -168,6 +168,7 @@
         };
         powermenu = {
           confirmation = true;
+          avatar.image = "/home/ptrk/flakes/home-manager/modules/hypr/nix.png";
         };
       };
       transition = "crossfade";
