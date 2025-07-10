@@ -16,6 +16,7 @@
     vscode
     firefox
     home-manager
+    kitty
   ];
 
   fonts.packages = with pkgs; [

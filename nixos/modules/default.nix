@@ -9,5 +9,6 @@
     ./audio.nix
     ./nvidia.nix
     ./firewall.nix
+    ./hypr
   ];
 }
