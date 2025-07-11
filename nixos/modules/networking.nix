@@ -1,4 +1,5 @@
 {
+  networking.networkmanager.enable = true;
   networking.hostName = "nixos";
   networking.wireless.iwd.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
@@ -10,5 +11,4 @@
       AutoConnect = true;
     };
   };
-  networking.networkmanager.enable = true;
 }

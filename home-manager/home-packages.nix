@@ -5,5 +5,6 @@
   home.packages = with pkgs; [
     fastfetch
     nixfmt-rfc-style
+    networkmanagerapplet
   ];
 }

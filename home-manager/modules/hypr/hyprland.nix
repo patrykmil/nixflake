@@ -15,6 +15,7 @@
 
       exec-once = [
         "hyprpanel"
+        "nm-applet --indicator"
       ];
 
       input = {
