@@ -8,5 +8,6 @@
     ./fish.nix
     ./kdeconnect.nix
     ./hypr
+    ./wofi.nix
   ];
 }
