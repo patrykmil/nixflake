@@ -13,6 +13,9 @@
     helix
     bat
     kdePackages.kate
+    kdePackages.breeze-icons
+    bibata-cursors
+    nwg-look
     vscode
     firefox
     home-manager
