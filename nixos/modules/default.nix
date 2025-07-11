@@ -10,5 +10,6 @@
     ./nvidia.nix
     ./firewall.nix
     ./hypr
+    ./keyring.nix
   ];
 }
