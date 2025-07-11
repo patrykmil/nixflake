@@ -26,7 +26,7 @@
     grim
     slurp
     wofi
-    kitty
+    walker
   ];
 
   fonts.packages = with pkgs; [
