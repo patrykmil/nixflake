@@ -7,10 +7,10 @@
       package = pkgs.palenight-theme;
     };
 
-    iconTheme = {
-      name = "Breeze Dark";
-      package = pkgs.kdePackages.breeze-icons;
-    };
+    # iconTheme = {
+    #   name = "Breeze Dark";
+    #   package = pkgs.kdePackages.breeze-icons;
+    # };
 
     gtk3.extraConfig = {
       Settings = ''
@@ -22,6 +22,11 @@
       Settings = ''
         gtk-application-prefer-dark-theme=1
       '';
+    };
+
+    iconTheme = {
+      name = "Qogir";
+      package = pkgs.qogir-icon-theme;
     };
 
   };
