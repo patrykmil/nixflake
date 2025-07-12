@@ -127,7 +127,7 @@
         "$mainMod,R,exec,wofi --show drun"
         "$mainMod,P,pseudo,"
         "$mainMod,J,togglesplit,"
-        "$mainMod,B,exec,firefox"
+        "$mainMod,B,exec,brave"
         "$mainMod,M,exec,hyprctl keyword general:layout master"
         "$mainMod,D,exec,hyprctl keyword general:layout dwindle"
         "$mainMod,left,movefocus,l"

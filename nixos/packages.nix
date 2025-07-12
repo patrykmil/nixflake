@@ -18,7 +18,7 @@
     bibata-cursors
     nwg-look
     vscode
-    firefox
+    brave
     home-manager
     hyprland
     hypridle
@@ -30,7 +30,6 @@
     grim
     slurp
     wofi
-    floorp
   ];
 
   fonts.packages = with pkgs; [
