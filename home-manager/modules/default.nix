@@ -10,5 +10,6 @@
     ./hypr
     ./wofi.nix
     ./gtk.nix
+    ./gammastep.nix
   ];
 }

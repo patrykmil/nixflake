@@ -30,6 +30,7 @@
     grim
     slurp
     wofi
+    gammastep
   ];
 
   fonts.packages = with pkgs; [
