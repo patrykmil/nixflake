@@ -2,7 +2,7 @@
 {
   services.xserver.enable = true;
 
-  services.displayManager.gdm = {
+  services.xserver.displayManager.gdm = {
     enable = true;
     wayland = true;
   };
@@ -15,4 +15,12 @@
     layout = "pl";
     variant = "";
   };
+
+  programs.dconf.profiles.gdm.databases = [
+    {
+      settings."org/gnome/desktop/peripherals/keyboard" = {
+        numlock-state = true;
+      };
+    }
+  ];
 }

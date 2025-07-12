@@ -6,13 +6,13 @@
 }:
 {
   boot.loader = {
+    timeout = 30;
     grub = {
       enable = true;
       efiSupport = true;
       useOSProber = true;
       device = "nodev";
       default = "saved";
-      timeout = 30;
     };
     efi = {
       canTouchEfiVariables = true;
