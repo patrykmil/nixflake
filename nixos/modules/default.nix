@@ -5,11 +5,12 @@
     ./gc.nix
     ./networking.nix
     ./locale.nix
-    ./desktop.nix
+    ./login.nix
     ./audio.nix
     ./nvidia.nix
     ./firewall.nix
     ./hypr
     ./keyring.nix
+    ./printing.nix
   ];
 }

@@ -23,6 +23,7 @@
     hyprland
     hypridle
     hyprpanel
+    hyprlock
     xdg-desktop-portal-hyprland
     xdg-utils
     wl-clipboard
