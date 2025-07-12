@@ -12,6 +12,7 @@
       useOSProber = true;
       device = "nodev";
       default = "saved";
+      timeout = 30;
     };
     efi = {
       canTouchEfiVariables = true;
