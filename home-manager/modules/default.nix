@@ -9,7 +9,6 @@
     ./kdeconnect.nix
     ./hypr
     ./wofi.nix
-    ./cursor.nix
-    ./icons.nix
+    ./gtk.nix
   ];
 }
