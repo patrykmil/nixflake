@@ -8,6 +8,10 @@
         "HDMI-A-1,1920x1080@60,0x0,1"
       ];
 
+      workspace = [
+        "1,monitor:DP-2"
+      ];
+
       env = [
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_SIZE,24"
@@ -16,6 +20,7 @@
       exec-once = [
         "hyprpanel"
         "nm-applet --indicator"
+        "hyprctl dispatch movecursor 2880 540"
       ];
 
       input = {
