@@ -117,7 +117,7 @@
       bind = [
         "$mainMod,T,exec,wezterm"
         "$mainMod,Q,killactive,"
-        "$mainMod,E,exec,dolphin"
+        "$mainMod,E,exec,pcmanfm"
         "$mainMod,F,togglefloating,"
         "$mainMod,R,exec,wofi --show drun"
         "$mainMod,P,pseudo,"

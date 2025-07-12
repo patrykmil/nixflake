@@ -14,6 +14,7 @@
     bat
     kdePackages.kate
     kdePackages.breeze-icons
+    pcmanfm
     bibata-cursors
     nwg-look
     vscode
