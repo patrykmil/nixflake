@@ -12,5 +12,6 @@
     ./hypr
     ./keyring.nix
     ./printing.nix
+    ./floorp.nix
   ];
 }

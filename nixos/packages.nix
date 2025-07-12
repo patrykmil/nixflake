@@ -30,7 +30,7 @@
     grim
     slurp
     wofi
-    walker
+    floorp
   ];
 
   fonts.packages = with pkgs; [
