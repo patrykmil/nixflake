@@ -44,7 +44,7 @@
     GTK_THEME = "palenight";
     QT_QPA_PLATFORMTHEME = "gtk2";
     QT_STYLE_OVERRIDE = "palenight";
-    XCURSOR_THEME = "Bibata-Modern-Ice";
+    XCURSOR_THEME = "Bibata-Modern-Classic";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";

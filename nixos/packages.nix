@@ -26,7 +26,6 @@
     xdg-desktop-portal-hyprland
     xdg-utils
     wl-clipboard
-    mako
     grim
     slurp
     wofi
