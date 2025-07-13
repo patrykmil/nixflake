@@ -18,7 +18,7 @@
       ];
 
       exec-once = [
-        "waybar"
+        "${pkgs.waybar}/bin/waybar"
         "hyprctl dispatch movecursor 2880 540"
       ];
 
