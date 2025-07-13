@@ -39,7 +39,13 @@
     x11.enable = true;
   };
 
-  # For apps that respect the color-scheme environment variable
+  home.packages = [
+    (pkgs.writeShellScriptBin "pavucontrol-dark" ''
+      export GTK_THEME=Adwaita-dark
+      exec ${pkgs.pavucontrol}/bin/pavucontrol "$@"
+    '')
+  ];
+
   home.sessionVariables = {
     GTK_THEME = "palenight";
     QT_QPA_PLATFORMTHEME = "gtk2";
