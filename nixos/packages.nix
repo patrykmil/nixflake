@@ -31,6 +31,8 @@
     slurp
     wofi
     gammastep
+    python314
+    wlogout
   ];
 
   fonts.packages = with pkgs; [

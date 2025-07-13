@@ -8,5 +8,8 @@
     networkmanagerapplet
     mako
     waybar
+    pulseaudio
+    pamixer
+    pavucontrol
   ];
 }

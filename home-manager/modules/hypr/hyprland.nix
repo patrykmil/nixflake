@@ -18,8 +18,7 @@
       ];
 
       exec-once = [
-        "hyprpanel"
-        "nm-applet --indicator"
+        "waybar"
         "hyprctl dispatch movecursor 2880 540"
       ];
 
