@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: Cartograph CF Nerd Font, monospace;
+  font-family: MesloLGS NF, monospace;
   font-weight: bold;
   font-size: 14px;
   min-height: 0;
@@ -19,17 +19,18 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: #9ccfd8;
+  color: #fcc5e9;
 }
 
 #workspaces button.focused {
-  color: #9ccfd8;
+  color: #fcc5e9;
 }
 
 #workspaces button.urgent {
 }
 
 #workspaces button:hover {
+  background-color: #4185c5;
 }
 
 #custom-language,
