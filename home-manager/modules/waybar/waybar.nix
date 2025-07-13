@@ -36,7 +36,7 @@
           format = "󰖩 {essid}";
           format-ethernet = "󱎔 Wired";
           format-disconnected = "󰖪 Dced";
-          on-click = "wezterm -e nmtui";
+          on-click = "alacritty -e nmtui";
         };
         clock = {
           format = "{:%H:%M -- %m/%d} ";
@@ -75,12 +75,16 @@
         "custom/apps" = {
           "format" = "  Apps";
           "on-click" = "wofi --show drun -replace";
-          "on-click-right" = "wlogout"
+          "on-click-right" = "wlogout";
         };
         "custom/divider" = {
           format = " | ";
           interval = "once";
           tooltip = false;
+        };
+        "hyprland/workspaces" = {
+          move-to-monitor = true;
+          all-outputs = true;
         };
       }
     ];

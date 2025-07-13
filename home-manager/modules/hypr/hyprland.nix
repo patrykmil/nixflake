@@ -123,7 +123,7 @@
         "$mainMod,Q,killactive,"
         "$mainMod,E,exec,pcmanfm"
         "$mainMod,F,togglefloating,"
-        "$mainMod,R,exec,wofi --show drun"
+        "$mainMod,R,exec,wofi --show drun -replace"
         "$mainMod,P,pseudo,"
         "$mainMod,J,togglesplit,"
         "$mainMod,B,exec,brave"
@@ -183,6 +183,15 @@
       windowrule = [
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+      ];
+      windowrulev2 = [
+        "float, class:^(Alacritty)$"
+        "size 280 300, class:^(Alacritty)$"
+        "move 75% 69%, class:^(Alacritty)$"
+
+        "float, class:^(org\\.pulseaudio\\.pavucontrol)$"
+        "size 700 500, class:^(org\\.pulseaudio\\.pavucontrol)$"
+        "move 60% 50%, class:^(org\\.pulseaudio\\.pavucontrol)$"
       ];
     };
   };
