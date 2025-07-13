@@ -5,8 +5,8 @@
     longitude = 19.944544;
 
     settings.general = {
-      brightness-day = 0.8;
-      brightness-night = 0.8;
+      brightness-day = 0.6;
+      brightness-night = 0.6;
     };
 
     temperature = {

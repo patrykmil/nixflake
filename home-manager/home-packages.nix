@@ -6,5 +6,7 @@
     fastfetch
     nixfmt-rfc-style
     networkmanagerapplet
+    mako
+    waybar
   ];
 }

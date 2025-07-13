@@ -11,5 +11,6 @@
     ./wofi.nix
     ./gtk.nix
     ./gammastep.nix
+    ./waybar
   ];
 }

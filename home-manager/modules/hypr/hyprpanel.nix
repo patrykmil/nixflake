@@ -1,5 +1,5 @@
 {
-  programs.hyprpanel.enable = true;
+  programs.hyprpanel.enable = false;
 
   programs.hyprpanel.settings = {
     bar = {
