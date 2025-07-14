@@ -12,5 +12,6 @@
     pamixer
     pavucontrol
     alacritty
+    geeqie
   ];
 }
