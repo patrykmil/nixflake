@@ -44,7 +44,7 @@
 
       general = {
         gaps_in = 5;
-        gaps_out = 10;
+        gaps_out = "10,10,2,10";
         border_size = 1;
         "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
         "col.inactive_border" = "rgba(595959aa)";
@@ -187,12 +187,12 @@
       ];
       windowrulev2 = [
         "float, class:^(Alacritty)$"
-        "size 280 300, class:^(Alacritty)$"
+        "size 350 300, class:^(Alacritty)$"
         "move 75% 69%, class:^(Alacritty)$"
 
         "float, class:^(org\\.pulseaudio\\.pavucontrol)$"
-        "size 700 500, class:^(org\\.pulseaudio\\.pavucontrol)$"
-        "move 60% 50%, class:^(org\\.pulseaudio\\.pavucontrol)$"
+        "size 800 500, class:^(org\\.pulseaudio\\.pavucontrol)$"
+        "move 55% 50%, class:^(org\\.pulseaudio\\.pavucontrol)$"
       ];
     };
   };
