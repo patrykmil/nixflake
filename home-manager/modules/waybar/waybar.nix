@@ -31,6 +31,7 @@
         ];
         "hyprland/window" = {
           format = "{}";
+          tooltip = false;
         };
         network = {
           format = "󰖩 {essid}";
@@ -64,8 +65,8 @@
         "pulseaudio#microphone" = {
           format = "{format_source}";
           tooltip = true;
-          format-source = "  󰍬 {volume}%";
-          format-source-muted = "   Muted";
+          format-source = "󰍬 {volume}%";
+          format-source-muted = " Muted";
           on-click = "pavucontrol-dark";
           on-click-right = "pamixer --default-source -t";
           on-scroll-up = "pamixer --default-source -i 5";
@@ -76,6 +77,7 @@
           "format" = "  Apps";
           "on-click" = "wofi --show drun -replace";
           "on-click-right" = "wlogout";
+          tooltip = false;
         };
         "custom/divider" = {
           format = " | ";

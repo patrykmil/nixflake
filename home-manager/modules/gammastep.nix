@@ -6,7 +6,7 @@
 
     settings.general = {
       brightness-day = 0.6;
-      brightness-night = 0.6;
+      brightness-night = 0.55;
     };
 
     temperature = {
