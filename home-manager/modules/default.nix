@@ -13,6 +13,5 @@
     ./gtk.nix
     ./gammastep.nix
     ./waybar
-    ./wlogout.nix
   ];
 }

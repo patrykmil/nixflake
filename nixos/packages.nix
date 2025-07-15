@@ -33,7 +33,6 @@
     wofi-power-menu
     gammastep
     python314
-    wlogout
   ];
 
   fonts.packages = with pkgs; [
