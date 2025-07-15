@@ -10,6 +10,9 @@
 
       workspace = [
         "1,monitor:DP-2"
+        # Smart gaps/borders thingy part 1
+        "w[tv1],gapsout:0,gapsin:0"
+        "f[1],gapsout:0,gapsin:0"
       ];
 
       env = [
@@ -193,6 +196,12 @@
         "float, class:^(org\\.pulseaudio\\.pavucontrol)$"
         "size 800 500, class:^(org\\.pulseaudio\\.pavucontrol)$"
         "move 55% 50%, class:^(org\\.pulseaudio\\.pavucontrol)$"
+
+        # Smart gaps/borders thingy part 2
+        "bordersize 0, floating:0, onworkspace:w[tv1]"
+        "rounding 0, floating:0, onworkspace:w[tv1]"
+        "bordersize 0, floating:0, onworkspace:f[1]"
+        "rounding 0, floating:0, onworkspace:f[1]"
       ];
     };
   };
