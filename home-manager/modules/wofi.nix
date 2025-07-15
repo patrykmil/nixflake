@@ -1,57 +1,61 @@
 {
   programs.wofi = {
     enable = true;
+    settings = {
+      prompt = "Apps";
+    };
     style = ''
-      window {
-        font-family: "DejaVu Sans", "Font Awesome 5 Free";
-        margin: 0px;
-        border: 1px solid rgba(0, 0, 0, 0.9);
-        background-color: rgba(29, 31, 33, 0.95);
-        border-radius: 10px;
+       ::root{
+        --accent: #5291e2;
+        --dark:   #383C4A;
+       }
+
+      *{
+        font-family: MesloLGS NF;
+        font-size: 1.04em;
+      }
+
+      window{
+        background-color: var(--light);
       }
 
       #input {
         margin: 5px;
+        border-radius: 0px;
         border: none;
-        color:rgb(246, 242, 248);
-        background-color: rgba(55, 59, 65, 0.95);
+        border-bottom: 3px solid grey;
+        background-color: var(--dark);
+        color: white;
+        font-size: 2em;
       }
 
       #inner-box {
-        margin: 5px;
-        border: none;
-        background-color: transparent;
+        background-color: var(--dark);
       }
 
       #outer-box {
-        margin: 5px;
-        border: none;
-        background-color: transparent;
-      }
 
-      #scroll {
-        margin: 0px;
-        border: none;
+        margin: 2px;
+        padding:0px;
+        background-color: var(--dark);
       }
 
       #text {
-        margin: 5px;
-        border: none;
-        color: #c5c8c6;
-      }
-
-      #entry {
-        border: none;
-      }
-
-      #entry:focus {
-        border: none;
+        padding: 5px;
+        color: white;
       }
 
       #entry:selected {
-        background-color: rgba(55, 59, 65, 0.95);
-        border-radius: 5px;
-        border: none;
+        background-color: var(--accent);
+      }
+
+      #text:selected {
+      }
+
+      #scroll {
+      }
+
+      #img {
       }
     '';
   };
