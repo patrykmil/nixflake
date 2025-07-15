@@ -76,7 +76,7 @@
         "custom/apps" = {
           "format" = "  Apps";
           "on-click" = "wofi --show drun -replace";
-          "on-click-right" = "wlogout";
+          "on-click-right" = "wofi-power-menu";
           tooltip = false;
         };
         "custom/divider" = {

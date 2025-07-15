@@ -30,6 +30,7 @@
     grim
     slurp
     wofi
+    wofi-power-menu
     gammastep
     python314
     wlogout

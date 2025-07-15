@@ -9,6 +9,7 @@
     ./kdeconnect.nix
     ./hypr
     ./wofi.nix
+    ./wofi-power-menu.nix
     ./gtk.nix
     ./gammastep.nix
     ./waybar
