@@ -12,7 +12,6 @@
     eza
     helix
     bat
-    kdePackages.kate
     kdePackages.breeze-icons
     pcmanfm
     bibata-cursors

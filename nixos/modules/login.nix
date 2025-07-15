@@ -8,7 +8,7 @@
   };
 
   services.displayManager.autoLogin = {
-    enable = true;
+    enable = false;
     user = user;
   };
   services.xserver.xkb = {

@@ -1,3 +1,3 @@
 {
-  security.pam.services.ptrk.kwallet.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 }
