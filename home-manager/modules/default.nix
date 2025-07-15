@@ -13,5 +13,6 @@
     ./gtk.nix
     ./gammastep.nix
     ./waybar
+    ./scripts/set-scripts.nix
   ];
 }

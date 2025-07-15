@@ -22,6 +22,8 @@
           "hyprland/window"
         ];
         modules-right = [
+          "custom/monitor-toggle"
+          "custom/divider"
           "network"
           "custom/divider"
           "pulseaudio"
@@ -87,6 +89,13 @@
         "hyprland/workspaces" = {
           move-to-monitor = true;
           all-outputs = true;
+        };
+        "custom/monitor-toggle" = {
+          format = "{}";
+          tooltip = false;
+          exec = "bash -c 'hyprctl monitors | grep -q HDMI-A-1 && echo \"󰍺\" || echo \"󰍹\"'";
+          interval = 5;
+          on-click = "~/.config/scripts/toggle-second-monitor.sh";
         };
       }
     ];
