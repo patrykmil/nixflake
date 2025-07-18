@@ -3,18 +3,21 @@
     format = "{}";
     tooltip = false;
   };
+
   network = {
     format = "󰖩 {essid}";
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
     on-click = "alacritty -e nmtui";
   };
+
   clock = {
     format = "{:%H:%M -- %m/%d} ";
     tooltip-format = ''
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
   };
+
   pulseaudio = {
     format = "{icon} {volume}%";
     tooltip = true;
@@ -32,6 +35,7 @@
       ];
     };
   };
+
   "pulseaudio#microphone" = {
     format = "{format_source}";
     tooltip = true;
@@ -43,21 +47,25 @@
     on-scroll-down = "pamixer --default-source -d 5";
     scroll-step = 5;
   };
+
   "custom/apps" = {
     "format" = "  Apps";
     "on-click" = "wofi --show drun -replace";
     "on-click-right" = "wofi-power-menu";
     tooltip = false;
   };
+
   "custom/divider" = {
     format = " | ";
     interval = "once";
     tooltip = false;
   };
+
   "hyprland/workspaces" = {
     move-to-monitor = true;
     all-outputs = true;
   };
+
   "custom/monitor-toggle" = {
     format = "{}";
     tooltip = false;

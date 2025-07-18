@@ -11,7 +11,7 @@
     ./wofi-power-menu.nix
     ./gtk.nix
     ./gammastep.nix
-    ./waybar
+    ./waybar/waybar.nix
     ./scripts/set-scripts.nix
   ];
 }
