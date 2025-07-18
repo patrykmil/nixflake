@@ -5,32 +5,14 @@
   };
 
   environment.systemPackages = with pkgs; [
-    wezterm
-    git
-    fzf
-    zoxide
-    eza
-    helix
-    bat
-    kdePackages.breeze-icons
     pcmanfm
-    bibata-cursors
     nwg-look
     vscode
     brave
     home-manager
-    hyprland
-    hypridle
-    hyprpanel
-    hyprlock
-    xdg-desktop-portal-hyprland
-    xdg-utils
     wl-clipboard
     grim
     slurp
-    wofi
-    wofi-power-menu
-    gammastep
     python314
   ];
 

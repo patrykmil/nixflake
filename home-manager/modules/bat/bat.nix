@@ -10,6 +10,8 @@ let
   themeName = "pmndrs";
 in
 {
+  programs.bat.enable = true;
+
   home.file.".config/bat/themes/pmndrs.tmTheme".source = customTheme;
 
   home.activation.bat-theme-cache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''

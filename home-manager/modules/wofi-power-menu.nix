@@ -1,4 +1,9 @@
+{ pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    wofi-power-menu
+  ];
+
   home.file.".config/wofi-power-menu.toml".text = ''
     [menu.suspend]
     cmd = "systemctl suspend"
