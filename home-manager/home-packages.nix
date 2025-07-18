@@ -7,7 +7,6 @@
     nixfmt-rfc-style
     networkmanagerapplet
     mako
-    waybar
     pulseaudio
     pamixer
     pavucontrol
