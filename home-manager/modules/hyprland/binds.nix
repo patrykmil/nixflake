@@ -38,7 +38,9 @@
     "$mainMod SHIFT,0,movetoworkspace,10"
     "$mainMod,mouse_down,workspace,e+1"
     "$mainMod,mouse_up,workspace,e-1"
-    "$mainMod,S,exec,~/.config/scripts/screenshot.sh output"
+    # Screenshots
+    ",print,exec,~/.config/scripts/screenshot.sh all"
+    "$mainMod,S,exec,~/.config/scripts/screenshot.sh monitor"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
   ];
 

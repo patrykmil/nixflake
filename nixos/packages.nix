@@ -12,7 +12,6 @@
     home-manager
     wl-clipboard
     grim
-    grimblast
     slurp
     python314
   ];
