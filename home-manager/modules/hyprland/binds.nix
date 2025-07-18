@@ -7,6 +7,7 @@
     "$mainMod,E,exec,pcmanfm"
     "$mainMod,F,togglefloating,"
     "$mainMod,R,exec,wofi --show drun -replace"
+    "$mainMod SHIFT,R,exec,wofi-power-menu"
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
     "$mainMod,B,exec,brave"
