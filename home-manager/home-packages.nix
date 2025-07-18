@@ -12,5 +12,6 @@
     pavucontrol
     alacritty
     geeqie
+    hyprpicker
   ];
 }

@@ -42,6 +42,7 @@
     ",print,exec,~/.config/scripts/screenshot.sh all"
     "$mainMod,S,exec,~/.config/scripts/screenshot.sh monitor"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
+    "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
   ];
 
   bindm = [
