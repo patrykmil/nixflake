@@ -1,0 +1,12 @@
+{
+  dwindle = {
+    pseudotile = true;
+    preserve_split = true;
+    force_split = 2;
+  };
+
+  master = {
+    new_status = "slave";
+    new_on_active = "before";
+  };
+}

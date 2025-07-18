@@ -1,17 +1,25 @@
 {
   imports = [
+    ./hyprland/hyprland.nix
+
+    ./shell/fish.nix
+    ./shell/bat/bat.nix
+    ./shell/eza.nix
+
+    ./bar/waybar/waybar.nix
+    ./bar/hyprpanel/hyprpanel.nix
+
+    ./scripts/set-scripts.nix
+
+    ./launcher/wofi.nix
+    ./launcher/wofi-power-menu.nix
+
+    ./wallpaper/hyprpaper.nix
+
     ./helix.nix
-    ./eza.nix
     ./wezterm.nix
-    ./bat/bat.nix
-    ./git.nix
-    ./fish.nix
-    ./hypr
-    ./wofi.nix
-    ./wofi-power-menu.nix
     ./gtk.nix
     ./gammastep.nix
-    ./waybar/waybar.nix
-    ./scripts/set-scripts.nix
+    ./git.nix
   ];
 }

@@ -168,7 +168,7 @@
         };
         powermenu = {
           confirmation = false;
-          avatar.image = "/home/ptrk/flakes/home-manager/modules/hypr/nix.png";
+          avatar.image = "/home/ptrk/flakes/home-manager/modules/bar/hyprpanel/nix.png";
         };
         directories = {
           left = {
