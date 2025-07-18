@@ -9,7 +9,7 @@ mode=${1:-area}
 
 case "$mode" in
 active)
-    command="grimblast copysave active $outputPath"
+    command="~$outputPath"
     ;;
 output)
     command="grimblast copysave output $outputPath"

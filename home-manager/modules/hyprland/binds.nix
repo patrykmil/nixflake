@@ -36,10 +36,10 @@
     "$mainMod SHIFT,8,movetoworkspace,8"
     "$mainMod SHIFT,9,movetoworkspace,9"
     "$mainMod SHIFT,0,movetoworkspace,10"
-    "$mainMod,S,togglespecialworkspace,magic"
-    "$mainMod SHIFT,S,movetoworkspace,special:magic"
     "$mainMod,mouse_down,workspace,e+1"
     "$mainMod,mouse_up,workspace,e-1"
+    "$mainMod,S,exec,~/.config/scripts/screenshot.sh output"
+    "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
   ];
 
   bindm = [
