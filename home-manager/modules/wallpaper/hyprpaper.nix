@@ -1,3 +1,6 @@
+let
+  wallpaperFolder = builtins.toString ./wallpapers;
+in
 {
   services.hyprpaper = {
     enable = true;
@@ -5,11 +8,11 @@
       splash = false;
 
       preload = [
-        "/home/ptrk/flakes/wallpapers/ink_wave.png"
+        "${wallpaperFolder}/ink_wave.png"
       ];
 
       wallpaper = [
-        ",/home/ptrk/flakes/wallpapers/ink_wave.png"
+        ",${wallpaperFolder}/ink_wave.png"
       ];
     };
   };
