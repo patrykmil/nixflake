@@ -5,6 +5,7 @@
     ./shell/fish.nix
     ./shell/bat/bat.nix
     ./shell/eza.nix
+    ./shell/direnv.nix
 
     ./bar/waybar/waybar.nix
     ./bar/hyprpanel/hyprpanel.nix
