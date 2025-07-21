@@ -14,6 +14,7 @@
     grim
     slurp
     python314
+    ruff
   ];
 
   fonts.packages = with pkgs; [
