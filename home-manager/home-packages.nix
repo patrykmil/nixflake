@@ -13,5 +13,6 @@
     alacritty
     geeqie
     hyprpicker
+    hyprpaper
   ];
 }
