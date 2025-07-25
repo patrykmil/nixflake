@@ -7,7 +7,7 @@
     extraConfig = ''
       return {
         color_scheme = "Poimandres",
-
+        font = wezterm.font("CaskaydiaMono Nerd Font Mono"),
         window_close_confirmation = "NeverPrompt",
         use_fancy_tab_bar = false,
         hide_tab_bar_if_only_one_tab = true,
