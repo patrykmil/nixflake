@@ -1,6 +1,11 @@
 {
   "$mainMod" = "SUPER";
 
+  binds = {
+    allow_workspace_cycles = true;
+    workspace_back_and_forth = true;
+  };
+
   bind = [
     "$mainMod,T,exec,wezterm"
     "$mainMod,Q,killactive,"
@@ -44,6 +49,8 @@
     "$mainMod,S,exec,~/.config/scripts/screenshot.sh monitor"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
+    # Alt tab to switch workspaces
+    "Alt,Tab,workspace,previous"
   ];
 
   bindm = [

@@ -18,7 +18,9 @@
   ];
 
   fonts.packages = with pkgs; [
-    meslo-lg
-    meslo-lgs-nf
+    maple-mono.NF
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.meslo-lg
+    excalifont
   ];
 }

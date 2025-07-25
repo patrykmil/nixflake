@@ -137,8 +137,8 @@
         };
       };
       font = {
-        name = "MesloLGS NF";
-        label = "MesloLGS NF";
+        name = "CaskaydiaMono Nerd Font Mono";
+        label = "CaskaydiaMono Nerd Font Mono";
         size = "1.1rem";
         weight = 500;
       };

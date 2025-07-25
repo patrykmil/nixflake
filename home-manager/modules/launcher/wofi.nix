@@ -11,7 +11,7 @@
        }
 
       *{
-        font-family: MesloLGS NF;
+        font-family: CaskaydiaMono Nerd Font Mono;
         font-size: 1.04em;
       }
 
