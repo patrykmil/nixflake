@@ -40,7 +40,7 @@
     format = "{format_source}";
     tooltip = true;
     format-source = "󰍬 {volume}%";
-    format-source-muted = " Muted";
+    format-source-muted = "󰍭 Muted";
     on-click = "pavucontrol-dark";
     on-click-right = "pamixer --default-source -t";
     on-scroll-up = "pamixer --default-source -i 5";
