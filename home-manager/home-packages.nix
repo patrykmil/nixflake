@@ -14,5 +14,6 @@
     geeqie
     hyprpicker
     hyprpaper
+    jetbrains.pycharm-professional
   ];
 }
