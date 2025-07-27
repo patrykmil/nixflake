@@ -27,7 +27,7 @@
         host: configPath:
         nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit user; };
+          specialArgs = { inherit homeStateVersion user; };
           modules = [
             configPath
             distro-grub-themes.nixosModules.${system}.default
