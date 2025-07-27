@@ -15,6 +15,7 @@
     slurp
     python314
     ruff
+    sqlite
   ];
 
   fonts.packages = with pkgs; [

@@ -15,5 +15,7 @@
     hyprpicker
     hyprpaper
     jetbrains.pycharm-professional
+    bun
+    dbeaver-bin
   ];
 }

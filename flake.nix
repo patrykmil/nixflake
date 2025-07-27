@@ -33,7 +33,7 @@
           inherit user;
         };
         modules = [
-          ./nixos/configuration.nix
+          ./system/configuration.nix
           distro-grub-themes.nixosModules.${system}.default
         ];
       };
