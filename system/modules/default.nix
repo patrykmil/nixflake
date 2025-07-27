@@ -7,10 +7,11 @@
     ./locale.nix
     ./login.nix
     ./audio.nix
-    ./nvidia.nix
     ./firewall.nix
     ./hypr
     ./keyring.nix
     ./printing.nix
+    ./experimental.nix
+    ./kernel.nix
   ];
 }
