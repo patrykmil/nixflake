@@ -8,6 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
+    stylix = {
+      url = "github:nix-community/stylix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -16,6 +20,7 @@
       nixpkgs,
       home-manager,
       distro-grub-themes,
+      stylix,
       ...
     }@inputs:
     let
@@ -42,7 +47,9 @@
             inherit inputs homeStateVersion user;
             hostName = host;
           };
-          modules = homeManagerModules;
+          modules = [
+            stylix.homeManagerModules.stylix
+          ] ++ homeManagerModules;
         };
     in
     {

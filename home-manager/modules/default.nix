@@ -23,5 +23,7 @@
     ./gtk.nix
     ./gammastep.nix
     ./git.nix
+
+    ./stylix.nix
   ];
 }
