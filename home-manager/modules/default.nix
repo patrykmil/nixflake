@@ -16,7 +16,7 @@
     ./launcher/wofi.nix
     ./launcher/wofi-power-menu.nix
 
-    ./wallpaper/hyprpaper.nix
+    ./hyprpaper.nix
 
     ./helix.nix
     ./wezterm.nix

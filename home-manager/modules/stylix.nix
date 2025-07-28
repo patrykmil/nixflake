@@ -12,7 +12,7 @@
 
   stylix = {
     enable = true;
-    image = ./wallpaper/wallpapers/deer-forest.jpg;
+    image = ../../wallpapers/ink-wave.png;
     polarity = "dark";
 
     targets = {
