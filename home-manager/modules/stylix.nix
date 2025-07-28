@@ -12,12 +12,13 @@
 
   stylix = {
     enable = true;
-    image = ../../wallpapers/ink-wave.png;
+    image = ../../wallpapers/ink-wave.jpg;
     polarity = "dark";
 
     targets = {
       # waybar.enable = false;
       wezterm.enable = false;
+      fish.enable = false;
     };
 
     cursor = {
