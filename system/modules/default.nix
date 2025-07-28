@@ -8,7 +8,7 @@
     ./login.nix
     ./audio.nix
     ./firewall.nix
-    ./hypr
+    ./hyprland.nix
     ./keyring.nix
     ./printing.nix
     ./experimental.nix

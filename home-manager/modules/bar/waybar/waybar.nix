@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 let
   layout = import ./waybar-layout.nix;
   commonSettings = {
@@ -12,7 +12,6 @@ let
   };
 in
 {
-
   programs.waybar = {
     enable = true;
     style = builtins.readFile ./style.css;

@@ -53,9 +53,3 @@
       homeConfigurations."${user}-desktop" = mkHomeConfig "desktop" [ ./home-manager/home.nix ];
     };
 }
-
-# sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop
-# sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop
-
-# home-manager switch --flake /home/ptrk/flakes#ptrk-laptop
-# home-manager switch --flake /home/ptrk/flakes#ptrk-desktop
