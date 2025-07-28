@@ -40,7 +40,7 @@
         };
 
       mkHomeConfig =
-        host: homeManagerModules:
+        host: homeModules:
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.${system};
           extraSpecialArgs = {
@@ -48,8 +48,8 @@
             hostName = host;
           };
           modules = [
-            stylix.homeManagerModules.stylix
-          ] ++ homeManagerModules;
+            stylix.homeModules.stylix
+          ] ++ homeModules;
         };
     in
     {
