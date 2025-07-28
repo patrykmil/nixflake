@@ -16,15 +16,14 @@
       geeqie
       hyprpicker
       hyprpaper
-      jetbrains.pycharm-professional
       bun
-      dbeaver-bin
     ]
     ++ (
       if hostName == "desktop" then
         [
           jetbrains.pycharm-professional
           dbeaver-bin
+          ffmpeg-full
         ]
       else if hostName == "laptop" then
         [
