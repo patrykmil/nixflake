@@ -1,6 +1,7 @@
 {
   imports = [
     ./hyprland/hyprland.nix
+    ./hypridle.nix
 
     ./shell/fish.nix
     ./shell/bat/bat.nix

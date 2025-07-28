@@ -22,6 +22,7 @@
 
     [menu.lock-screen]
     cmd = "hyprlock"
+    enabled = "false"
 
     [menu.hibernate]
     enabled = "false"
