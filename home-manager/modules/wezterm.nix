@@ -20,31 +20,6 @@
         tab_bar_at_bottom = true,
         tab_max_width = 25,
 
-        colors = {
-          tab_bar = {
-            background = "#0b0022",
-            active_tab = {
-              bg_color = "#506477",
-              fg_color = "#E4F0FB",
-            },
-            inactive_tab = {
-              bg_color = "#1B1E28",
-              fg_color = "#A4A0AB",
-            },
-            inactive_tab_hover = {
-              bg_color = "#42675A",
-              fg_color = "#C4C0CB",
-            },
-            new_tab = {
-              bg_color = "#0b0022",
-              fg_color = "#A4A0AB",
-            },
-            new_tab_hover = {
-              bg_color = "#0b0022",
-              fg_color = "#FCC5E9",
-            },
-          },
-        },
 
         keys = {
           { key = "t", mods = "CTRL", action = wezterm.action.SpawnTab "DefaultDomain" },
@@ -66,3 +41,28 @@
     '';
   };
 }
+# colors = {
+#   tab_bar = {
+#     background = "#0b0022",
+#     active_tab = {
+#       bg_color = "#506477",
+#       fg_color = "#E4F0FB",
+#     },
+#     inactive_tab = {
+#       bg_color = "#1B1E28",
+#       fg_color = "#A4A0AB",
+#     },
+#     inactive_tab_hover = {
+#       bg_color = "#42675A",
+#       fg_color = "#C4C0CB",
+#     },
+#     new_tab = {
+#       bg_color = "#0b0022",
+#       fg_color = "#A4A0AB",
+#     },
+#     new_tab_hover = {
+#       bg_color = "#0b0022",
+#       fg_color = "#FCC5E9",
+#     },
+#   },
+# },

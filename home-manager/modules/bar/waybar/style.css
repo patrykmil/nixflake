@@ -11,7 +11,7 @@
 
 window#waybar {
   background: rgba(21, 18, 27, 0);
-  color: #cdd6f4;
+  /* color: #cdd6f4; */
 }
 
 tooltip {

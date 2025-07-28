@@ -17,11 +17,4 @@
     ruff
     sqlite
   ];
-
-  fonts.packages = with pkgs; [
-    maple-mono.NF
-    nerd-fonts.caskaydia-mono
-    nerd-fonts.meslo-lg
-    excalifont
-  ];
 }

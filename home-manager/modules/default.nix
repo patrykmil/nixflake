@@ -20,7 +20,6 @@
 
     ./helix.nix
     ./wezterm.nix
-    ./gtk.nix
     ./gammastep.nix
     ./git.nix
 
