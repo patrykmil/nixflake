@@ -1,15 +1,5 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    maple-mono.NF
-    noto-fonts
-    nerd-fonts.caskaydia-mono
-    nerd-fonts.meslo-lg
-    nerd-fonts.arimo
-    excalifont
-    qogir-icon-theme
-  ];
-
   stylix = {
     enable = true;
     image = ../../wallpapers/ink-wave.jpg;

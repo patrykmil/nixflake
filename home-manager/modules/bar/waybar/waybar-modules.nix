@@ -12,7 +12,7 @@
   };
 
   clock = {
-    format = "{:%H:%M -- %m/%d} ";
+    format = "{:%H:%M -- %d/%m} ";
     tooltip-format = ''
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
@@ -49,9 +49,9 @@
   };
 
   "custom/apps" = {
-    "format" = "  Apps";
-    "on-click" = "wofi --show drun -replace";
-    "on-click-right" = "wofi-power-menu";
+    "format" = "  Launch";
+    "on-click" = "~/.config/scripts/toggle-wofi.sh drun";
+    "on-click-right" = "~/.config/scripts/toggle-wofi.sh power";
     tooltip = false;
   };
 

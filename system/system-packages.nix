@@ -18,6 +18,7 @@
       python314
       ruff
       sqlite
+      qogir-icon-theme
     ]
     ++ (
       if hostName == "desktop" then
@@ -33,4 +34,13 @@
 
         ]
     );
+
+  fonts.packages = with pkgs; [
+    maple-mono.NF
+    noto-fonts
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.meslo-lg
+    nerd-fonts.arimo
+    excalifont
+  ];
 }
