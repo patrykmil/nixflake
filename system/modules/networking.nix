@@ -1,6 +1,7 @@
+{ hostName, ... }:
 {
   networking.networkmanager.enable = true;
-  networking.hostName = "nixos";
+  networking.hostName = hostName;
   networking.wireless.iwd.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
   networking.wireless.iwd.settings = {
