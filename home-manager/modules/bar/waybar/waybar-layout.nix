@@ -37,6 +37,7 @@ in
       "pulseaudio#microphone"
       "custom/divider"
       "battery"
+      "backlight"
       "custom/divider"
       "clock"
     ];

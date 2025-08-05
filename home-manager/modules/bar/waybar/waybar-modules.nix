@@ -88,4 +88,13 @@
     tooltip-format = ''{time}'';
     max-length = 25;
   };
+
+  backlight = {
+    device = "intel_backlight";
+    format = " {percent}%";
+    interval = 5;
+    tooltip = false;
+    on-scroll-down = "brightnessctl set 5%-";
+    on-scroll-up = "brightnessctl set +5%";
+  };
 }

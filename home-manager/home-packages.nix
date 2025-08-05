@@ -29,7 +29,7 @@
         ]
       else if hostName == "laptop" then
         [
-
+          brightnessctl
         ]
       else
         [
