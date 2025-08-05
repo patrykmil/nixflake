@@ -2,6 +2,7 @@
   "hyprland/window" = {
     format = "{}";
     tooltip = false;
+    max-length = 50;
   };
 
   network = {
@@ -72,5 +73,19 @@
     exec = "bash -c 'hyprctl monitors | grep -q HDMI-A-1 && echo \"󰍺\" || echo \"󰍹\"'";
     interval = 5;
     on-click = "~/.config/scripts/toggle-second-monitor.sh";
+  };
+
+  battery = {
+    interval = 60;
+    format = "{icon} {capacity}%";
+    format-charging = "󱐋 {capacity}%";
+    format-icons = [
+      "󱊡"
+      "󱊢"
+      "󱊣"
+    ];
+    tooltip = true;
+    tooltip-format = ''{time}'';
+    max-length = 25;
   };
 }
