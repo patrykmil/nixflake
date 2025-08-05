@@ -2,7 +2,7 @@ let
   modules = import ./waybar-modules.nix;
 in
 {
-  main = {
+  main-desktop = {
     modules-left = [
       "custom/apps"
       "custom/divider"
@@ -16,6 +16,23 @@ in
       "custom/divider"
       "network"
       "custom/divider"
+      "pulseaudio"
+      "pulseaudio#microphone"
+      "custom/divider"
+      "clock"
+    ];
+  } // modules;
+
+  main-laptop = {
+    modules-left = [
+      "custom/apps"
+      "custom/divider"
+      "hyprland/workspaces"
+    ];
+    modules-center = [
+      "hyprland/window"
+    ];
+    modules-right = [
       "pulseaudio"
       "pulseaudio#microphone"
       "custom/divider"
