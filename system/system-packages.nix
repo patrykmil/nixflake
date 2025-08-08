@@ -9,7 +9,7 @@
     [
       pcmanfm
       nwg-look
-      vscode
+      # vscode
       brave
       home-manager
       wl-clipboard

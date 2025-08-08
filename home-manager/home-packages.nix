@@ -31,6 +31,8 @@
       else if hostName == "laptop" then
         [
           brightnessctl
+          libgcc
+          vscode-fhs
         ]
       else
         [
