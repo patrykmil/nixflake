@@ -17,8 +17,10 @@
       hyprpicker
       hyprpaper
       bun
-      htop
       peazip
+      htop
+      ripgrep
+      fd
     ]
     ++ (
       if hostName == "desktop" then
