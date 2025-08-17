@@ -21,18 +21,21 @@
       btop
       ripgrep
       fd
+      localsend
     ]
     ++ (
       if hostName == "desktop" then
         [
           jetbrains.pycharm-professional
           ffmpeg-full
+          vscode
         ]
       else if hostName == "laptop" then
         [
           brightnessctl
           libgcc
           vscode-fhs
+          arduino-ide
         ]
       else
         [

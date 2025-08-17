@@ -2,8 +2,8 @@
   networking.firewall = rec {
     allowedTCPPortRanges = [
       {
-        from = 1714;
-        to = 1764;
+        from = 53317;
+        to = 53318;
       }
     ];
     allowedUDPPortRanges = allowedTCPPortRanges;
