@@ -18,7 +18,7 @@
       hyprpaper
       bun
       peazip
-      htop
+      btop
       ripgrep
       fd
     ]
@@ -26,7 +26,6 @@
       if hostName == "desktop" then
         [
           jetbrains.pycharm-professional
-          dbeaver-bin
           ffmpeg-full
         ]
       else if hostName == "laptop" then
