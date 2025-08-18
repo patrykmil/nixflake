@@ -10,8 +10,8 @@
 
     targets = {
       # waybar.enable = false;
-      wezterm.enable = false;
-      fish.enable = false;
+      # fish.enable = false;
+      # wezterm.enable = faplse;
     };
 
     cursor = {
