@@ -52,7 +52,8 @@
           };
           modules = [
             stylix.homeModules.stylix
-          ] ++ homeModules;
+          ]
+          ++ homeModules;
         };
     in
     {

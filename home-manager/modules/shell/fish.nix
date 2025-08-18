@@ -28,4 +28,6 @@
     enable = true;
     enableFishIntegration = true;
   };
+
+  programs.btop.enable = true;
 }
