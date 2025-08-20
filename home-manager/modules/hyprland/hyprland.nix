@@ -10,5 +10,7 @@
       // (import ./binds.nix)
       // (import ./window-rules.nix)
       // (import ./autostart.nix { inherit pkgs; });
+
+    extraConfig = (import ./sensitivity.nix).extraConfig;
   };
 }
