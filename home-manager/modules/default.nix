@@ -15,6 +15,7 @@
 
       ./scripts/set-scripts.nix
 
+      ./launcher/rofi.nix
       ./launcher/wofi.nix
       ./launcher/wofi-power-menu.nix
 
