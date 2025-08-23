@@ -9,7 +9,7 @@
     format = "󰖩 {essid}";
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
-    on-click = "alacritty -e nmtui";
+    on-click = "network-menu";
   };
 
   clock = {
@@ -50,9 +50,9 @@
   };
 
   "custom/apps" = {
-    "format" = "  Launch";
-    "on-click" = "~/.config/scripts/toggle-wofi.sh drun";
-    "on-click-right" = "~/.config/scripts/toggle-wofi.sh power";
+    "format" = "  Run";
+    "on-click" = "rofi -show drun -sidebar-mode";
+    "on-click-right" = "power-menu";
     tooltip = false;
   };
 

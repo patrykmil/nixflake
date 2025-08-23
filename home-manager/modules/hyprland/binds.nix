@@ -11,8 +11,8 @@
     "$mainMod,Q,killactive,"
     "$mainMod,E,exec,pcmanfm"
     "$mainMod,F,togglefloating,"
-    "$mainMod,R,exec,~/.config/scripts/toggle-wofi.sh drun"
-    "$mainMod SHIFT,R,exec,~/.config/scripts/toggle-wofi.sh power"
+    "$mainMod,R,exec,rofi -show drun -sidebar-mode"
+    "$mainMod SHIFT,R,exec,power-menu"
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
     "$mainMod,B,exec,brave"
@@ -46,7 +46,7 @@
     "$mainMod,mouse_up,workspace,e-1"
     # Screenshots
     ",print,exec,~/.config/scripts/screenshot.sh all"
-    "$mainMod,S,exec,~/.config/scripts/screenshot.sh monitor"
+    "$mainMod,S,exec,screenshot-menu"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
     # Alt tab to switch workspaces
