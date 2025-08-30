@@ -15,6 +15,7 @@
       ./printing.nix
       ./experimental.nix
       ./kernel.nix
+      ./usb.nix
     ]
     ++ (
       if hostName == "desktop" then
