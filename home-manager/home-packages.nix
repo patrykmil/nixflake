@@ -22,6 +22,8 @@
       ripgrep
       fd
       localsend
+      prusa-slicer
+      unzip
     ]
     ++ (
       if hostName == "desktop" then
