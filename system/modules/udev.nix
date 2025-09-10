@@ -1,8 +1,9 @@
 { pkgs, lib, ... }:
 {
-  services.udev.packages = [
-    pkgs.platformio-core
-    pkgs.openocd
+  services.udev.packages = with pkgs; [
+    platformio-core
+    openocd
+    platformio-core.udev
   ];
 
   services.udev.extraRules = ''
