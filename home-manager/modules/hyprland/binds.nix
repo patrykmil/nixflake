@@ -49,8 +49,7 @@
     "$mainMod,S,exec,screenshot-menu"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
-    # Alt tab to switch workspaces
-    # "Alt,Tab,workspace,previous"
+    "$mainMod,Tab,workspace,previous"
     "Alt, Tab, exec, rofi -show window"
   ];
 
