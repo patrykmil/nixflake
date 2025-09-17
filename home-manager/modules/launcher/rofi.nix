@@ -10,7 +10,14 @@
       rofi-network-manager
     ];
     extraConfig = {
-      font = "monospace 20";
+      font = "Excalifont 20";
+      modi = "drun,window,run,filebrowser";
+      show-icons = true;
+      drun-display-format = "{icon} {name}";
+      display-drun = "  Apps";
+      display-run = "  Run";
+      display-filebrowser = "  File";
+      display-window = " Windows";
     };
   };
 

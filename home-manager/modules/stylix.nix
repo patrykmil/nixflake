@@ -12,6 +12,7 @@
       # waybar.enable = false;
       # fish.enable = false;
       # wezterm.enable = faplse;
+      # rofi.enable = false;
     };
 
     cursor = {
@@ -26,13 +27,21 @@
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       serif = {
-        name = "Noto Serif";
-        package = pkgs.noto-fonts;
+        name = "Excalifont";
+        package = pkgs.excalifont;
       };
       sansSerif = {
-        name = "Arimo Nerd Font";
-        package = pkgs.nerd-fonts.arimo;
+        name = "Excalifont";
+        package = pkgs.excalifont;
       };
+      # serif = {
+      #   name = "Noto Serif";
+      #   package = pkgs.noto-fonts;
+      # };
+      # sansSerif = {
+      #   name = "Arimo Nerd Font";
+      #   package = pkgs.nerd-fonts.arimo;
+      # };
     };
 
     iconTheme = {
