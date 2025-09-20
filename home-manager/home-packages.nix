@@ -32,6 +32,8 @@
           jetbrains.pycharm-professional
           ffmpeg-full
           vscode
+          file
+          toybox
         ]
       else if hostName == "laptop" then
         [
