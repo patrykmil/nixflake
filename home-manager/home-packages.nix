@@ -24,6 +24,7 @@
       localsend
       prusa-slicer
       unzip
+      wget
     ]
     ++ (
       if hostName == "desktop" then
