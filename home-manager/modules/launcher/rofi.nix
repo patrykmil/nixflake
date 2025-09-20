@@ -12,13 +12,15 @@
     ];
     extraConfig = {
       font = "Excalifont 20";
-      modi = "drun,window,run,filebrowser";
+      modi = "drun,window,run,filebrowser,calc,";
       show-icons = true;
-      drun-display-format = "{icon} {name}";
-      display-drun = "  Apps";
-      display-run = "  Run";
-      display-filebrowser = "  File";
-      display-window = " Windows";
+      drun-display-format = " {icon} {name}";
+      display-drun = "   Apps ";
+      display-run = "   Run ";
+      display-filebrowser = "   File ";
+      display-window = "  Windows ";
+      display-calc = " 󰪚 Calc ";
+      icon-theme = "Qogir";
     };
   };
 
