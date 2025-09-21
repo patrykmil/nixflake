@@ -9,13 +9,12 @@
     [
       pcmanfm
       nwg-look
-      # vscode
       brave
       home-manager
       wl-clipboard
       grim
       slurp
-      python314
+      python313
       ruff
       sqlite
       qogir-icon-theme
