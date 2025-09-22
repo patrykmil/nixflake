@@ -27,6 +27,8 @@
       ./git.nix
 
       ./stylix.nix
+
+      ./helium.nix
     ]
     ++ (
       if hostName == "desktop" then

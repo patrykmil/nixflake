@@ -25,6 +25,7 @@
       prusa-slicer
       unzip
       wget
+      appimage-run
     ]
     ++ (
       if hostName == "desktop" then
