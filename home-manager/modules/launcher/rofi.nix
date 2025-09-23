@@ -20,7 +20,6 @@
       display-filebrowser = "   File ";
       display-window = "  Windows ";
       display-calc = " 󰪚 Calc ";
-      icon-theme = "Qogir";
     };
   };
 

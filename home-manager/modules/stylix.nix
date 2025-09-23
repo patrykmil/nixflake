@@ -46,9 +46,20 @@
 
     iconTheme = {
       enable = true;
-      light = "Qogir";
-      dark = "Qogir";
-      package = pkgs.qogir-icon-theme;
+      light = "Papirus-Light";
+      dark = "Papirus-Dark";
+      package = pkgs.catppuccin-papirus-folders;
+      # package = pkgs.catppuccin-papirus-folders.override {
+      #   flavor = "mocha";
+      #   accent = "blue";   # Change to your desired accent color
+      # };
     };
+
+    # iconTheme = {
+    #   enable = true;
+    #   light = "Qogir";
+    #   dark = "Qogir";
+    #   package = pkgs.qogir-icon-theme;
+    # };
   };
 }
