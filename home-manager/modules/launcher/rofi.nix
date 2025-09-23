@@ -14,7 +14,7 @@
       font = "Excalifont 20";
       modi = "drun,window,run,filebrowser,calc,";
       show-icons = true;
-      drun-display-format = " {icon} {name}";
+      drun-display-format = " {name}";
       display-drun = "   Apps ";
       display-run = "   Run ";
       display-filebrowser = "   File ";
