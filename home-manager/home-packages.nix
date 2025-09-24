@@ -26,13 +26,13 @@
       unzip
       wget
       appimage-run
+      vscode-fhs
     ]
     ++ (
       if hostName == "desktop" then
         [
           jetbrains.pycharm-professional
           ffmpeg-full
-          vscode
           file
           toybox
         ]
@@ -40,7 +40,6 @@
         [
           brightnessctl
           libgcc
-          vscode-fhs
           arduino-ide
         ]
       else
