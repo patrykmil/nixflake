@@ -337,33 +337,12 @@
         "url": "https://git.outfoxxed.me/quickshell/quickshell"
       }
     },
-    "quickshell_2": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1758273351,
-        "narHash": "sha256-wOv1guIi9THD1NjOtBU2Xh/Avg9xv7nIjsfFSkr1NeQ=",
-        "ref": "refs/heads/master",
-        "rev": "e9a574d919a89602d2868621576b2ccae54a5cb0",
-        "revCount": 675,
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
-      }
-    },
     "root": {
       "inputs": {
         "dankMaterialShell": "dankMaterialShell",
         "distro-grub-themes": "distro-grub-themes",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
-        "quickshell": "quickshell_2",
         "stylix": "stylix"
       }
     },

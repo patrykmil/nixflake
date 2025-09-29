@@ -29,6 +29,8 @@
       ./stylix.nix
 
       # ./helium.nix
+
+      ./dankMaterialShell.nix
     ]
     ++ (
       if hostName == "desktop" then
