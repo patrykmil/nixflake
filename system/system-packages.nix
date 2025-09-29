@@ -1,4 +1,8 @@
-{ pkgs, hostName, ... }:
+{
+  pkgs,
+  hostName,
+  ...
+}:
 {
   nixpkgs.config = {
     allowUnfree = true;
@@ -17,7 +21,14 @@
       python313
       ruff
       sqlite
-      qogir-icon-theme
+      # qogir-icon-theme
+
+      # For Dank Material Shell
+      libnotify
+      xdg-desktop-portal-gtk
+      mate.mate-polkit
+      jq
+      xwayland-satellite
     ]
     ++ (
       if hostName == "desktop" then
@@ -41,5 +52,8 @@
     nerd-fonts.meslo-lg
     nerd-fonts.arimo
     excalifont
+    material-symbols
+    inter
+    fira-code
   ];
 }

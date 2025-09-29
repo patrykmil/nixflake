@@ -11,8 +11,8 @@
     "$mainMod,Q,killactive,"
     "$mainMod,E,exec,pcmanfm"
     "$mainMod,F,togglefloating,"
-    "$mainMod,R,exec,rofi -show drun -sidebar-mode"
-    "$mainMod SHIFT,R,exec,power-menu"
+    "$mainMod,R,exec,dms ipc call spotlight toggle"
+    "$mainMod SHIFT,R,exec,dms ipc call powermenu toggle"
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
     "$mainMod,B,exec,brave"
@@ -46,11 +46,9 @@
     "$mainMod,mouse_up,workspace,e-1"
     # Screenshots
     ",print,exec,~/.config/scripts/screenshot.sh all"
-    "$mainMod,S,exec,screenshot-menu"
     "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
-    "$mainMod,Tab,workspace,previous"
-    "Alt, Tab, exec, rofi -show window"
+    "Alt,Tab,workspace,previous"
   ];
 
   bindm = [

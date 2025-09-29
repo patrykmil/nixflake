@@ -2,14 +2,22 @@
   description = "A very basic flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
     stylix = {
-      url = "github:nix-community/stylix/release-25.05";
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -21,6 +29,7 @@
       home-manager,
       distro-grub-themes,
       stylix,
+      dankMaterialShell,
       ...
     }@inputs:
     let
@@ -52,6 +61,7 @@
           };
           modules = [
             stylix.homeModules.stylix
+            dankMaterialShell.homeModules.dankMaterialShell.default
           ]
           ++ homeModules;
         };

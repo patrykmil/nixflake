@@ -8,11 +8,11 @@
       fastfetch
       nixfmt-rfc-style
       networkmanagerapplet
-      mako
-      pulseaudio
-      pamixer
-      pavucontrol
-      alacritty
+      # mako
+      # pulseaudio
+      # pamixer
+      # pavucontrol
+      # alacritty
       geeqie
       hyprpicker
       hyprpaper
@@ -27,6 +27,7 @@
       wget
       appimage-run
       vscode-fhs
+      hyprsunset
     ]
     ++ (
       if hostName == "desktop" then

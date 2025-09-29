@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   stylix = {
     enable = true;
@@ -13,6 +13,7 @@
       # fish.enable = false;
       # wezterm.enable = faplse;
       # rofi.enable = false;
+      gtk.enable = true;
     };
 
     cursor = {

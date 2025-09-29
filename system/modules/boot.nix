@@ -24,4 +24,5 @@
     enable = true;
     theme = "nixos";
   };
+
 }
