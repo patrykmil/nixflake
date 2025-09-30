@@ -11,7 +11,7 @@
     targets = {
       # waybar.enable = false;
       # fish.enable = false;
-      # wezterm.enable = faplse;
+      wezterm.enable = false;
       # rofi.enable = false;
       gtk.enable = true;
     };

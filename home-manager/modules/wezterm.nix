@@ -6,17 +6,18 @@
 
     # command_palette_bg_color = "#171922",
     # command_palette_fg_color = "#E4F0FB",
+    # enable_scroll_bar = true,   This 2 didnt work
+    # tab_bar_at_bottom = true,
 
     extraConfig = ''
       return {
         font = wezterm.font("CaskaydiaMono Nerd Font Mono"),
         color_scheme = "Poimandres",
+        font_size = 18;
         command_palette_rows = 5,
         window_close_confirmation = "NeverPrompt",
         use_fancy_tab_bar = false,
         hide_tab_bar_if_only_one_tab = true,
-        enable_scroll_bar = true,
-        tab_bar_at_bottom = true,
         tab_max_width = 25,
 
         keys = {
