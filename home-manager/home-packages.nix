@@ -28,7 +28,7 @@
       appimage-run
       vscode-fhs
       # Libre office and spelling dictionaries
-      libreoffice-still-unwrapped
+      libreoffice-still
       hunspell
       hunspellDicts.pl_PL
       hunspellDicts.en_US
