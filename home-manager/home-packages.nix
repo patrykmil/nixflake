@@ -5,43 +5,46 @@
   home.packages =
     with pkgs;
     [
-      fastfetch
-      nixfmt-rfc-style
-      networkmanagerapplet
       # mako
       # pulseaudio
       # pamixer
       # pavucontrol
       # alacritty
+      # networkmanagerapplet
+      # hyprpaper
+      # peazip
+      fastfetch
+      nixfmt-rfc-style
       geeqie
+      hyprsunset
       hyprpicker
-      hyprpaper
       bun
-      peazip
       btop
       ripgrep
       fd
       localsend
-      prusa-slicer
       unzip
       wget
       appimage-run
       vscode-fhs
-      hyprsunset
+      # Libre office and spelling dictionaries
+      libreoffice-still-unwrapped
+      hunspell
+      hunspellDicts.pl_PL
+      hunspellDicts.en_US
     ]
     ++ (
       if hostName == "desktop" then
         [
+          # file
           jetbrains.pycharm-professional
           ffmpeg-full
-          file
           toybox
         ]
       else if hostName == "laptop" then
         [
-          brightnessctl
-          libgcc
-          arduino-ide
+          # brightnessctl
+          # libgcc
         ]
       else
         [

@@ -11,17 +11,16 @@
   environment.systemPackages =
     with pkgs;
     [
-      pcmanfm
-      nwg-look
-      brave
+      # nwg-look
       home-manager
+      pcmanfm
+      brave
       wl-clipboard
       grim
       slurp
       python313
       ruff
       sqlite
-      # qogir-icon-theme
 
       # For Dank Material Shell
       libnotify
