@@ -5,6 +5,8 @@
     enableDynamicTheming = false;
   };
 
+  services.cliphist.enable = true;
+
   home.file.".config/DankMaterialShell/settings.json".text = ''
     {
       "currentThemeName": "blue",
