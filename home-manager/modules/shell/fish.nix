@@ -3,15 +3,23 @@
     enable = true;
     shellAliases = {
       his = "history | tac";
+
       cc = "clear";
-      zj = "zellij";
+
       e = "eza --icons=always -a -l --git -B";
       es = "eza --icons=always -a -l --git -B --total-size";
       et = "eza --icons=auto -T -L=4 -a -l --git -B --no-filesize --no-permissions --octal-permissions --no-user --no-time --git-ignore";
-      dnrs = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop";
-      dhms = "home-manager switch --flake /home/ptrk/flakes#ptrk-desktop -b backup";
-      lnrs = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop";
-      lhms = "home-manager switch --flake /home/ptrk/flakes#ptrk-laptop -b backup";
+
+
+      dss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop";
+      dhs = "home-manager switch --flake /home/ptrk/flakes#ptrk-desktop -b backup";
+      lss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop";
+      lhs = "home-manager switch --flake /home/ptrk/flakes#ptrk-laptop -b backup";
+
+      dst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#desktop";
+      dht = "home-manager test --flake /home/ptrk/flakes#ptrk-desktop -b backup";
+      lst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#laptop";
+      lht = "home-manager test --flake /home/ptrk/flakes#ptrk-laptop -b backup";
 
     };
     functions = {
