@@ -13,7 +13,7 @@
       ./bar/waybar/waybar.nix
       ./bar/hyprpanel/hyprpanel.nix
 
-      ./scripts
+      ./scripts/script-modules.nix
 
       ./launcher/rofi.nix
       ./launcher/wofi.nix
