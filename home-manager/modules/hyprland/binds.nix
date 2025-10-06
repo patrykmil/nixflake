@@ -7,7 +7,7 @@
   };
 
   bind = [
-    "$mainMod,T,exec,ghostty"
+    "$mainMod,T,exec,alacritty"
     "$mainMod,Q,killactive,"
     "$mainMod,E,exec,pcmanfm"
     "$mainMod,F,togglefloating,"

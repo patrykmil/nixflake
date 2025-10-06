@@ -28,7 +28,7 @@
       wget
       appimage-run
       vscode-fhs
-      ghostty
+      alacritty
       # Libre office and spelling dictionaries
       libreoffice-still
       hunspell
