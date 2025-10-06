@@ -18,17 +18,17 @@
       case "$mode" in
       all)
           "$GRIM" "$outputPath" && \
-          "$NOTIFY" -t 5000 -u normal \
+          "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
           ;;
       monitor)
           "$GRIM" -g "$("$SLURP" -o)" "$outputPath" && \
-          "$NOTIFY" -t 5000 -u normal \
+          "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
           ;;
       area)
           "$GRIM" -g "$("$SLURP")" "$outputPath" && \
-          "$NOTIFY" -t 5000 -u normal \
+          "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
           ;;
       *)

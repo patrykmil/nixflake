@@ -45,8 +45,8 @@
     "$mainMod,mouse_down,workspace,e+1"
     "$mainMod,mouse_up,workspace,e-1"
     # Screenshots
-    ",print,exec,~/.config/scripts/screenshot.sh all"
-    "$mainMod SHIFT,S,exec,~/.config/scripts/screenshot.sh area"
+    ",print,exec, screenshot all"
+    "$mainMod SHIFT,S,exec, screenshot area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
     "Alt,Tab,workspace,previous"
   ];
