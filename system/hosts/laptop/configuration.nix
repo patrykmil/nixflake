@@ -10,8 +10,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../system-packages.nix
-    ../../modules
-    ../../modules/udev.nix
+    ../../modules/system-modules.nix
   ];
 
   system.stateVersion = homeStateVersion;
