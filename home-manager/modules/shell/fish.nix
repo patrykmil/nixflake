@@ -17,9 +17,7 @@
       lhs = "home-manager switch --flake /home/ptrk/flakes#ptrk-laptop -b backup";
 
       dst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#desktop";
-      dht = "home-manager test --flake /home/ptrk/flakes#ptrk-desktop -b backup";
       lst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#laptop";
-      lht = "home-manager test --flake /home/ptrk/flakes#ptrk-laptop -b backup";
 
     };
     functions = {
