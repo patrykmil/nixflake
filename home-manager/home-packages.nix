@@ -28,6 +28,7 @@
       wget
       appimage-run
       vscode-fhs
+      ghostty
       # Libre office and spelling dictionaries
       libreoffice-still
       hunspell
