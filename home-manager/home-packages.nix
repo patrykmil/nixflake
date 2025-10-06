@@ -25,6 +25,7 @@
       localsend
       unzip
       xarchiver
+      superfile
       wget
       appimage-run
       vscode-fhs

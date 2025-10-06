@@ -13,6 +13,7 @@
     "$mainMod,F,togglefloating,"
     "$mainMod,R,exec,dms ipc call spotlight toggle"
     "$mainMod SHIFT,R,exec,dms ipc call powermenu toggle"
+    "$mainMod,TAB,hyprexpo:expo,toggle"
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
     "$mainMod,B,exec,brave"
