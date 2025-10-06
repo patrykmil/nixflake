@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, hostName, ... }:
 {
   programs.dankMaterialShell = {
     enable = true;
@@ -115,6 +115,22 @@
       ],
       "dankBarCenterWidgets": [],
       "dankBarRightWidgets": [
+        ${
+          if hostName == "laptop" then
+            ''
+              {
+                "id": "battery",
+                "enabled": true
+              },
+              {
+                "id": "spacer",
+                "enabled": true,
+                "size": 10
+              },
+            ''
+          else
+            ""
+        }
         {
           "id": "clipboard",
           "enabled": true
