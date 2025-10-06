@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, hostName, ... }:
 {
   wayland.windowManager.hyprland = {
     enable = true;
     settings =
-      (import ./monitors.nix)
+      (import ./monitors.nix { inherit hostName; })
       // (import ./inputs.nix)
       // (import ./look.nix)
       // (import ./layouts.nix)
