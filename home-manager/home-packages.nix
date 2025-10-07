@@ -5,31 +5,33 @@
   home.packages =
     with pkgs;
     [
-      # mako
-      # pulseaudio
-      # pamixer
-      # pavucontrol
-      # alacritty
-      # networkmanagerapplet
-      # hyprpaper
-      # peazip
-      fastfetch
+      bun
       nixfmt-rfc-style
-      geeqie
+      python313
+      ruff
+
       hyprsunset
       hyprpicker
-      bun
-      btop
+      grim
+      slurp
+
+      wl-clipboard
+      fastfetch
       ripgrep
+      btop
       fd
-      localsend
       unzip
-      xarchiver
       superfile
+      lazygit
       wget
       appimage-run
+
+      geeqie
+      localsend
+      xarchiver
       vscode-fhs
       alacritty
+
       # Libre office and spelling dictionaries
       libreoffice-still
       hunspell
@@ -39,7 +41,6 @@
     ++ (
       if hostName == "desktop" then
         [
-          # file
           jetbrains.pycharm-professional
           ffmpeg-full
           toybox

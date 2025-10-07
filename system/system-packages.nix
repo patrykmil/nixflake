@@ -11,23 +11,22 @@
   environment.systemPackages =
     with pkgs;
     [
-      # nwg-look
       home-manager
       pcmanfm
       brave
-      wl-clipboard
-      grim
-      slurp
-      python313
-      ruff
-      sqlite
+
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
+      xdg-utils
+      xwayland-satellite
+
+      pipewire
+      wireplumber
 
       # For Dank Material Shell
       libnotify
-      xdg-desktop-portal-gtk
       mate.mate-polkit
       jq
-      xwayland-satellite
     ]
     ++ (
       if hostName == "desktop" then
@@ -52,7 +51,5 @@
     nerd-fonts.arimo
     excalifont
     material-symbols
-    inter
-    fira-code
   ];
 }
