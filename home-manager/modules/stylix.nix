@@ -9,11 +9,8 @@
     polarity = "dark";
 
     targets = {
-      # waybar.enable = false;
-      # fish.enable = false;
-      wezterm.enable = false;
-      # rofi.enable = false;
       gtk.enable = true;
+      wezterm.enable = false;
     };
 
     cursor = {
@@ -35,14 +32,6 @@
         name = "Excalifont";
         package = pkgs.excalifont;
       };
-      # serif = {
-      #   name = "Noto Serif";
-      #   package = pkgs.noto-fonts;
-      # };
-      # sansSerif = {
-      #   name = "Arimo Nerd Font";
-      #   package = pkgs.nerd-fonts.arimo;
-      # };
     };
 
     iconTheme = {
@@ -55,12 +44,5 @@
       #   accent = "blue";   # Change to your desired accent color
       # };
     };
-
-    # iconTheme = {
-    #   enable = true;
-    #   light = "Qogir";
-    #   dark = "Qogir";
-    #   package = pkgs.qogir-icon-theme;
-    # };
   };
 }

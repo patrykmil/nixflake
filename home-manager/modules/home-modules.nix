@@ -3,34 +3,30 @@
   imports =
     [
       ./hyprland/hyprland.nix
-      ./hypridle.nix
+      # ./hypridle.nix
+      # ./hyprpaper.nix
+      ./dankMaterialShell.nix
 
-      ./shell/fish.nix
-      ./shell/bat/bat.nix
-      ./shell/eza.nix
-      ./shell/direnv.nix
+      # ./wezterm.nix
+      ./shell.nix
+      ./helix.nix
+      ./git.nix
 
-      ./bar/waybar/waybar.nix
-      ./bar/hyprpanel/hyprpanel.nix
+      # ./bar/waybar/waybar.nix
+      # ./bar/hyprpanel/hyprpanel.nix
 
       ./scripts/script-modules.nix
 
-      ./launcher/rofi.nix
-      ./launcher/wofi.nix
-      ./launcher/wofi-power-menu.nix
+      # ./launcher/rofi.nix
+      # ./launcher/wofi.nix
+      # ./launcher/wofi-power-menu.nix
 
-      ./hyprpaper.nix
-
-      ./helix.nix
-      ./wezterm.nix
-      ./gammastep.nix
-      ./git.nix
+      # ./gammastep.nix
 
       ./stylix.nix
 
       # ./helium.nix
 
-      ./dankMaterialShell.nix
     ]
     ++ (
       if hostName == "desktop" then

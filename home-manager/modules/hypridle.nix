@@ -1,6 +1,6 @@
 {
   services.hypridle = {
-    enable = false;
+    enable = true;
     settings = {
       general = {
         before_sleep_cmd = "loginctl lock-session";
@@ -10,7 +10,7 @@
       listener = [
         {
           timeout = 300;
-          on-timeout = "hyprctl dispacht dpms off";
+          on-timeout = "hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on";
         }
         {

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.rofi = {
-    enable = false;
+    enable = true;
     package = pkgs.rofi-wayland;
     terminal = "/${pkgs.wezterm}/bin/wezterm";
     plugins = with pkgs; [

@@ -1,6 +1,6 @@
 {
   services.gammastep = {
-    enable = false;
+    enable = true;
     latitude = 50.049683;
     longitude = 19.944544;
 

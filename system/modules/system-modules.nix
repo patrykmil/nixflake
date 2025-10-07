@@ -2,13 +2,13 @@
 {
   imports =
     [
-      ./boot.nix
+      ./bootloader.nix
       ./user.nix
       ./gc.nix
       ./networking.nix
       ./locale.nix
       ./login.nix
-      ./audio.nix
+      ./media.nix
       ./firewall.nix
       ./hyprland.nix
       ./keyring.nix
@@ -16,7 +16,7 @@
       ./experimental.nix
       ./kernel.nix
       ./usb.nix
-      # ./udev.nix
+      # ./platformio.nix
     ]
     ++ (
       if hostName == "desktop" then

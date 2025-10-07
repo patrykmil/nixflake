@@ -13,7 +13,7 @@ let
 in
 {
   programs.waybar = {
-    enable = false;
+    enable = true;
     settings = [
       (
         {
