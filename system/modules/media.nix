@@ -18,6 +18,9 @@
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-hyprland
     ];
-    config.common.default = "hyprland";
+    config.common = {
+      default = "gtk";
+      # "org.freedesktop.portal.ScreenCast" = "gtk";
+    };
   };
 }

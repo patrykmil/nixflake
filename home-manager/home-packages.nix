@@ -27,6 +27,7 @@
       appimage-run
 
       geeqie
+      celluloid
       localsend
       xarchiver
       vscode-fhs
