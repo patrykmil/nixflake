@@ -44,6 +44,7 @@
           jetbrains.pycharm-professional
           ffmpeg-full
           toybox
+          obs-studio
         ]
       else if hostName == "laptop" then
         [
