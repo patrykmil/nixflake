@@ -1,21 +1,27 @@
 {
-  description = "A very basic flake";
+  description = "Skibidi";
 
   inputs = {
+
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     distro-grub-themes.url = "github:AdisonCavani/distro-grub-themes";
+
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     dankMaterialShell = {
       url = "github:AvengeMedia/DankMaterialShell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
   };
 
   outputs =
@@ -23,28 +29,23 @@
       self,
       nixpkgs,
       home-manager,
-      distro-grub-themes,
-      stylix,
-      dankMaterialShell,
       ...
     }@inputs:
+
     let
       system = "x86_64-linux";
       user = "ptrk";
-      homeStateVersion = "25.05";
+      homeStateVersion = "25.11";
 
       mkNixosConfig =
         host: configPath:
         nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = {
-            inherit homeStateVersion user;
+            inherit inputs homeStateVersion user system;
             hostName = host;
           };
-          modules = [
-            configPath
-            distro-grub-themes.nixosModules.${system}.default
-          ];
+          modules = [ configPath ];
         };
 
       mkHomeConfig =
@@ -55,13 +56,10 @@
             inherit inputs homeStateVersion user;
             hostName = host;
           };
-          modules = [
-            stylix.homeModules.stylix
-            dankMaterialShell.homeModules.dankMaterialShell.default
-          ]
-          ++ homeModules;
+          modules = [] ++ homeModules;
         };
     in
+
     {
       nixosConfigurations.laptop = mkNixosConfig "laptop" ./system/hosts/laptop/configuration.nix;
       nixosConfigurations.desktop = mkNixosConfig "desktop" ./system/hosts/desktop/configuration.nix;

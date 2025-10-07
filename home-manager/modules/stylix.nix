@@ -1,5 +1,14 @@
-{ pkgs, lib, ... }:
 {
+  pkgs,
+  lib,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    inputs.stylix.homeModules.stylix
+  ];
+
   stylix = {
     enable = true;
 

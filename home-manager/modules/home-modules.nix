@@ -5,7 +5,7 @@
       ./hyprland/hyprland.nix
       # ./hypridle.nix
       # ./hyprpaper.nix
-      ./dankMaterialShell.nix
+      ./dank-material-shell.nix
 
       # ./wezterm.nix
       ./shell.nix

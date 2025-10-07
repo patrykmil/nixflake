@@ -2,9 +2,15 @@
   config,
   pkgs,
   lib,
+  inputs,
+  system,
   ...
 }:
 {
+  imports = [
+    inputs.distro-grub-themes.nixosModules.${system}.default
+  ];
+
   boot.loader = {
     timeout = 30;
     grub = {
@@ -24,5 +30,4 @@
     enable = true;
     theme = "nixos";
   };
-
 }
