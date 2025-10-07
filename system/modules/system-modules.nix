@@ -12,6 +12,7 @@
       ./firewall.nix
       ./hyprland.nix
       ./keyring.nix
+      ./polkit.nix
       ./printing.nix
       ./experimental.nix
       ./kernel.nix

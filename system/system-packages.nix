@@ -25,7 +25,6 @@
 
       # For Dank Material Shell
       libnotify
-      mate.mate-polkit
       jq
     ]
     ++ (
