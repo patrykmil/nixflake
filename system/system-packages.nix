@@ -23,6 +23,8 @@
       pipewire
       wireplumber
 
+      ruff
+
       # For Dank Material Shell
       libnotify
       jq

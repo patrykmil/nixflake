@@ -8,7 +8,6 @@
       bun
       nixfmt-rfc-style
       python313
-      ruff
 
       hyprsunset
       hyprpicker

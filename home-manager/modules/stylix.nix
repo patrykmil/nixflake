@@ -34,12 +34,12 @@
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       serif = {
-        name = "Excalifont";
-        package = pkgs.excalifont;
+        name = "CaskaydiaMono Nerd Font";
+        package = pkgs.nerd-fonts.caskaydia-mono;
       };
       sansSerif = {
-        name = "Excalifont";
-        package = pkgs.excalifont;
+        name = "CaskaydiaMono Nerd Font";
+        package = pkgs.nerd-fonts.caskaydia-mono;
       };
     };
 
