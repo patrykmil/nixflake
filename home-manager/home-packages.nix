@@ -14,6 +14,7 @@
       grim
       slurp
 
+      playerctl
       wl-clipboard
       fastfetch
       ripgrep

@@ -52,6 +52,7 @@
     "$mainMod SHIFT,0,movetoworkspace,10"
     "$mainMod,mouse_down,workspace,e+1"
     "$mainMod,mouse_up,workspace,e-1"
+    
     # Screenshots
     ",print,exec, screenshot all"
     "$mainMod SHIFT,S,exec, screenshot area"
@@ -65,18 +66,15 @@
   ];
 
   bindel = [
-    ",XF86AudioRaiseVolume,exec,wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-    ",XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-    ",XF86AudioMute,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-    ",XF86AudioMicMute,exec,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-    ",XF86MonBrightnessUp,exec,brightnessctl -e4 -n2 set 5%+"
-    ",XF86MonBrightnessDown,exec,brightnessctl -e4 -n2 set 5%-"
+    "$mainMod,F9,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    "$mainMod SHIFT,F9,exec,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+    "$mainMod,F10,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+    "$mainMod,F11,exec,wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
   ];
 
   bindl = [
-    ",XF86AudioNext,exec,playerctl next"
-    ",XF86AudioPause,exec,playerctl play-pause"
-    ",XF86AudioPlay,exec,playerctl play-pause"
-    ",XF86AudioPrev,exec,playerctl previous"
+    "$mainMod,F6,exec,playerctl previous"
+    "$mainMod,F7,exec,playerctl play-pause"
+    "$mainMod,F8,exec,playerctl next"
   ];
 }
