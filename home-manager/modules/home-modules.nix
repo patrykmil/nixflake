@@ -26,7 +26,7 @@
       ./stylix.nix
 
       # ./helium.nix
-
+      ./mime.nix
     ]
     ++ (
       if hostName == "desktop" then
