@@ -8,17 +8,24 @@
 
   bind = [
     "$mainMod,T,exec,alacritty"
-    "$mainMod,Q,killactive,"
+    "$mainMod,B,exec,brave"
     "$mainMod,E,exec,pcmanfm"
+
+    "$mainMod,Q,killactive,"
     "$mainMod,F,togglefloating,"
+
     "$mainMod,R,exec,dms ipc call spotlight toggle"
     "$mainMod SHIFT,R,exec,dms ipc call powermenu toggle"
+
     "$mainMod,TAB,hyprexpo:expo,toggle"
+    
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
-    "$mainMod,B,exec,brave"
+
     "$mainMod,M,exec,hyprctl keyword general:layout master"
     "$mainMod,D,exec,hyprctl keyword general:layout dwindle"
+    "$mainMod,S,exec,hyprctl keyword general:layout scrolling"
+    
     "$mainMod,left,movefocus,l"
     "$mainMod,right,movefocus,r"
     "$mainMod,up,movefocus,u"

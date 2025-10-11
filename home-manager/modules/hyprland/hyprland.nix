@@ -9,6 +9,7 @@
     enable = true;
     plugins = with pkgs.hyprlandPlugins; [
       hyprexpo
+      hyprscrolling
     ];
 
     settings =

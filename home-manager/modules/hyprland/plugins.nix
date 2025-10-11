@@ -4,4 +4,8 @@
     skip_empty = true;
     workspace_method = "first 1";
   };
+
+  "plugin:hyprscrolling" = {
+    fullscreen_on_one_column = true;
+  };
 }
