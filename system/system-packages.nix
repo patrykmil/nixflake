@@ -19,6 +19,7 @@
       xdg-desktop-portal-hyprland
       xdg-utils
       xwayland-satellite
+      kdePackages.xwaylandvideobridge 
 
       pipewire
       wireplumber

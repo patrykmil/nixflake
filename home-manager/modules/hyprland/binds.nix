@@ -18,14 +18,14 @@
     "$mainMod SHIFT,R,exec,dms ipc call powermenu toggle"
 
     "$mainMod,TAB,hyprexpo:expo,toggle"
-    
+
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
 
     "$mainMod,M,exec,hyprctl keyword general:layout master"
     "$mainMod,D,exec,hyprctl keyword general:layout dwindle"
     "$mainMod,S,exec,hyprctl keyword general:layout scrolling"
-    
+
     "$mainMod,left,movefocus,l"
     "$mainMod,right,movefocus,r"
     "$mainMod,up,movefocus,u"
@@ -52,7 +52,7 @@
     "$mainMod SHIFT,0,movetoworkspace,10"
     "$mainMod,mouse_down,workspace,e+1"
     "$mainMod,mouse_up,workspace,e-1"
-    
+
     # Screenshots
     ",print,exec, screenshot all"
     "$mainMod SHIFT,S,exec, screenshot area"
@@ -66,13 +66,13 @@
   ];
 
   bindel = [
-    "$mainMod,F9,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-    "$mainMod SHIFT,F9,exec,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-    "$mainMod,F10,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-    "$mainMod,F11,exec,wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+    "$mainMod,F10,exec,dms ipc call audio decrement 5"
+    "$mainMod,F11,exec,dms ipc call audio increment 5"
   ];
 
   bindl = [
+    "$mainMod,F12,exec,dms ipc call audio mute"
+    ",F12,exec,dms ipc call audio micmute"
     "$mainMod,F6,exec,playerctl previous"
     "$mainMod,F7,exec,playerctl play-pause"
     "$mainMod,F8,exec,playerctl next"
