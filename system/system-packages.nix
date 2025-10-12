@@ -12,7 +12,6 @@
     with pkgs;
     [
       home-manager
-      pcmanfm
       brave
 
       xdg-desktop-portal-gtk

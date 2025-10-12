@@ -21,6 +21,7 @@
       btop
       fd
       unzip
+      zip
       superfile
       lazygit
       wget
@@ -30,6 +31,7 @@
       celluloid
       localsend
       xarchiver
+      nautilus
       vscode-fhs
       alacritty
 

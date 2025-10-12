@@ -16,7 +16,7 @@
       ./printing.nix
       ./experimental.nix
       ./kernel.nix
-      ./usb.nix
+      ./files.nix
       # ./platformio.nix
     ]
     ++ (
