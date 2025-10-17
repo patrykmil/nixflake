@@ -24,6 +24,7 @@
       wireplumber
 
       ruff
+      sqlite
 
       # For Dank Material Shell
       libnotify
