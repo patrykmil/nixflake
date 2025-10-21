@@ -19,7 +19,7 @@
       // (import ./layouts.nix)
       // (import ./binds.nix)
       // (import ./window-rules.nix)
-      // (import ./autostart.nix { inherit pkgs; })
+      // (import ./autostart.nix { inherit pkgs hostName; })
       // (import ./plugins.nix);
 
     extraConfig = (import ./sensitivity.nix).extraConfig;
