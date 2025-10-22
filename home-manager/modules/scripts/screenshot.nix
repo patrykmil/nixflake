@@ -20,16 +20,19 @@
           "$GRIM" "$outputPath" && \
           "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
+          wl-copy < "$outputPath"
           ;;
       monitor)
           "$GRIM" -g "$("$SLURP" -o)" "$outputPath" && \
           "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
+          wl-copy < "$outputPath"
           ;;
       area)
           "$GRIM" -g "$("$SLURP")" "$outputPath" && \
           "$NOTIFY" -t 3000 -u normal \
             "Screenshot saved" "$outputPath"
+          wl-copy < "$outputPath"
           ;;
       *)
           echo "Invalid option: $mode"
