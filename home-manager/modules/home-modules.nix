@@ -1,45 +1,43 @@
 { hostName, ... }:
 {
-  imports =
-    [
-      ./hyprland/hyprland.nix
-      # ./hypridle.nix
-      # ./hyprpaper.nix
-      ./dank-material-shell.nix
+  imports = [
+    ./hyprland/hyprland.nix
+    # ./hypridle.nix
+    # ./hyprpaper.nix
+    ./dank-material-shell.nix
 
-      # ./wezterm.nix
-      ./shell.nix
-      ./helix.nix
-      ./git.nix
+    # ./wezterm.nix
+    ./shell.nix
+    ./helix.nix
+    ./git.nix
 
-      # ./bar/waybar/waybar.nix
-      # ./bar/hyprpanel/hyprpanel.nix
+    # ./bar/waybar/waybar.nix
+    # ./bar/hyprpanel/hyprpanel.nix
 
-      ./scripts/script-modules.nix
+    ./scripts/script-modules.nix
 
-      # ./launcher/rofi.nix
-      # ./launcher/wofi.nix
-      # ./launcher/wofi-power-menu.nix
+    # ./launcher/rofi.nix
+    # ./launcher/wofi.nix
+    # ./launcher/wofi-power-menu.nix
 
-      # ./gammastep.nix
+    # ./gammastep.nix
 
-      ./stylix.nix
+    ./stylix.nix
 
-      # ./helium.nix
-      ./mime.nix
-    ]
-    ++ (
-      if hostName == "desktop" then
-        [
+    ./mime.nix
+  ]
+  ++ (
+    if hostName == "desktop" then
+      [
+        ./helium.nix
+      ]
+    else if hostName == "laptop" then
+      [
 
-        ]
-      else if hostName == "laptop" then
-        [
+      ]
+    else
+      [
 
-        ]
-      else
-        [
-
-        ]
-    );
+      ]
+  );
 }
