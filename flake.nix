@@ -47,21 +47,21 @@
     }@inputs:
 
     let
-      system = "x86_64-linux";
+      hostSystem = "x86_64-linux";
       user = "ptrk";
       homeStateVersion = "25.11";
 
       mkNixosConfig =
         host: configPath:
         nixpkgs.lib.nixosSystem {
-          inherit system;
+          system = hostSystem;
           specialArgs = {
             inherit
               inputs
               homeStateVersion
               user
-              system
               ;
+            system = hostSystem;
             hostName = host;
           };
           modules = [ configPath ];
@@ -70,10 +70,11 @@
       mkHomeConfig =
         host: homeModules:
         home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.${system};
+          pkgs = nixpkgs.legacyPackages.${hostSystem};
           extraSpecialArgs = {
             inherit inputs homeStateVersion user;
             hostName = host;
+            system = hostSystem;
           };
           modules = [ ] ++ homeModules;
         };
