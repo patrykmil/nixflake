@@ -25,6 +25,7 @@
 
       ruff
       sqlite
+      cmake
 
       # For Dank Material Shell
       libnotify

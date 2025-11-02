@@ -7,7 +7,7 @@
 
   workspace = (if hostName == "desktop" then [ "1,monitor:DP-2" ] else [ ]) ++ [
     # Smart gaps/borders thingy part 1
-    "w[tv1],gapsin:0, gapsout:0 0 16 0"
-    "f[1],gapsin:0, gapsout:0 0 16 0"
+    "w[tv1],gapsin:0, gapsout:0"
+    "f[1],gapsin:0, gapsout:0"
   ];
 }

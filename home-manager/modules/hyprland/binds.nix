@@ -14,8 +14,8 @@
     "$mainMod,Q,killactive,"
     "$mainMod,F,togglefloating,"
 
-    "$mainMod,R,exec,dms ipc call spotlight toggle"
-    "$mainMod SHIFT,R,exec,dms ipc call powermenu toggle"
+    "$mainMod,R,exec, vicinae toggle"
+
 
     "$mainMod,TAB,hyprexpo:expo,toggle"
 

@@ -1,7 +1,7 @@
 {
   general = {
     gaps_in = 5;
-    gaps_out = "10,10,25,10";
+    gaps_out = "10";
     border_size = 1;
     resize_on_border = false;
     allow_tearing = false;
