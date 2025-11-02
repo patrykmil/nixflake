@@ -17,6 +17,7 @@
       ./experimental.nix
       ./kernel.nix
       ./files.nix
+      ./cachix.nix
       # ./platformio.nix
     ]
     ++ (
