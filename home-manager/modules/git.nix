@@ -1,9 +1,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "patrykmil";
-    userEmail = "patryk.miler@student.pk.edu.pl";
-    extraConfig = {
+    settings = {
+      user = {
+        email = "patryk.miler@student.pk.edu.pl";
+        name = "patrykmil";
+      };
       core.editor = "code";
       pull.rebase = "true";
       init.defaultBranch = "main";
