@@ -44,8 +44,8 @@
     ++ (
       if hostName == "desktop" then
         [
-          jetbrains.pycharm-professional
-          ffmpeg-full
+          # jetbrains.pycharm-professional
+          # ffmpeg-full
           toybox
           obs-studio
         ]
