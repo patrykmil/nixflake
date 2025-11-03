@@ -66,13 +66,13 @@
   ];
 
   bindel = [
-    "$mainMod,F10,exec,dms ipc call audio decrement 5"
-    "$mainMod,F11,exec,dms ipc call audio increment 5"
+    "$mainMod,F10,exec,pamixer -d 5"
+    "$mainMod,F11,exec,pamixer -i 5"
   ];
 
   bindl = [
-    "$mainMod,F12,exec,dms ipc call audio mute"
-    ",F12,exec,dms ipc call audio micmute"
+    ",F9,exec,pamixer -t"
+    ",F12,exec,pamixer --default-source -t"
     "$mainMod,F6,exec,playerctl previous"
     "$mainMod,F7,exec,playerctl play-pause"
     "$mainMod,F8,exec,playerctl next"
