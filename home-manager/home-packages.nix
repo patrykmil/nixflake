@@ -62,8 +62,8 @@ in
         ]
       else if hostName == "laptop" then
         [
-          # brightnessctl
-          # libgcc
+          bluetuith
+          brightnessctl
         ]
       else
         [

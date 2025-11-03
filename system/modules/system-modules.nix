@@ -26,7 +26,8 @@
       ]
     else if hostName == "laptop" then
       [
-        ./battery.nix
+        # ./battery.nix
+        ./bluetooth.nix
       ]
     else
       [
