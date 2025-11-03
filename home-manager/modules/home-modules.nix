@@ -5,6 +5,7 @@
     ./hypridle.nix
     ./hyprpaper.nix
     # ./dank-material-shell.nix
+    ./notifications.nix
 
     # ./wezterm.nix
     ./shell.nix

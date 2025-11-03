@@ -2,7 +2,8 @@
 {
   exec-once = [
     # "hyprctl dispatch movecursor 2880 540"
-    "dms run"
+    # "dms run"
+    "waybar"
   ]
   ++ (
     if hostName == "desktop" then
