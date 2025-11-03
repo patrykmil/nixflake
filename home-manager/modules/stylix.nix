@@ -5,6 +5,7 @@
   ...
 }:
 {
+  
   imports = [
     inputs.stylix.homeModules.stylix
   ];
@@ -14,7 +15,7 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 
-    image = ../../wallpapers/ink-wave.jpg;
+    image = ../../wallpapers/pacman-nord.jpg;
     polarity = "dark";
 
     targets = {
