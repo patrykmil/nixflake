@@ -8,7 +8,7 @@
   ++ (
     if hostName == "desktop" then
       [
-        "hyprsunset -g 67"
+        "bright 67"
       ]
     else if hostName == "laptop" then
       [
