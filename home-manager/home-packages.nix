@@ -1,4 +1,12 @@
-{ pkgs, hostName, ... }:
+{
+  pkgs,
+  hostName,
+  inputs,
+  ...
+}:
+let
+  wifitui = inputs.wifitui.packages.${pkgs.system}.default;
+in
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -25,8 +33,11 @@
       superfile
       lazygit
       wget
+      wifitui
       appimage-run
 
+      pavucontrol
+      pamixer
       geeqie
       celluloid
       localsend

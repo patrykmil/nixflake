@@ -36,6 +36,10 @@
       url = "github:vicinaehq/vicinae";
     };
 
+    wifitui = {
+      url = "github:shazow/wifitui";
+    };
+
   };
 
   outputs =

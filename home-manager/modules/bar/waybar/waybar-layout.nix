@@ -12,8 +12,8 @@ in
       "hyprland/window"
     ];
     modules-right = [
-      "custom/monitor-toggle"
-      "custom/divider"
+      # "custom/monitor-toggle"
+      # "custom/divider"
       "network"
       "custom/divider"
       "pulseaudio"

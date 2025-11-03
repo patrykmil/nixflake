@@ -6,10 +6,10 @@
   };
 
   network = {
-    format = "󰖩 {essid}";
+    format = "󰖩 Wifi";
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
-    on-click = "network-menu";
+    on-click = "alacritty -e wifitui";
   };
 
   clock = {
@@ -42,7 +42,7 @@
     tooltip = true;
     format-source = "󰍬 {volume}%";
     format-source-muted = "󰍭 Muted";
-    on-click = "pavucontrol-dark";
+    on-click = "pavucontrol";
     on-click-right = "pamixer --default-source -t";
     on-scroll-up = "pamixer --default-source -i 5";
     on-scroll-down = "pamixer --default-source -d 5";
