@@ -23,6 +23,7 @@
     if hostName == "desktop" then
       [
         ./nvidia.nix
+        ./fancontrol.nix
       ]
     else if hostName == "laptop" then
       [
