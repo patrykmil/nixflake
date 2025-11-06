@@ -26,6 +26,7 @@
 
     ./stylix.nix
 
+    ./webapps.nix
     ./mime.nix
   ]
   ++ (
