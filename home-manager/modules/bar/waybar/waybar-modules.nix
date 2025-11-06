@@ -51,8 +51,8 @@
 
   "custom/apps" = {
     "format" = "  Run";
-    "on-click" = "rofi -show drun -sidebar-mode";
-    "on-click-right" = "power-menu";
+    "on-click" = "vicinae toggle";
+    "on-click-right" = "alacritty";
     tooltip = false;
   };
 
