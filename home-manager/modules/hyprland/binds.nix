@@ -9,7 +9,7 @@
   bind = [
     "$mainMod,T,exec,alacritty"
     "$mainMod,B,exec,brave"
-    "$mainMod,E,exec,nautilus"
+    "$mainMod,E,exec,nautilus --new-window"
 
     "$mainMod,Q,killactive,"
     "$mainMod,F,togglefloating,"
