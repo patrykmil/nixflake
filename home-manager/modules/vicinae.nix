@@ -2,12 +2,17 @@
   pkgs,
   hostName,
   inputs,
+  lib,
   ...
 }:
 {
   imports = [
     inputs.vicinae.homeManagerModules.default
   ];
+
+  home.activation.removeOldVicinaeConfig = lib.hm.dag.entryBefore [ "writeBoundary" ] ''
+    rm -f ~/.config/vicinae/vicinae.json*
+  '';
 
   services.vicinae = {
     enable = true;
