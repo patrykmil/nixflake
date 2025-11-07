@@ -59,7 +59,7 @@
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
     "Alt,Tab,workspace,previous"
 
-    "$mainMod Shift,V,exec,plainpaste"
+    "$mainMod SHIFT,V,exec,plainpaste"
   ];
 
   bindm = [
