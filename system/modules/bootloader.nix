@@ -4,6 +4,7 @@
   lib,
   inputs,
   system,
+  hostName,
   ...
 }:
 {
@@ -15,7 +16,7 @@
     timeout = 30;
     grub = {
       enable = true;
-      efiSupport = true;
+      efiSupport = if hostName == "desktop" then false else true;
       useOSProber = true;
       device = "nodev";
       default = "saved";
