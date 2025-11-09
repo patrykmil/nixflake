@@ -24,6 +24,7 @@
       [
         ./nvidia.nix
         ./fancontrol.nix
+        ./docker.nix
       ]
     else if hostName == "laptop" then
       [
