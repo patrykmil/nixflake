@@ -10,6 +10,7 @@
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
     on-click = "alacritty -e wifitui";
+    on-click-right = "plainpaste";
   };
 
   clock = {
