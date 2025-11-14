@@ -4,7 +4,7 @@
   xdg.mimeApps = {
     enable = true;
     defaultApplications = {
-      "application/pdf" = [ "brave-browser.desktop" ];
+      "application/pdf" = [ "helium.desktop" ];
       "text" = [ "code.desktop" ];
     };
   };

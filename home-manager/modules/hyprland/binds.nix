@@ -8,7 +8,7 @@
 
   bind = [
     "$mainMod,T,exec,alacritty"
-    "$mainMod,B,exec,brave"
+    "$mainMod,B,exec,helium"
     "$mainMod,E,exec,nautilus --new-window"
     "$mainMod,M,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
 
