@@ -9,7 +9,7 @@
     format = "󰖩 Wifi";
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
-    on-click = "alacritty -e wifitui";
+    on-click = "alacritty --class wifitui -e wifitui";
     on-click-right = "plainpaste";
   };
 
