@@ -2,10 +2,10 @@
 
 
 let
-	version = "0.5.7.1";
+	version = "0.6.5.1";
 	heliumAppImage = pkgs.fetchurl {
 		url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-${version}-x86_64.AppImage";
-		sha256 = "sha256:03e7cd716eee8db798a8e6fe831cd0d29d7d275e1cb1f172a24d11551171a3ad";
+		sha256 = "sha256:107848c0d9cb9bbb1395b9b9f8e4d6425d851a76f589a003f12ecfe51b483eee";
 	};
 	heliumIcon = pkgs.fetchurl {
 		url = "https://github.com/imputnet/helium-chromium/raw/c8be58073466cc886546c99b984893faa9c8105d/resources/branding/product_logo.svg";

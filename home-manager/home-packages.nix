@@ -59,6 +59,7 @@ in
           # ffmpeg-full
           toybox
           obs-studio
+          teams-for-linux
         ]
       else if hostName == "laptop" then
         [

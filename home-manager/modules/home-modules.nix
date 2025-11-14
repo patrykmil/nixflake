@@ -32,7 +32,7 @@
   ++ (
     if hostName == "desktop" then
       [
-        # ./helium.nix
+        ./helium.nix
       ]
     else if hostName == "laptop" then
       [
