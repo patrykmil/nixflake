@@ -16,7 +16,7 @@
     timeout = 30;
     grub = {
       enable = true;
-      efiSupport = if hostName == "desktop" then false else true;
+      efiSupport = true;
       useOSProber = true;
       device = "nodev";
       default = "saved";

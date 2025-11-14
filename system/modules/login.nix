@@ -1,26 +1,36 @@
-{ user, ... }:
 {
-  services.xserver.enable = true;
-
-  services.displayManager.gdm = {
+  pkgs,
+  ...
+}:
+let
+  tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
+  hyprland-session = "${pkgs.hyprland}/share/wayland-sessions";
+in
+{
+  services.greetd = {
     enable = true;
-    wayland = true;
-  };
-
-  services.displayManager.autoLogin = {
-    enable = true;
-    user = user;
-  };
-  services.xserver.xkb = {
-    layout = "pl";
-    variant = "";
-  };
-
-  programs.dconf.profiles.gdm.databases = [
-    {
-      settings."org/gnome/desktop/peripherals/keyboard" = {
-        numlock-state = true;
+    settings = {
+      default_session = {
+        command = "${tuigreet} --time --remember --remember-session --sessions ${hyprland-session}";
+        user = "ptrk";
       };
-    }
-  ];
+      initial_session = {
+        command = "${pkgs.hyprland}/bin/Hyprland";
+        user = "ptrk";
+      };
+    };
+  };
+
+  security.pam.services.greetd.enableGnomeKeyring = true;
+
+  # https://www.reddit.com/r/NixOS/comments/u0cdpi/tuigreet_with_xmonad_how/
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    StandardError = "journal";
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVTDisallocate = true;
+  };
 }
