@@ -6,17 +6,16 @@
   ...
 }:
 {
-  imports = [
-    inputs.vicinae.homeManagerModules.default
-  ];
-
   home.activation.removeOldVicinaeConfig = lib.hm.dag.entryBefore [ "checkLinkTargets" ] ''
     rm -f $HOME/.config/vicinae/vicinae.json* || echo "Failed to remove files"
   '';
 
-  services.vicinae = {
+  programs.vicinae = {
     enable = true;
-    autoStart = true;
+    systemd = {
+      enable = true;
+      autoStart = true;
+    };
     settings = {
       faviconService = "twenty";
       font.normal = "Maple Mono NF";

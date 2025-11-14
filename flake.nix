@@ -32,9 +32,9 @@
     #   inputs.dms-cli.follows = "dms-cli";
     # };
 
-    vicinae = {
-      url = "github:vicinaehq/vicinae";
-    };
+    # vicinae = {
+    #   url = "github:vicinaehq/vicinae";
+    # };
 
     wifitui = {
       url = "github:shazow/wifitui";
