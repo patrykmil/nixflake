@@ -8,17 +8,16 @@
 
   bind = [
     "$mainMod,T,exec,alacritty"
+    "$mainMod SHIFT,T,exec, [float] alacritty"
     "$mainMod,B,exec,helium"
     "$mainMod,E,exec,nautilus --new-window"
     "$mainMod,M,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
 
-
     "$mainMod,Q,killactive,"
     "$mainMod,F,togglefloating,"
+    "$mainMod,P,pin,"
 
     "$mainMod,R,exec, vicinae toggle"
-
-
     "$mainMod,TAB,hyprexpo:expo,toggle"
 
     "$mainMod,P,pseudo,"
