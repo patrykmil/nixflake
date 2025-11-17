@@ -9,7 +9,6 @@
     ./locale.nix
     ./login.nix
     ./media.nix
-    ./firewall.nix
     ./hyprland.nix
     ./keyring.nix
     ./polkit.nix
@@ -17,6 +16,7 @@
     ./experimental.nix
     ./kernel.nix
     ./files.nix
+    ./localsend.nix
     # ./platformio.nix
   ]
   ++ (

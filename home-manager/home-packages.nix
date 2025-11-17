@@ -40,7 +40,6 @@ in
       pamixer
       geeqie
       celluloid
-      localsend
       xarchiver
       nautilus
       vscode-fhs
