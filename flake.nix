@@ -17,27 +17,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # dgop = {
-    #   url = "github:AvengeMedia/dgop";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-    # dms-cli = {
-    #   url = "github:AvengeMedia/danklinux";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-    # dankMaterialShell = {
-    #   url = "github:AvengeMedia/DankMaterialShell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.dgop.follows = "dgop";
-    #   inputs.dms-cli.follows = "dms-cli";
-    # };
-
-    # vicinae = {
-    #   url = "github:vicinaehq/vicinae";
-    # };
-
     wifitui = {
       url = "github:shazow/wifitui";
+    };
+
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
   };

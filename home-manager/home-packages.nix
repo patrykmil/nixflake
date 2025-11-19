@@ -6,6 +6,7 @@
 }:
 let
   wifitui = inputs.wifitui.packages.${pkgs.system}.default;
+  antigravity = inputs.antigravity-nix.packages.${pkgs.system}.default;
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -42,8 +43,9 @@ in
       celluloid
       xarchiver
       nautilus
-      vscode-fhs
       alacritty
+      vscode-fhs
+      antigravity
 
       # Libre office and spelling dictionaries
       libreoffice-still

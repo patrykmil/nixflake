@@ -18,18 +18,15 @@
       xdg-desktop-portal-hyprland
       xdg-utils
       xwayland-satellite
-      # kdePackages.xwaylandvideobridge 
 
       pipewire
       wireplumber
+      libnotify
+      jq
 
       ruff
       sqlite
       cmake
-
-      # For Dank Material Shell
-      libnotify
-      jq
     ]
     ++ (
       if hostName == "desktop" then
