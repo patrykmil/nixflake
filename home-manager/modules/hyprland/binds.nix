@@ -55,8 +55,9 @@
     "$mainMod,mouse_up,workspace,e-1"
 
     # Screenshots
-    ",print,exec, screenshot all"
-    "$mainMod SHIFT,S,exec, screenshot area"
+    ",print,exec, screencapture shot all"
+    "$mainMod SHIFT,S,exec, screencapture shot area"
+    "$mainMod SHIFT,D,exec, screencapture record area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
     "Alt,Tab,workspace,previous"
 
