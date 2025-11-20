@@ -27,6 +27,8 @@
       ruff
       sqlite
       cmake
+
+      lm_sensors
     ]
     ++ (
       if hostName == "desktop" then
