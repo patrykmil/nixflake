@@ -1,6 +1,7 @@
 { pkgs, hostName, ... }:
 {
   programs.hyprland.enable = true;
+  programs.hyprland.xwayland.enable = true;
   environment.sessionVariables = {
     QT_QPA_PLATFORMTHEME = "gtk2";
     XDG_CURRENT_DESKTOP = "Hyprland";

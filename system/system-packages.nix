@@ -14,7 +14,6 @@
       home-manager
       brave
 
-      xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
       xdg-utils
       xwayland-satellite
