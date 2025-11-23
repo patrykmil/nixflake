@@ -61,6 +61,7 @@ in
           toybox
           obs-studio
           teams-for-linux
+          devenv
         ]
       else if hostName == "laptop" then
         [
