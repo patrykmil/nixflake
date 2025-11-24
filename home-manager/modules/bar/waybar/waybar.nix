@@ -31,7 +31,7 @@ in
       )
       (
         {
-          output = "*";
+          output = "HDMI-A-1";
         }
         // commonSettings
         // layout.other
