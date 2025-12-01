@@ -18,7 +18,8 @@
     "$mainMod,P,pin,"
 
     "$mainMod,R,exec, vicinae toggle"
-    "$mainMod,TAB,hyprexpo:expo,toggle"
+    "$mainMod,V,exec, vicinae vicinae://extensions/vicinae/clipboard/history"
+    "$mainMod,TAB,exec, vicinae vicinae://extensions/vicinae/wm/switch-windows"
 
     "$mainMod,P,pseudo,"
     "$mainMod,J,togglesplit,"
@@ -60,8 +61,6 @@
     "$mainMod SHIFT,D,exec, screencapture record area"
     "$mainMod SHIFT,C,exec,hyprpicker -a -q -r"
     "Alt,Tab,workspace,previous"
-
-    "$mainMod SHIFT,V,exec,plainpaste"
   ];
 
   bindm = [
