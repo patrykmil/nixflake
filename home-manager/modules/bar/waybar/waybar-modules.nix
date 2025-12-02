@@ -9,8 +9,7 @@
     format = "󰖩 Wifi";
     format-ethernet = "󱎔 Wired";
     format-disconnected = "󰖪 Dced";
-    on-click = "alacritty --class wifitui -e wifitui";
-    on-click-right = "plainpaste";
+    on-click = "pkill wifitui || alacritty --class wifitui -e wifitui";
   };
 
   clock = {
@@ -24,7 +23,7 @@
     format = "{icon} {volume}%";
     tooltip = true;
     format-muted = "󰖁 Muted";
-    on-click = "pavucontrol";
+    on-click = "pkill pavucontrol || pavucontrol";
     on-click-right = "pamixer -t";
     on-scroll-up = "pamixer -i 5";
     on-scroll-down = "pamixer -d 5";
@@ -43,7 +42,7 @@
     tooltip = true;
     format-source = "󰍬 {volume}%";
     format-source-muted = "󰍭 Muted";
-    on-click = "pavucontrol";
+    on-click = "pkill pavucontrol || pavucontrol";
     on-click-right = "pamixer --default-source -t";
     on-scroll-up = "pamixer --default-source -i 5";
     on-scroll-down = "pamixer --default-source -d 5";
