@@ -52,7 +52,7 @@
   "custom/apps" = {
     "format" = "  ";
     "on-click" = "vicinae toggle";
-    "on-click-right" = "alacritty";
+    "on-click-right" = "hyprctl dispatch exec [float] alacritty";
     tooltip = false;
   };
 
