@@ -28,8 +28,6 @@
 
     ./webapps.nix
     ./mime.nix
-
-#    ./cachix-home.nix
   ]
   ++ (
     if hostName == "desktop" then
