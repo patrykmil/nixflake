@@ -1,7 +1,7 @@
 { hostName, ... }:
 {
   imports = [
-    ./cachix.nix
+    ./settings.nix
     ./bootloader.nix
     ./user.nix
     ./gc.nix
@@ -13,7 +13,6 @@
     ./keyring.nix
     ./polkit.nix
     ./printing.nix
-    ./experimental.nix
     ./kernel.nix
     ./files.nix
     ./localsend.nix
