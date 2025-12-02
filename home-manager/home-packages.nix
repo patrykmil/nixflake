@@ -14,8 +14,8 @@ in
   home.packages =
     with pkgs;
     [
-      bun
       nixfmt-rfc-style
+      bun
       python313
 
       hyprsunset
@@ -23,27 +23,26 @@ in
       grim
       slurp
 
-      playerctl
-      wl-clipboard
+      btop
       fastfetch
       ripgrep
-      btop
       fd
       unzip
       zip
-      superfile
-      lazygit
       wget
+      wl-clipboard
       wifitui
-      appimage-run
-
+      playerctl
       pavucontrol
       pamixer
+      appimage-run
+
+
       geeqie
       celluloid
       alacritty
       vscode-fhs
-      antigravity
+      # antigravity
 
       # Libre office and spelling dictionaries
       libreoffice-still
