@@ -21,6 +21,7 @@
     targets = {
       gtk.enable = true;
       wezterm.enable = false;
+      waybar.font = "serif";
     };
 
     cursor = {
@@ -35,11 +36,11 @@
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       serif = {
-        name = "CaskaydiaMono Nerd Font";
+        name = "CaskaydiaMono Nerd Font Propo";
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       sansSerif = {
-        name = "CaskaydiaMono Nerd Font";
+        name = "CaskaydiaMono Nerd Font Propo";
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
     };
@@ -54,5 +55,6 @@
       #   accent = "blue";   # Change to your desired accent color
       # };
     };
+
   };
 }

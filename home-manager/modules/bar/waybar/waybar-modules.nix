@@ -50,7 +50,7 @@
   };
 
   "custom/apps" = {
-    "format" = "  Run";
+    "format" = "  ";
     "on-click" = "vicinae toggle";
     "on-click-right" = "alacritty";
     tooltip = false;
