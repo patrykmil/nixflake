@@ -41,8 +41,6 @@ in
       pamixer
       geeqie
       celluloid
-      xarchiver
-      nautilus
       alacritty
       vscode-fhs
       antigravity

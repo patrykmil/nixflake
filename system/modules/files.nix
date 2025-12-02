@@ -3,6 +3,8 @@
   environment.systemPackages = with pkgs; [
     usbutils
     udiskie
+    nautilus
+    xarchiver
   ];
 
   services.devmon.enable = true;
@@ -12,5 +14,5 @@
   programs.nautilus-open-any-terminal = {
     enable = true;
     terminal = "alacritty";
-  };  
+  };
 }
