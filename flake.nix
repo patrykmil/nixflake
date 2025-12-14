@@ -58,7 +58,7 @@
                 hostName = host;
                 system = hostSystem;
               };
-              home-manager.backupFileExtension = ".backup";
+              home-manager.backupFileExtension = "backup";
               home-manager.users.${user} = import ./home-manager/home.nix;
             }
           ];

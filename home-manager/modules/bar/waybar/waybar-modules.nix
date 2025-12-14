@@ -52,7 +52,7 @@
   "custom/apps" = {
     "format" = "  ";
     "on-click" = "vicinae toggle";
-    "on-click-right" = "hyprctl dispatch exec [float] alacritty";
+    "on-click-right" = "swaync-client -t";
     tooltip = false;
   };
 

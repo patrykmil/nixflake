@@ -15,6 +15,7 @@
       "SUPER,B,exec,$BROWSER"
       "SUPER,E,exec,$FILES --new-window"
       "SUPER,Y,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
+      "SUPER,N,exec,swaync-client -t"
 
       "SUPER,Q,killactive,"
       "SUPER,F,togglefloating,"
