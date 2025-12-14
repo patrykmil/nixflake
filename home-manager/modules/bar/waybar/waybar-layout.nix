@@ -14,8 +14,6 @@ in
     modules-right = [
       # "custom/monitor-toggle"
       # "custom/divider"
-      "network"
-      "custom/divider"
       "pulseaudio"
       "pulseaudio#microphone"
       "custom/divider"
@@ -30,9 +28,11 @@ in
       "hyprland/workspaces"
     ];
     modules-center = [
-      "hyprland/window"
+      # "hyprland/window"
     ];
     modules-right = [
+      "network"
+      "custom/divider"
       "pulseaudio"
       "pulseaudio#microphone"
       "custom/divider"
