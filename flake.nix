@@ -20,12 +20,6 @@
     wifitui = {
       url = "github:shazow/wifitui";
     };
-
-    antigravity-nix = {
-      url = "github:jacopone/antigravity-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
   };
 
   outputs =

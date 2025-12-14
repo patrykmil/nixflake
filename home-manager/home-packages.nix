@@ -59,6 +59,7 @@ in
           obs-studio
           teams-for-linux
           devenv
+          # floorp-bin
         ]
       else if hostName == "laptop" then
         [
