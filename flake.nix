@@ -48,27 +48,25 @@
             system = hostSystem;
             hostName = host;
           };
-          modules = [ configPath ];
-        };
-
-      mkHomeConfig =
-        host: homeModules:
-        home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.${hostSystem};
-          extraSpecialArgs = {
-            inherit inputs homeStateVersion user;
-            hostName = host;
-            system = hostSystem;
-          };
-          modules = [ ] ++ homeModules;
+          modules = [
+            configPath
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.extraSpecialArgs = {
+                inherit inputs homeStateVersion user;
+                hostName = host;
+                system = hostSystem;
+              };
+              home-manager.backupFileExtension = ".backup";
+              home-manager.users.${user} = import ./home-manager/home.nix;
+            }
+          ];
         };
     in
 
     {
       nixosConfigurations.laptop = mkNixosConfig "laptop" ./system/hosts/laptop/configuration.nix;
       nixosConfigurations.desktop = mkNixosConfig "desktop" ./system/hosts/desktop/configuration.nix;
-
-      homeConfigurations."${user}-laptop" = mkHomeConfig "laptop" [ ./home-manager/home.nix ];
-      homeConfigurations."${user}-desktop" = mkHomeConfig "desktop" [ ./home-manager/home.nix ];
     };
 }

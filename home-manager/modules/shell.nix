@@ -15,15 +15,13 @@
     // (
       if hostName == "desktop" then
         {
-          dss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop";
-          dhs = "home-manager switch --flake /home/ptrk/flakes#ptrk-desktop -b backup";
-          dst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#desktop";
+          ss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop";
+          st = "sudo nixos-rebuild test --flake /home/ptrk/flakes#desktop";
         }
       else if hostName == "laptop" then
         {
-          lss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop";
-          lhs = "home-manager switch --flake /home/ptrk/flakes#ptrk-laptop -b backup";
-          lst = "sudo nixos-rebuild test --flake /home/ptrk/flakes#laptop";
+          ss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop";
+          st = "sudo nixos-rebuild test --flake /home/ptrk/flakes#laptop";
         }
       else
         { }

@@ -31,7 +31,7 @@
       };
     };
     # extensions = [
-    #   (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+    #   (inputs.vicinae.mkVicinaeExtension.${pkgs.stdenv.hostPlatform.system} {
     #     inherit pkgs;
     #     name = "wifi-commander";
     #     src =

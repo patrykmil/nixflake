@@ -5,12 +5,9 @@
   ...
 }:
 let
-  wifitui = inputs.wifitui.packages.${pkgs.system}.default;
-  antigravity = inputs.antigravity-nix.packages.${pkgs.system}.default;
+  wifitui = inputs.wifitui.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
-  nixpkgs.config.allowUnfree = true;
-
   home.packages =
     with pkgs;
     [
@@ -37,12 +34,10 @@ in
       pamixer
       appimage-run
 
-
       geeqie
       celluloid
       alacritty
       vscode-fhs
-      # antigravity
 
       # Libre office and spelling dictionaries
       libreoffice-still
