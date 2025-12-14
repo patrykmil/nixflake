@@ -1,12 +1,14 @@
 {
-  dwindle = {
-    pseudotile = true;
-    preserve_split = true;
-    force_split = 2;
-  };
+  wayland.windowManager.hyprland.settings = {
+    dwindle = {
+      pseudotile = true;
+      preserve_split = true;
+      force_split = 2;
+    };
 
-  master = {
-    new_status = "slave";
-    new_on_active = "before";
+    master = {
+      new_status = "slave";
+      new_on_active = "before";
+    };
   };
 }

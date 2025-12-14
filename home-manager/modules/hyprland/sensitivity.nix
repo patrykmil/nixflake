@@ -1,5 +1,5 @@
 {
-  extraConfig = ''
+  wayland.windowManager.hyprland.extraConfig = ''
     device {
       name = logitech-g403-1
       sensitivity = -0.5;
