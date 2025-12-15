@@ -12,12 +12,12 @@
     on-click = "pkill wifitui || alacritty --class wifitui -e wifitui";
   };
 
-  clock = {
-    format = "{:%H:%M -- %d/%m} ";
-    tooltip-format = ''
-      <big>{:%Y %B}</big>
-      <tt><small>{calendar}</small></tt>'';
+  "custom/clock2" = {
+    interval = 60;
+    return-type = "json";
+    exec = "python3 /home/ptrk/flakes/home-manager/modules/bar/waybar/cal.py";
   };
+
 
   pulseaudio = {
     format = "{icon} {volume}%";

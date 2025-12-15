@@ -17,7 +17,7 @@ in
       "pulseaudio"
       "pulseaudio#microphone"
       "custom/divider"
-      "clock"
+      "custom/clock2"
     ];
   } // modules;
 
