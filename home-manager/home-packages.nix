@@ -27,6 +27,8 @@ in
       unzip
       zip
       wget
+      tldr
+      mtr
       wl-clipboard
       wifitui
       playerctl
