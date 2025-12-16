@@ -8,6 +8,8 @@
       "wheel"
       "networkmanager"
       "docker"
+      "kvm"
+      "adbusers"
     ];
   };
 }
