@@ -4,7 +4,6 @@
     (pkgs.writeShellScriptBin "bright" ''
       #!/usr/bin/env bash
 
-      SWITCH="${pkgs.hyprsunset}/bin/hyprsunset"
       CONFIG_FILE="$HOME/.config/brightness.txt"
 
       touch "$CONFIG_FILE"
@@ -20,14 +19,7 @@
           exit 1
         fi
       fi
-
-      if pgrep -x hyprsunset > /dev/null; then
-        pkill -x hyprsunset
-      fi
-
-      sleep 1
-
-      nohup "$SWITCH" -g "$gamma" > /dev/null 2>&1 &
+      hyprctl hyprsunset gamma "$gamma" > /dev/null 2>&1 &
     '')
   ];
 }
