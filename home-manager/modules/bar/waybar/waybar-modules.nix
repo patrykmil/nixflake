@@ -23,7 +23,7 @@
     format = "{icon} {volume}%";
     tooltip = true;
     format-muted = "󰖁 Muted";
-    on-click = "pkill pavucontrol || pavucontrol";
+    on-click = "pkill pwvucontrol || pwvucontrol";
     on-click-right = "pamixer -t";
     on-scroll-up = "pamixer -i 5";
     on-scroll-down = "pamixer -d 5";
@@ -42,7 +42,7 @@
     tooltip = true;
     format-source = "󰍬 {volume}%";
     format-source-muted = "󰍭 Muted";
-    on-click = "pkill pavucontrol || pavucontrol";
+    on-click = "pkill pwvucontrol || pwvucontrol";
     on-click-right = "pamixer --default-source -t";
     on-scroll-up = "pamixer --default-source -i 5";
     on-scroll-down = "pamixer --default-source -d 5";

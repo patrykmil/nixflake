@@ -17,9 +17,9 @@
     ++ (
       if hostName == "desktop" then
         [
-          "float, class:^(org\\.pulseaudio\\.pavucontrol)$"
-          "size 1060 570, class:^(org\\.pulseaudio\\.pavucontrol)$"
-          "move 850 470, class:^(org\\.pulseaudio\\.pavucontrol)$"
+          "float, class:^(com\\.saivert\\.pwvucontrol)$"
+          "size 1060 570, class:^(com\\.saivert\\.pwvucontrol)$"
+          "move 850 470, class:^(com\\.saivert\\.pwvucontrol)$"
 
           "float, class:^(wifitui)$"
           "size 600 720, class:^(wifitui)$"

@@ -32,7 +32,7 @@ in
       wl-clipboard
       wifitui
       playerctl
-      pavucontrol
+      pwvucontrol
       pamixer
       appimage-run
 
