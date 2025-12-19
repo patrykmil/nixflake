@@ -7,7 +7,7 @@
     # ./dank-material-shell.nix
     ./notifications.nix
 
-    # ./wezterm.nix
+    ./wezterm.nix
     ./shell.nix
     ./helix.nix
     ./git.nix

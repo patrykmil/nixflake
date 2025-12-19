@@ -1,7 +1,8 @@
+{hostName, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     "$BROWSER" = "brave";
-    "$TERMINAL" = "alacritty";
+    "$TERMINAL" = if hostName == "laptop" then "alacritty" else "wezterm"; 
     "$FILES" = "nautilus";
 
     binds = {

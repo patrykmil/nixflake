@@ -40,6 +40,8 @@
         ]
     );
 
+  services.xserver.excludePackages = [ pkgs.xterm ];
+
   fonts.packages = with pkgs; [
     maple-mono.NF
     noto-fonts
