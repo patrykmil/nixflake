@@ -20,6 +20,7 @@ in
       grim
       slurp
 
+      nix-tree
       btop
       fastfetch
       ripgrep
