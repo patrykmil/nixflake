@@ -9,7 +9,7 @@
     ++ (
       if hostName == "desktop" then
         [
-          "bright 67"
+          "sleep 1 && bright 67"
         ]
       else if hostName == "laptop" then
         [
