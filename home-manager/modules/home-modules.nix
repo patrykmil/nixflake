@@ -11,6 +11,7 @@
     ./shell.nix
     ./helix.nix
     ./git.nix
+    ./jj.nix
 
     ./bar/waybar/waybar.nix
     # ./bar/hyprpanel/hyprpanel.nix
