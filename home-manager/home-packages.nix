@@ -53,11 +53,12 @@ in
         [
           # jetbrains.pycharm-professional
           # ffmpeg-full
+          # floorp-bin
           toybox
           obs-studio
           teams-for-linux
           devenv
-          # floorp-bin
+          krita
         ]
       else if hostName == "laptop" then
         [
