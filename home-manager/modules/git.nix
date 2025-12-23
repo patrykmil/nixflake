@@ -9,6 +9,9 @@
       core.editor = "code";
       pull.rebase = "true";
       init.defaultBranch = "main";
+      alias = {
+        amend = "commit --amend --no-edit";
+      };
     };
   };
 }
