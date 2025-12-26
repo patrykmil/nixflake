@@ -8,7 +8,6 @@
     with pkgs;
     [
       home-manager
-      brave
 
       xdg-desktop-portal-hyprland
       xdg-utils

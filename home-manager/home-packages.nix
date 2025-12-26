@@ -6,6 +6,7 @@
 }:
 let
   wifitui = inputs.wifitui.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  zen-browser = inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
   home.packages =
@@ -14,6 +15,8 @@ in
       nixfmt-rfc-style
       bun
       python313
+
+      brave
 
       hyprsunset
       hyprpicker
@@ -58,6 +61,7 @@ in
           teams-for-linux
           devenv
           krita
+          zen-browser
         ]
       else if hostName == "laptop" then
         [
