@@ -62,6 +62,7 @@ in
           devenv
           krita
           zen-browser
+          zed-editor-fhs
         ]
       else if hostName == "laptop" then
         [
