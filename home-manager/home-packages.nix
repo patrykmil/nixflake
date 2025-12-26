@@ -34,7 +34,6 @@ in
       wifitui
       playerctl
       pwvucontrol
-      pamixer
       appimage-run
 
       geeqie

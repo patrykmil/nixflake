@@ -74,16 +74,16 @@
     ];
 
     bindel = [
-      "SUPER,F10,exec,pamixer -d 5"
-      "SUPER,F11,exec,pamixer -i 5"
+      ",XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+      ",XF86AudioRaiseVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
     ];
 
     bindl = [
-      ",F9,exec,pamixer -t"
-      ",F12,exec,pamixer --default-source -t"
-      "SUPER,F6,exec,playerctl previous"
-      "SUPER,F7,exec,playerctl play-pause"
-      "SUPER,F8,exec,playerctl next"
+      ",XF86AudioMute,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+      ",F12,exec,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+      ",XF86AudioPrev,exec,playerctl previous"
+      ",XF86AudioPlay,exec,playerctl play-pause"
+      ",XF86AudioNext,exec,playerctl next"
     ];
   };
 }

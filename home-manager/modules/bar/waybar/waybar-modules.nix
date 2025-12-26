@@ -6,9 +6,9 @@
   };
 
   network = {
-    format = "󰖩 Wifi";
-    format-ethernet = "󱎔 Wired";
-    format-disconnected = "󰖪 Dced";
+    format = "󰖩";
+    format-ethernet = "󱎔";
+    format-disconnected = "󰖪";
     on-click = "pkill wifitui || alacritty --class wifitui -e wifitui";
   };
 
@@ -22,15 +22,14 @@
   pulseaudio = {
     format = "{icon} {volume}%";
     tooltip = true;
-    format-muted = "󰖁 Muted";
+    format-muted = "󰖁";
     on-click = "pkill pwvucontrol || pwvucontrol";
-    on-click-right = "pamixer -t";
-    on-scroll-up = "pamixer -i 5";
-    on-scroll-down = "pamixer -d 5";
+    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+    on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+    on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
     scroll-step = 5;
     format-icons = {
       default = [
-        ""
         ""
         ""
       ];
@@ -41,11 +40,11 @@
     format = "{format_source}";
     tooltip = true;
     format-source = "󰍬 {volume}%";
-    format-source-muted = "󰍭 Muted";
+    format-source-muted = "󰍭";
     on-click = "pkill pwvucontrol || pwvucontrol";
-    on-click-right = "pamixer --default-source -t";
-    on-scroll-up = "pamixer --default-source -i 5";
-    on-scroll-down = "pamixer --default-source -d 5";
+    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+    on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+";
+    on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-";
     scroll-step = 5;
   };
 

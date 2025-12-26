@@ -13,7 +13,8 @@ in
     ];
     modules-right = [
       # "custom/monitor-toggle"
-      # "custom/divider"
+      "network"
+      "custom/divider"
       "pulseaudio"
       "pulseaudio#microphone"
       "custom/divider"
