@@ -80,6 +80,7 @@
 
     bindl = [
       ",XF86AudioMute,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+      ",F9, exec, wpctl set-mute -p $(hyprctl activewindow -j | jq '.pid') toggle"
       ",F12,exec,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
       ",XF86AudioPrev,exec,playerctl previous"
       ",XF86AudioPlay,exec,playerctl play-pause"
