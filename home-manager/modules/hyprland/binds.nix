@@ -1,8 +1,8 @@
-{hostName, ... }:
+{ hostName, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     "$BROWSER" = "brave";
-    "$TERMINAL" = if hostName == "laptop" then "alacritty" else "wezterm"; 
+    "$TERMINAL" = if hostName == "laptop" then "alacritty" else "wezterm";
     "$FILES" = "nautilus";
 
     binds = {
@@ -59,13 +59,13 @@
       "SUPER SHIFT,0,movetoworkspace,10"
       "SUPER,mouse_down,workspace,e+1"
       "SUPER,mouse_up,workspace,e-1"
+      "Alt,Tab,workspace,previous"
 
       # Screenshots
       ",print,exec, screencapture shot all"
       "SUPER SHIFT,S,exec, screencapture shot area"
       "SUPER SHIFT,D,exec, screencapture record area"
       "SUPER SHIFT,C,exec,hyprpicker -a -q -r"
-      "Alt,Tab,workspace,previous"
     ];
 
     bindm = [

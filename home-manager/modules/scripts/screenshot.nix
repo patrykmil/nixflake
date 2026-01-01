@@ -94,7 +94,7 @@
           ;;
         *)
           echo "Invalid operation: $operation"
-          echo "Usage: $0 {shot|record} [mode]"
+          echo "Usage: screencapture {shot|record} [mode]"
           echo "Modes for shot: all, monitor, area"
           echo "Modes for record: all, area"
           exit 1

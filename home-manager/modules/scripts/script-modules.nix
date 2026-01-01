@@ -1,8 +1,16 @@
+{ pkgs, ... }:
 {
   imports = [
     ./screenshot.nix
-    ./manage-monitors.nix
-    ./brightness.nix
-    ./idle-inhibitor.nix
+    ./monitor-toggle.nix
+  ];
+
+  home.packages = [
+    (pkgs.writeScriptBin "bright" ''
+      exec "${toString ./.}/brightness.py" "$@"
+    '')
+    (pkgs.writeScriptBin "idleInhibitor" ''
+      exec "${toString ./.}/idle-inhibitor.py" "$@"
+    '')
   ];
 }
