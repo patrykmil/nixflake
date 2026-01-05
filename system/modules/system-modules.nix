@@ -25,6 +25,7 @@
         ./fancontrol.nix
         # ./docker.nix
         ./games.nix
+        ./waydroid.nix
       ]
     else if hostName == "laptop" then
       [
