@@ -24,7 +24,6 @@ in
       slurp
 
       nix-tree
-      btop
       fastfetch
       ripgrep
       fd

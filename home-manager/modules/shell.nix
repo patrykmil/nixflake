@@ -1,4 +1,4 @@
-{ hostName, ... }:
+{ pkgs, hostName, ... }:
 {
   programs.fish = {
     enable = true;
@@ -41,7 +41,14 @@
     enableFishIntegration = true;
   };
 
-  programs.btop.enable = true;
+  programs.btop = {
+    enable = true;
+    package = if hostName == "desktop" then pkgs.btop.override { cudaSupport = true; } else pkgs.btop;
+    settings = {
+      graph_symbol = "block";
+    }
+    // (if hostName == "desktop" then { shown_boxes = "cpu mem net proc gpu0"; } else { });
+  };
 
   programs.eza = {
     enable = true;
