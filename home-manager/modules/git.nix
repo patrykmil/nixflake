@@ -15,6 +15,7 @@
         myclone = "!f() { git clone git@github.com:patrykmil/$1.git; }; f";
         unadd = "restore --staged";
         wdiff = "diff -w --word-diff=color --ignore-space-at-eol";
+        com = "!f() { git add . && git commit -m \"$1\"; }; f";
       };
     };
   };
