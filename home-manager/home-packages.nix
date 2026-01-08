@@ -12,7 +12,7 @@ in
   home.packages =
     with pkgs;
     [
-      nixfmt-rfc-style
+      nixfmt
       bun
       python313
 

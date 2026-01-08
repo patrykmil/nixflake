@@ -7,18 +7,34 @@
       autoStart = true;
     };
     settings = {
-      faviconService = "twenty";
-      font.normal = "Maple Mono NF";
-      font.size = 11;
-      popToRootOnClose = true;
-      rootSearch.searchFiles = false;
-      theme.name = "rose-pine";
-      theme.iconTheme = "iconTheme";
-      window = {
-        csd = true;
-        opacity = 1;
-        rounding = 10;
+      favicon_service = "twenty";
+      search_files_in_root = false;
+      pop_to_root_on_close = true;
+      font = {
+        normal = {
+          size = 11;
+          normal = "Maple Mono NF";
+        };
       };
+      theme.name = "rose-pine";
+      theme = {
+        light = {
+          name = "rose-pine";
+          icon_theme = "Adwaita";
+        };
+        dark = {
+          name = "rose-pine";
+          icon_theme = "Adwaita";
+        };
+      };
+      launcher_window = {
+        opacity = 1;
+      };
+      # window = {
+      #   csd = true;
+      #   opacity = 1;
+      #   rounding = 10;
+      # };
     };
   };
 }

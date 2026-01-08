@@ -22,6 +22,7 @@
       gtk.enable = true;
       wezterm.enable = false;
       waybar.font = "serif";
+      vicinae.enable = false;
     };
 
     cursor = {
