@@ -5,7 +5,7 @@
   ...
 }:
 {
-  
+
   imports = [
     inputs.stylix.homeModules.stylix
   ];
@@ -15,14 +15,15 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 
-    image = ../../wallpapers/pacman-nord.jpg;
-    polarity = "dark";
+    # image = ../../wallpapers/pacman-nord.jpg;
+    # polarity = "dark";
 
     targets = {
       gtk.enable = true;
       wezterm.enable = false;
       waybar.font = "serif";
       vicinae.enable = false;
+      # hyprpaper.enable = lib.mkDefault false;
     };
 
     cursor = {
@@ -46,7 +47,7 @@
       };
     };
 
-    iconTheme = {
+    icons = {
       enable = true;
       light = "Papirus-Light";
       dark = "Papirus-Dark";
