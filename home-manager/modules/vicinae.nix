@@ -30,11 +30,92 @@
       launcher_window = {
         opacity = 1;
       };
-      # window = {
-      #   csd = true;
-      #   opacity = 1;
-      #   rounding = 10;
-      # };
+      providers = {
+        "clipboard" = {
+          "entrypoints" = {
+            "history" = {
+              "preferences" = {
+                "defaultAction" = "copy";
+              };
+            };
+          };
+        };
+        "core" = {
+          "entrypoints" = {
+            "about" = {
+              "enabled" = false;
+            };
+            "documentation" = {
+              "enabled" = false;
+            };
+            "keybind-settings" = {
+              "enabled" = false;
+            };
+            "manage-fallback" = {
+              "enabled" = false;
+            };
+            "oauth-token-store" = {
+              "enabled" = false;
+            };
+            "open-default-config" = {
+              "enabled" = false;
+            };
+            "reload-scripts" = {
+              "enabled" = false;
+            };
+            "report-bug" = {
+              "enabled" = false;
+            };
+            "settings" = {
+              "enabled" = false;
+            };
+            "sponsor" = {
+              "enabled" = false;
+            };
+          };
+        };
+        "developer" = {
+          "enabled" = false;
+        };
+        "font" = {
+          "enabled" = false;
+        };
+        "power" = {
+          "entrypoints" = {
+            "hibernate" = {
+              "enabled" = false;
+            };
+            "lock" = {
+              "enabled" = false;
+            };
+            "power-off" = {
+              "alias" = "Shutdown";
+              "preferences" = {
+                "confirm" = false;
+              };
+            };
+            "reboot" = {
+              "preferences" = {
+                "confirm" = false;
+              };
+            };
+            "sleep" = {
+              "enabled" = false;
+            };
+            "soft-reboot" = {
+              "enabled" = false;
+            };
+            "suspend" = {
+              "preferences" = {
+                "confirm" = false;
+              };
+            };
+          };
+        };
+        "theme" = {
+          "enabled" = false;
+        };
+      };
     };
   };
 }
