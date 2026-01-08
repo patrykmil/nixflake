@@ -16,6 +16,7 @@
     ./kernel.nix
     ./files.nix
     ./localsend.nix
+    ./brave-policies.nix
     # ./platformio.nix
   ]
   ++ (
