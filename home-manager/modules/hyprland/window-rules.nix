@@ -32,30 +32,35 @@
         "match:workspace" = "f[1]";
       }
       {
-        name = "windowrule-5";
+        name = "windowrule-emulator";
         float = "on";
         "match:class" = "^(Emulator)$";
+      }
+      {
+        name = "windowrule-waydroid";
+        float = "on";
+        "match:class" = "(?i).*waydroid.*";
       }
     ]
     ++ (
       if hostName == "desktop" then
         [
           {
-            name = "windowrule-6";
+            name = "windowrule-pwvucontrol";
             float = "on";
             size = "1060 570";
             move = "(850) (470)";
             "match:class" = "^(com\\.saivert\\.pwvucontrol)$";
           }
           {
-            name = "windowrule-7";
+            name = "windowrule-wifitui";
             float = "on";
             size = "600 720";
             move = "(1315) (315)";
             "match:class" = "^(wifitui)$";
           }
           {
-            name = "windowrule-8";
+            name = "windowrule-localsend";
             float = "on";
             size = "700 900";
             center = "on";
