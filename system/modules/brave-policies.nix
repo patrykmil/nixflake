@@ -16,7 +16,10 @@
       "AutofillAddressEnabled": false,
       "AutofillCreditCardEnabled": false,
       "DnsOverHttpsMode": "secure",
-      "DnsOverHttpsTemplates": "https://extended.dns.mullvad.net/dns-query"
+      "DnsOverHttpsTemplates": "https://base.dns.mullvad.net/dns-query"
     }
   '';
 }
+
+# https://base.dns.mullvad.net/dns-query
+# https://security.cloudflare-dns.com/dns-query
