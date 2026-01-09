@@ -67,9 +67,16 @@
     );
 
     workspace = [
-      "1,monitor:DP-2"
       "w[tv1],gapsin:0, gapsout:0"
       "f[1],gapsin:0, gapsout:0"
-    ];
+    ]
+    ++ (
+      if hostName == "desktop" then
+        [
+          "1,monitor:DP-2"
+        ]
+      else
+        [ ]
+    );
   };
 }
