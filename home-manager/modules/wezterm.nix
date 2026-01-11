@@ -27,7 +27,7 @@
             ''
           else
             "         
-              font_size = 18;
+              font_size = 12;
             "
         }
 
