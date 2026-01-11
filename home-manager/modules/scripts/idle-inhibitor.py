@@ -61,7 +61,7 @@ def set_inhibition(minutes: int):
     if check_status()[0]:
         kill_inhibition()
     subprocess.Popen(
-        ["systemd-inhibit", "sleep", str(minutes * 60), "--why=Prevent system idle", "--who=idle-inhibitor.py"],
+        ["systemd-inhibit", "sleep", str(minutes * 60)],
     )
     with open(STATUS_FILE, "w") as f:
         f.write(f"{int(time.time())} {minutes * 60}\n")
