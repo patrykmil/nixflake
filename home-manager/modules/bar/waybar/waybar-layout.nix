@@ -42,7 +42,7 @@ in
       "battery"
       "backlight"
       "custom/divider"
-      "clock"
+      "custom/clock2"
     ];
   } // modules;
 
