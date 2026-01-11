@@ -86,5 +86,11 @@
       ",XF86AudioPlay,exec,playerctl play-pause"
       ",XF86AudioNext,exec,playerctl next"
     ];
+
+    gesture = [
+      "3, horizontal, workspace"
+      "3, swipe, mod: SUPER, move"
+      "3, swipe, mod: SUPER SHIFT, resize"
+    ];
   };
 }
