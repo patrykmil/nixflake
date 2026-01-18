@@ -18,7 +18,6 @@
     exec = "python3 /home/ptrk/flakes/home-manager/modules/bar/waybar/cal.py";
   };
 
-
   pulseaudio = {
     format = "{icon} {volume}%";
     tooltip = true;
@@ -95,5 +94,28 @@
     tooltip = false;
     on-scroll-down = "brightnessctl set 5%-";
     on-scroll-up = "brightnessctl set +5%";
+  };
+
+  tray = {
+    icon-size = 16;
+    spacing = 5;
+  };
+
+  "custom/tray" = {
+    exec = "/home/ptrk/flakes/home-manager/modules/bar/waybar/tray.sh";
+    interval = 5;
+    format = "{}";
+  };
+
+  "group/tray" = {
+    orientation = "horizontal";
+    "drawer" = {
+      "transition-duration" = 250;
+      "transition-left-to-right" = false;
+    };
+    modules = [
+      "custom/tray"
+      "tray"
+    ];
   };
 }

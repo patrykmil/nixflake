@@ -13,6 +13,7 @@ in
     ];
     modules-right = [
       # "custom/monitor-toggle"
+      "group/tray"
       "network"
       "custom/divider"
       "pulseaudio"
@@ -32,6 +33,7 @@ in
       # "hyprland/window"
     ];
     modules-right = [
+      "group/tray"
       "network"
       "custom/divider"
       "pulseaudio"
