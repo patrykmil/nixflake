@@ -2,8 +2,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     "$BROWSER" = "brave";
-    "$TERMINAL" = if hostName == "laptop" then "alacritty" else "wezterm";
-    "$FILES" = "nautilus";
+    "$TERMINAL" = "wezterm";
+    "$FILES" = "nemo";
 
     binds = {
       allow_workspace_cycles = true;
@@ -14,7 +14,7 @@
       "SUPER,T,exec,$TERMINAL"
       "SUPER SHIFT,T,exec, [float] $TERMINAL"
       "SUPER,B,exec,$BROWSER"
-      "SUPER,E,exec,$FILES --new-window"
+      "SUPER,E,exec,$FILES"
       "SUPER,Y,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
       "SUPER,N,exec,swaync-client -t"
 

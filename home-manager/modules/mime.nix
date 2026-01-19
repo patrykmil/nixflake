@@ -1,23 +1,46 @@
-{ config, pkgs, hostName, ... }:
+{
+  config,
+  pkgs,
+  hostName,
+  ...
+}:
 
 {
   xdg.mimeApps = {
     enable = true;
     defaultApplications = {
-      "application/pdf" = [ "brave.desktop" ];
-      "text" = [ "code.desktop" ];
+      "application/pdf" = [ "brave-browser.desktop" ];
+      "text/" = [
+        "code.desktop"
+        "Helix.desktop"
+      ];
+      "image/" = [ "org.geeqie.Geeqie.desktop" ];
+
+      "inode/directory" = [ "nemo.desktop" ];
+      "application/x-gnome-saved-search" = [ "nemo.desktop" ];
+
+      "video/" = [ "io.github.celluloid_player.Celluloid.desktop" ];
+      "audio/" = [ "io.github.celluloid_player.Celluloid.desktop" ];
     };
   };
 
   home.sessionVariables = {
     EDITOR = "code";
-    TERMINAL = if hostName == "desktop" then "wezterm" else "alacritty";
+    TERMINAL = "wezterm";
   };
 
   xdg.terminal-exec = {
     enable = true;
     settings = {
-      default = if hostName == "desktop" then ["wezterm.desktop"] else ["alacritty.desktop"];
+      default = [ "wezterm.desktop" ];
+    };
+  };
+
+  dconf = {
+    settings = {
+      "org/cinnamon/desktop/applications/terminal" = {
+        exec = "wezterm";
+      };
     };
   };
 }

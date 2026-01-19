@@ -3,16 +3,12 @@
   environment.systemPackages = with pkgs; [
     usbutils
     udiskie
-    nautilus
     xarchiver
+    nemo-with-extensions
+    nemo-fileroller
   ];
 
   services.devmon.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
-
-  programs.nautilus-open-any-terminal = {
-    enable = true;
-    terminal = "alacritty";
-  };
 }
