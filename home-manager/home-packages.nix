@@ -38,6 +38,7 @@ in
       pwvucontrol
       appimage-run
       trashy
+      nethogs
 
       geeqie
       celluloid
