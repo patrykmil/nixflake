@@ -37,6 +37,7 @@ in
       playerctl
       pwvucontrol
       appimage-run
+      trashy
 
       geeqie
       celluloid

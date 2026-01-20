@@ -11,6 +11,11 @@
       es = "eza --icons=always -a -l --git -B --total-size";
       et = "eza --icons=auto -T -L=4 -a -l --git -B --no-filesize --no-permissions --octal-permissions --no-user --no-time --git-ignore";
 
+      rt = "trash put";
+      restore = "trash list | tac | fzf --multi | awk '{$1=$1;print}' | rev | cut -d ' ' -f1 | rev | xargs trash restore --match=exact --force";
+      remove = "trash list | tac | fzf --multi | awk '{$1=$1;print}' | rev | cut -d ' ' -f1 | rev | xargs trash empty --match=exact --force";
+      emptytrash = "trash empty";
+
     }
     // (
       if hostName == "desktop" then
