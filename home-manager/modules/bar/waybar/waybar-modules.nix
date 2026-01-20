@@ -3,6 +3,7 @@
     format = "{}";
     tooltip = false;
     max-length = 50;
+    separate-outputs = true;
   };
 
   network = {
