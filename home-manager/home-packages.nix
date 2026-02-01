@@ -10,54 +10,49 @@ let
 in
 {
   home.packages =
-    with pkgs;
-    [
-      nixfmt
-      bun
-      python313
+    let
+      common = with pkgs; [
+        nixfmt
+        bun
+        python313
 
-      brave
+        brave
 
-      hyprsunset
-      hyprpicker
-      grim
-      slurp
+        hyprsunset
+        hyprpicker
+        grim
+        slurp
 
-      nix-tree
-      fastfetch
-      ripgrep
-      fd
-      unzip
-      zip
-      wget
-      tldr
-      mtr
-      wl-clipboard
-      wifitui
-      playerctl
-      pwvucontrol
-      appimage-run
-      trashy
-      nethogs
+        nix-tree
+        fastfetch
+        ripgrep
+        fd
+        unzip
+        zip
+        wget
+        tldr
+        mtr
+        wl-clipboard
+        wifitui
+        playerctl
+        pwvucontrol
+        appimage-run
+        trashy
+        nethogs
 
-      geeqie
-      celluloid
-      alacritty
-      vscode-fhs
-      opencode
+        geeqie
+        celluloid
+        alacritty
+        vscode-fhs
+        opencode
+        libreoffice-still
+        hunspell
+        hunspellDicts.pl_PL
+        hunspellDicts.en_US
+      ];
 
-      # Libre office and spelling dictionaries
-      libreoffice-still
-      hunspell
-      hunspellDicts.pl_PL
-      hunspellDicts.en_US
-    ]
-    ++ (
-      if hostName == "desktop" then
-        [
-          # jetbrains.pycharm-professional
-          # ffmpeg-full
-          # floorp-bin
+      hostSpecific = {
+        desktop = with pkgs; [
           toybox
           obs-studio
           teams-for-linux
@@ -65,37 +60,36 @@ in
           krita
           zen-browser
           zed-editor-fhs
-        ]
-      else if hostName == "laptop" then
-        [
+        ];
+        laptop = with pkgs; [
           bluetuith
           brightnessctl
-        ]
-      else
-        [
-
-        ]
-    );
+        ];
+      };
+    in
+    common ++ (hostSpecific.${hostName} or [ ]);
 
   xdg.desktopEntries =
-    if hostName == "laptop" then
-      {
-        code = {
-          name = "Visual Studio Code (Wayland)";
-          exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
-          categories = [
-            "Utility"
-            "TextEditor"
-            "Development"
-            "IDE"
-          ];
-          comment = "Code Editing. Redefined.";
-          genericName = "Text Editor";
-          icon = "vscode";
-          type = "Application";
-          startupNotify = true;
+    let
+      hostEntries = {
+        laptop = {
+          code = {
+            name = "Visual Studio Code (Wayland)";
+            exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
+            categories = [
+              "Utility"
+              "TextEditor"
+              "Development"
+              "IDE"
+            ];
+            comment = "Code Editing. Redefined.";
+            genericName = "Text Editor";
+            icon = "vscode";
+            type = "Application";
+            startupNotify = true;
+          };
         };
-      }
-    else
-      { };
+      };
+    in
+    hostEntries.${hostName} or { };
 }

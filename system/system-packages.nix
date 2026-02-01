@@ -5,39 +5,32 @@
 }:
 {
   environment.systemPackages =
-    with pkgs;
-    [
-      home-manager
+    let
+      common = with pkgs; [
+        home-manager
 
-      xdg-desktop-portal-hyprland
-      xdg-utils
-      xwayland-satellite
+        xdg-desktop-portal-hyprland
+        xdg-utils
+        xwayland-satellite
 
-      pipewire
-      wireplumber
-      libnotify
-      jq
+        pipewire
+        wireplumber
+        libnotify
+        jq
 
-      ruff
-      sqlite
-      cmake
+        ruff
+        sqlite
+        cmake
 
-      lm_sensors
-    ]
-    ++ (
-      if hostName == "desktop" then
-        [
+        lm_sensors
+      ];
 
-        ]
-      else if hostName == "laptop" then
-        [
-
-        ]
-      else
-        [
-
-        ]
-    );
+      hostSpecific = {
+        desktop = [ ];
+        laptop = [ ];
+      };
+    in
+    common ++ (hostSpecific.${hostName} or [ ]);
 
   services.xserver.excludePackages = [ pkgs.xterm ];
 
