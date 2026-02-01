@@ -71,7 +71,7 @@
     in
 
     {
-      nixosConfigurations.laptop = mkNixosConfig "laptop" ./system/hosts/laptop/configuration.nix;
-      nixosConfigurations.desktop = mkNixosConfig "desktop" ./system/hosts/desktop/configuration.nix;
+      nixosConfigurations.laptop = mkNixosConfig "laptop" ./hosts/laptop/configuration.nix;
+      nixosConfigurations.desktop = mkNixosConfig "desktop" ./hosts/desktop/configuration.nix;
     };
 }
