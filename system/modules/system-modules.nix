@@ -24,7 +24,7 @@
       hostSpecific = {
         desktop = [
           ./nvidia.nix
-          ./fancontrol.nix
+          ./coolercontrol.nix
           # ./docker.nix
           ./games.nix
           ./waydroid.nix
