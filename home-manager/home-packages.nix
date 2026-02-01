@@ -44,6 +44,7 @@ in
       celluloid
       alacritty
       vscode-fhs
+      opencode
 
       # Libre office and spelling dictionaries
       libreoffice-still
