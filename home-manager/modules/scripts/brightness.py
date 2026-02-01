@@ -34,8 +34,9 @@ Commands:
   <gamma>                      Set gamma and save
   gamma <value>                Set gamma and save
   temp <value>                 Set temperature and save
+  <gamma> <temp>               Set gamma and temperature and save
   reset                        Reset to default values
-                 """
+                  """
 
     if error:
         sys.exit(message)
@@ -106,6 +107,10 @@ if __name__ == "__main__":
             save_config(config)
             set_temperature(val)
         else:
-            print_usage(error=True)
+            config["gamma"] = cmd
+            config["temp"] = val
+            save_config(config)
+            set_gamma(cmd)
+            set_temperature(val)
     else:
         print_usage(error=True)

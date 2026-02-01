@@ -2,17 +2,16 @@
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      # "hyprctl dispatch movecursor 2880 540"
-      # "dms run"
       "waybar"
     ]
     ++ (
       if hostName == "desktop" then
         [
-          "sleep 1 && bright 67"
+          "sleep 1 && bright 67 4600"
         ]
       else if hostName == "laptop" then
         [
+          "sleep 1 && bright 100 4600"
         ]
       else
         [
