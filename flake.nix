@@ -40,6 +40,9 @@
       user = "ptrk";
       homeStateVersion = "25.11";
 
+      monitors = import ./vars/monitors.nix;
+      fonts = import ./vars/fonts.nix;
+
       mkNixosConfig =
         host: configPath:
         nixpkgs.lib.nixosSystem {
@@ -49,9 +52,12 @@
               inputs
               homeStateVersion
               user
+              monitors
+              fonts
               ;
             system = hostSystem;
             hostName = host;
+            hostMonitors = monitors.${host};
           };
           modules = [
             configPath
@@ -59,9 +65,16 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.extraSpecialArgs = {
-                inherit inputs homeStateVersion user;
+                inherit
+                  inputs
+                  homeStateVersion
+                  user
+                  monitors
+                  fonts
+                  ;
                 hostName = host;
                 system = hostSystem;
+                hostMonitors = monitors.${host};
               };
               home-manager.backupFileExtension = "backup";
               home-manager.users.${user} = import ./home-manager/home.nix;

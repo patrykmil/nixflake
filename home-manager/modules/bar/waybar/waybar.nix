@@ -1,6 +1,12 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  hostMonitors,
+  hostName,
+  ...
+}:
 let
-  layout = import ./waybar-layout.nix { inherit config; };
+  layout = import ./waybar-layout.nix { inherit config hostMonitors; };
   commonSettings = {
     layer = "top";
     position = "bottom";
@@ -17,21 +23,21 @@ in
     settings = [
       (
         {
-          output = "DP-2";
+          output = hostMonitors.primary;
         }
         // commonSettings
         // layout.main-desktop
       )
       (
         {
-          output = "eDP-1";
+          output = hostMonitors.laptop;
         }
         // commonSettings
         // layout.main-laptop
       )
       (
         {
-          output = "HDMI-A-1";
+          output = hostMonitors.secondary;
         }
         // commonSettings
         // layout.other

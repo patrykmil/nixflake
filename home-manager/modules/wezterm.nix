@@ -1,4 +1,9 @@
-{ pkgs, hostName, ... }:
+{
+  pkgs,
+  hostName,
+  fonts,
+  ...
+}:
 
 {
   programs.wezterm = {
@@ -11,7 +16,7 @@
 
     extraConfig = ''
       return {
-        font = wezterm.font("CaskaydiaMono Nerd Font Mono"),
+        font = wezterm.font("${fonts.monospace}"),
         color_scheme = "Poimandres",
         command_palette_rows = 5,
         window_close_confirmation = "NeverPrompt",

@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, hostMonitors, ... }:
 let
   flakeDir = "${config.home.homeDirectory}/flakes";
 in
@@ -73,7 +73,7 @@ in
   "custom/monitor-toggle" = {
     format = "{}";
     tooltip = false;
-    exec = "bash -c 'hyprctl monitors | grep -q HDMI-A-1 && echo \"󰍺\" || echo \"󰍹\"'";
+    exec = "bash -c 'hyprctl monitors | grep -q " + hostMonitors.secondary + " && echo \"󰍺\" || echo \"󰍹\"'";
     interval = 5;
     on-click = "~/.config/scripts/toggle-second-monitor.sh";
   };

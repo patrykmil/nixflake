@@ -1,4 +1,4 @@
-{ hostName, ... }:
+{ hostName, hostMonitors, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
@@ -78,7 +78,7 @@
     ++ (
       if hostName == "desktop" then
         [
-          "1,monitor:DP-2"
+          "1,monitor:${hostMonitors.primary}"
         ]
       else
         [ ]

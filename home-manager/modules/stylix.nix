@@ -2,6 +2,7 @@
   pkgs,
   lib,
   inputs,
+  fonts,
   ...
 }:
 {
@@ -34,15 +35,15 @@
 
     fonts = {
       monospace = {
-        name = "CaskaydiaMono Nerd Font Mono";
+        name = fonts.monospace;
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       serif = {
-        name = "CaskaydiaMono Nerd Font Propo";
+        name = fonts.serif;
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
       sansSerif = {
-        name = "CaskaydiaMono Nerd Font Propo";
+        name = fonts.sansSerif;
         package = pkgs.nerd-fonts.caskaydia-mono;
       };
     };

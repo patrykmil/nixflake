@@ -1,4 +1,9 @@
-{ config, ... }:
+{
+  config,
+  hostMonitors,
+  fonts,
+  ...
+}:
 let
   flakeDir = "${config.home.homeDirectory}/flakes";
 in
@@ -13,7 +18,7 @@ in
         };
       };
       layouts = {
-        "DP-2" = {
+        "${hostMonitors.primary}" = {
           left = [
             "dashboard"
             "workspaces"
@@ -27,7 +32,7 @@ in
             "notifications"
           ];
         };
-        "HDMI-A-1" = {
+        "${hostMonitors.secondary}" = {
           middle = [
             "workspaces"
             "windowtitle"
@@ -141,8 +146,8 @@ in
         };
       };
       font = {
-        name = "CaskaydiaMono Nerd Font Mono";
-        label = "CaskaydiaMono Nerd Font Mono";
+        name = fonts.monospace;
+        label = fonts.monospace;
         size = "1.1rem";
         weight = 500;
       };

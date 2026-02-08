@@ -1,6 +1,6 @@
-{ config, ... }:
+{ config, hostMonitors, ... }:
 let
-  modules = import ./waybar-modules.nix { inherit config; };
+  modules = import ./waybar-modules.nix { inherit config hostMonitors; };
 in
 {
   main-desktop = {

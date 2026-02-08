@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, hostMonitors, ... }:
 {
   home.packages = [
     (pkgs.writeShellScriptBin "monitorToggle" ''
@@ -6,8 +6,7 @@
 
       NOTIFY="${pkgs.libnotify}/bin/notify-send"
 
-      HDMI="HDMI-A-1"
-      DP="DP-2"
+      HDMI="${hostMonitors.secondary}"
 
       if hyprctl monitors | grep -q "$HDMI"; then
           hyprctl keyword monitor "$HDMI,disable"

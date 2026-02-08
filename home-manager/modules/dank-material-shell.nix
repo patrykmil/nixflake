@@ -2,6 +2,7 @@
   pkgs,
   hostName,
   inputs,
+  fonts,
   ...
 }:
 {
@@ -190,7 +191,7 @@
       "osLogoBrightness": 0.5,
       "osLogoContrast": 1,
       "fontFamily": "Maple Mono NF",
-      "monoFontFamily": "CaskaydiaMono Nerd Font Mono",
+      "monoFontFamily": "${fonts.serif}",
       "fontWeight": 400,
       "fontScale": 1,
       "notepadUseMonospace": true,
