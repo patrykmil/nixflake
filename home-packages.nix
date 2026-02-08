@@ -5,7 +5,6 @@
   ...
 }:
 let
-  wifitui = inputs.wifitui.packages.${pkgs.stdenv.hostPlatform.system}.default;
   zen-browser = inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
