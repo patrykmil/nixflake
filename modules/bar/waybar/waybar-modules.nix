@@ -20,7 +20,7 @@ in
   "custom/clock2" = {
     interval = 16;
     return-type = "json";
-    exec = "python3 ${flakeDir}/home-manager/modules/bar/waybar/cal.py";
+    exec = "python3 ${flakeDir}/modules/bar/waybar/cal.py";
   };
 
   pulseaudio = {
@@ -73,7 +73,8 @@ in
   "custom/monitor-toggle" = {
     format = "{}";
     tooltip = false;
-    exec = "bash -c 'hyprctl monitors | grep -q " + hostMonitors.secondary + " && echo \"󰍺\" || echo \"󰍹\"'";
+    exec =
+      "bash -c 'hyprctl monitors | grep -q " + hostMonitors.secondary + " && echo \"󰍺\" || echo \"󰍹\"'";
     interval = 5;
     on-click = "~/.config/scripts/toggle-second-monitor.sh";
   };
@@ -107,7 +108,7 @@ in
   };
 
   "custom/tray" = {
-    exec = "${flakeDir}/home-manager/modules/bar/waybar/tray.sh";
+    exec = "${flakeDir}/modules/bar/waybar/tray.sh";
     interval = 5;
     format = "{}";
   };

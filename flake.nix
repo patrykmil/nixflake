@@ -77,7 +77,7 @@
                 hostMonitors = monitors.${host};
               };
               home-manager.backupFileExtension = "backup";
-              home-manager.users.${user} = import ./home-manager/home.nix;
+              home-manager.users.${user} = import ./home.nix;
             }
           ];
         };

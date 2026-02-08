@@ -177,7 +177,7 @@ in
         };
         powermenu = {
           confirmation = false;
-          avatar.image = "${flakeDir}/home-manager/modules/bar/hyprpanel/nix.png";
+          avatar.image = "${flakeDir}/modules/bar/hyprpanel/nix.png";
         };
         directories = {
           left = {
