@@ -84,7 +84,8 @@
     in
 
     {
-      nixosConfigurations.laptop = mkNixosConfig "laptop" ./hosts/laptop/configuration.nix;
-      nixosConfigurations.desktop = mkNixosConfig "desktop" ./hosts/desktop/configuration.nix;
+      nixosConfigurations = nixpkgs.lib.genAttrs [ "laptop" "desktop" ] (
+        host: mkNixosConfig host ./configuration.nix
+      );
     };
 }

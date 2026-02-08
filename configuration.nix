@@ -3,16 +3,16 @@
   pkgs,
   user,
   homeStateVersion,
+  hostName,
   ...
 }:
 
 {
   imports = [
-    ./hardware-configuration.nix
-    ../../system-packages.nix
-    ../../system-modules.nix
+    ./hosts/${hostName}/hardware-configuration.nix
+    ./system-packages.nix
+    ./system-modules.nix
   ];
 
   system.stateVersion = homeStateVersion;
-
 }
