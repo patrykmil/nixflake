@@ -20,7 +20,7 @@ in
   "custom/clock2" = {
     interval = 16;
     return-type = "json";
-    exec = "python3 ${flakeDir}/modules/bar/waybar/cal.py";
+    exec = "python3 ${flakeDir}/modules/waybar/cal.py";
   };
 
   pulseaudio = {
@@ -108,7 +108,7 @@ in
   };
 
   "custom/tray" = {
-    exec = "${flakeDir}/modules/bar/waybar/tray.sh";
+    exec = "${flakeDir}/modules/waybar/tray.sh";
     interval = 5;
     format = "{}";
   };
