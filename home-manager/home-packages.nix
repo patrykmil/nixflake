@@ -60,6 +60,7 @@ in
           krita
           zen-browser
           zed-editor-fhs
+          megacmd
         ];
         laptop = with pkgs; [
           bluetuith
