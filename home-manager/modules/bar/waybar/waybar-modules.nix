@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   "hyprland/window" = {
     format = "{}";
@@ -16,7 +20,7 @@
   "custom/clock2" = {
     interval = 16;
     return-type = "json";
-    exec = "python3 /home/ptrk/flakes/home-manager/modules/bar/waybar/cal.py";
+    exec = "python3 ${flakeDir}/home-manager/modules/bar/waybar/cal.py";
   };
 
   pulseaudio = {
@@ -103,7 +107,7 @@
   };
 
   "custom/tray" = {
-    exec = "/home/ptrk/flakes/home-manager/modules/bar/waybar/tray.sh";
+    exec = "${flakeDir}/home-manager/modules/bar/waybar/tray.sh";
     interval = 5;
     format = "{}";
   };

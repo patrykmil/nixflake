@@ -1,5 +1,6 @@
+{ config, ... }:
 let
-  modules = import ./waybar-modules.nix;
+  modules = import ./waybar-modules.nix { inherit config; };
 in
 {
   main-desktop = {
@@ -21,7 +22,8 @@ in
       "custom/divider"
       "custom/clock2"
     ];
-  } // modules;
+  }
+  // modules;
 
   main-laptop = {
     modules-left = [
@@ -44,11 +46,13 @@ in
       "custom/divider"
       "custom/clock2"
     ];
-  } // modules;
+  }
+  // modules;
 
   other = {
     modules-left = [ ];
     modules-center = [ "hyprland/window" ];
     modules-right = [ "hyprland/workspaces" ];
-  } // modules;
+  }
+  // modules;
 }

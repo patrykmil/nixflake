@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   programs.hyprpanel.enable = true;
 
@@ -168,7 +172,7 @@
         };
         powermenu = {
           confirmation = false;
-          avatar.image = "/home/ptrk/flakes/home-manager/modules/bar/hyprpanel/nix.png";
+          avatar.image = "${flakeDir}/home-manager/modules/bar/hyprpanel/nix.png";
         };
         directories = {
           left = {

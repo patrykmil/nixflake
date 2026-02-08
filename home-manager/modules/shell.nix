@@ -1,4 +1,12 @@
-{ pkgs, hostName, ... }:
+{
+  config,
+  pkgs,
+  hostName,
+  ...
+}:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   programs.fish = {
     enable = true;
@@ -20,13 +28,13 @@
     // (
       if hostName == "desktop" then
         {
-          ss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#desktop";
-          st = "sudo nixos-rebuild test --flake /home/ptrk/flakes#desktop";
+          ss = "sudo nixos-rebuild switch --flake ${flakeDir}#desktop";
+          st = "sudo nixos-rebuild test --flake ${flakeDir}#desktop";
         }
       else if hostName == "laptop" then
         {
-          ss = "sudo nixos-rebuild switch --flake /home/ptrk/flakes#laptop";
-          st = "sudo nixos-rebuild test --flake /home/ptrk/flakes#laptop";
+          ss = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop";
+          st = "sudo nixos-rebuild test --flake ${flakeDir}#laptop";
         }
       else
         { }

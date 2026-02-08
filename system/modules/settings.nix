@@ -1,3 +1,4 @@
+{ user, ... }:
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -16,7 +17,7 @@
     ];
     trusted-users = [
       "root"
-      "ptrk"
+      user
     ];
   };
 }

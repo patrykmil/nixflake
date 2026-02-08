@@ -1,4 +1,7 @@
-{ lib, ... }:
+{ config, lib, ... }:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   services.hyprpaper = {
     enable = true;
@@ -7,7 +10,7 @@
       ipc = "on";
       wallpaper = lib.mkDefault {
         monitor = "";
-        path = "/home/ptrk/flakes/wallpapers/pacman-nord.jpg";
+        path = "${flakeDir}/wallpapers/pacman-nord.jpg";
       };
     };
   };

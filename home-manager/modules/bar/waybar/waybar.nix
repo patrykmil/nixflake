@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 let
-  layout = import ./waybar-layout.nix;
+  layout = import ./waybar-layout.nix { inherit config; };
   commonSettings = {
     layer = "top";
     position = "bottom";
