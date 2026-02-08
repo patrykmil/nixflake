@@ -14,7 +14,7 @@
   };
 
   "custom/clock2" = {
-    interval = 60;
+    interval = 16;
     return-type = "json";
     exec = "python3 /home/ptrk/flakes/home-manager/modules/bar/waybar/cal.py";
   };
