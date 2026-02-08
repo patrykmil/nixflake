@@ -17,14 +17,14 @@
         "git.nix"
         "jj.nix"
 
-        "bar/waybar/waybar.nix"
-        # "bar/hyprpanel/hyprpanel.nix"
+        "waybar/waybar.nix"
+        # "hyprpanel/hyprpanel.nix"
 
         "scripts/script-modules.nix"
 
-        # "launcher/rofi.nix"
-        # "launcher/wofi.nix"
-        # "launcher/wofi-power-menu.nix"
+        # "rofi.nix"
+        # "wofi.nix"
+        # "wofi-power-menu.nix"
         "vicinae.nix"
 
         # "gammastep.nix"
