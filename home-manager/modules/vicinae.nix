@@ -110,6 +110,11 @@
                 "confirm" = false;
               };
             };
+            "logout" = {
+              "preferences" = {
+                "confirm" = false;
+              };
+            };
           };
         };
         "theme" = {

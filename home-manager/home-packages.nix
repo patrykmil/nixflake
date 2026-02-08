@@ -71,6 +71,27 @@ in
 
   xdg.desktopEntries =
     let
+      commonDesktopEntries = {
+        nemo = {
+          name = "Nemo (Files)";
+          exec = "nemo %U";
+          icon = "folder";
+          comment = "Access and organize files";
+          terminal = false;
+          type = "Application";
+          categories = [
+            "GNOME"
+            "GTK"
+            "Utility"
+            "Core"
+          ];
+          mimeType = [
+            "inode/directory"
+            "application/x-gnome-saved-search"
+          ];
+          startupNotify = false;
+        };
+      };
       hostEntries = {
         laptop = {
           code = {
@@ -89,7 +110,9 @@ in
             startupNotify = true;
           };
         };
+        desktop = {
+        };
       };
     in
-    hostEntries.${hostName} or { };
+    commonDesktopEntries // (hostEntries.${hostName} or { });
 }
