@@ -4,7 +4,7 @@
     usbutils
     udiskie
     xarchiver
-    nemo
+    nemo-with-extensions
     nemo-fileroller
   ];
 
