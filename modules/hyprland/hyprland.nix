@@ -23,5 +23,6 @@
     plugins = with pkgs.hyprlandPlugins; [
       hyprscrolling
     ];
+    settings.xwayland.force_zero_scaling = true;
   };
 }
