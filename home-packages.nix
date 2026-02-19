@@ -94,21 +94,21 @@ in
       };
       hostEntries = {
         laptop = {
-          code = {
-            name = "Visual Studio Code (Wayland)";
-            exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
-            categories = [
-              "Utility"
-              "TextEditor"
-              "Development"
-              "IDE"
-            ];
-            comment = "Code Editing. Redefined.";
-            genericName = "Text Editor";
-            icon = "vscode";
-            type = "Application";
-            startupNotify = true;
-          };
+        #   code = {
+        #     name = "Visual Studio Code (Wayland)";
+        #     exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
+        #     categories = [
+        #       "Utility"
+        #       "TextEditor"
+        #       "Development"
+        #       "IDE"
+        #     ];
+        #     comment = "Code Editing. Redefined.";
+        #     genericName = "Text Editor";
+        #     icon = "vscode";
+        #     type = "Application";
+        #     startupNotify = true;
+        #   };
         };
         desktop = {
         };
