@@ -6,6 +6,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    mate.mate-polkit
+    mate-polkit
   ];
 }
