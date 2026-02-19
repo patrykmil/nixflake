@@ -23,21 +23,21 @@ in
     settings = [
       (
         {
-          output = hostMonitors.primary;
+          output = "DP-2";
         }
         // commonSettings
         // layout.main-desktop
       )
       (
         {
-          output = hostMonitors.laptop;
+          output = "eDP-1";
         }
         // commonSettings
         // layout.main-laptop
       )
       (
         {
-          output = hostMonitors.secondary;
+          output = "HDMI-A-1";
         }
         // commonSettings
         // layout.other
