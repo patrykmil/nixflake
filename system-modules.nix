@@ -21,13 +21,14 @@
         "files.nix"
         "localsend.nix"
         "brave-policies.nix"
+        "vms.nix"
       ];
 
       hostSpecific = {
         desktop = map mod [
           "nvidia.nix"
           "coolercontrol.nix"
-          # "docker.nix"
+          "docker.nix"
           "games.nix"
           "waydroid.nix"
         ];
