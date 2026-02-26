@@ -60,6 +60,7 @@ in
           zen-browser
           zed-editor-fhs
           megacmd
+          jetbrains.datagrip
         ];
         laptop = with pkgs; [
           bluetuith
