@@ -1,3 +1,4 @@
+{ hostName, ... }:
 {
   environment.etc."/brave/policies/managed/GroupPolicy.json".text = ''
     {
@@ -15,6 +16,15 @@
       "PasswordManagerEnabled": false,
       "AutofillAddressEnabled": false,
       "AutofillCreditCardEnabled": false,
+      ${
+        if hostName == "laptop" then
+          ''
+            "DnsOverHttpsMode": "secure",
+            "DnsOverHttpsTemplates": "https://dnsforge.de/dns-query"
+          ''
+        else
+          ""
+      }
     }
   '';
 }
@@ -23,4 +33,3 @@
 # "DnsOverHttpsTemplates": "https://dnsforge.de/dns-query"
 # "DnsOverHttpsTemplates": "https://base.dns.mullvad.net/dns-query"
 # "DnsOverHttpsTemplates": "https://security.cloudflare-dns.com/dns-query"
-# "DnsOverHttpsTemplates": "https://dnsforge.de/dns-query"
