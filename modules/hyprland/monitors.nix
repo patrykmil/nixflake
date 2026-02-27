@@ -2,8 +2,9 @@
 {
   wayland.windowManager.hyprland.settings = {
     monitor = [
-      "${hostMonitors.primary},1920x1080@165,0x0,1"
-      "${hostMonitors.secondary},disable"
+      "DP-2,1920x1080@165,0x0,1"
+      "HDMI-A-1,disable"
+      "eDP-1,1920x1080@60,0x0,1.2"
     ];
 
     workspace = (if hostName == "desktop" then [ "1,monitor:${hostMonitors.primary}" ] else [ ]) ++ [
