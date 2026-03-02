@@ -44,6 +44,8 @@ in
         alacritty
         vscode-fhs
         opencode
+        teams-for-linux
+        
         libreoffice-still
         hunspell
         hunspellDicts.pl_PL
@@ -54,7 +56,6 @@ in
         desktop = with pkgs; [
           toybox
           obs-studio
-          teams-for-linux
           devenv
           krita
           zen-browser
@@ -95,21 +96,21 @@ in
       };
       hostEntries = {
         laptop = {
-        #   code = {
-        #     name = "Visual Studio Code (Wayland)";
-        #     exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
-        #     categories = [
-        #       "Utility"
-        #       "TextEditor"
-        #       "Development"
-        #       "IDE"
-        #     ];
-        #     comment = "Code Editing. Redefined.";
-        #     genericName = "Text Editor";
-        #     icon = "vscode";
-        #     type = "Application";
-        #     startupNotify = true;
-        #   };
+          #   code = {
+          #     name = "Visual Studio Code (Wayland)";
+          #     exec = "env ELECTRON_ENABLE_WAYLAND=1 GDK_BACKEND=wayland code --ozone-platform=wayland --new-window";
+          #     categories = [
+          #       "Utility"
+          #       "TextEditor"
+          #       "Development"
+          #       "IDE"
+          #     ];
+          #     comment = "Code Editing. Redefined.";
+          #     genericName = "Text Editor";
+          #     icon = "vscode";
+          #     type = "Application";
+          #     startupNotify = true;
+          #   };
         };
         desktop = {
         };
