@@ -6,6 +6,7 @@
 }:
 let
   zen-browser = inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  helium-browser = inputs.helium.packages.x86_64-linux.default;
 in
 {
   home.packages =
@@ -45,7 +46,7 @@ in
         vscode-fhs
         opencode
         teams-for-linux
-        
+
         libreoffice-still
         hunspell
         hunspellDicts.pl_PL
@@ -59,6 +60,7 @@ in
           devenv
           krita
           zen-browser
+          helium-browser
           zed-editor-fhs
           megacmd
           jetbrains.datagrip

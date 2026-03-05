@@ -177,6 +177,26 @@
         "type": "gitlab"
       }
     },
+    "helium": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1772020767,
+        "narHash": "sha256-OxeMEMxRJ6dF3UGXVJoNRwxU/F1nOVbdcyX9n8S3Mxk=",
+        "owner": "amaanq",
+        "repo": "helium-flake",
+        "rev": "9d3ef138f70b3540397320d25ead6aa96101371d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "amaanq",
+        "repo": "helium-flake",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -257,6 +277,7 @@
     "root": {
       "inputs": {
         "distro-grub-themes": "distro-grub-themes",
+        "helium": "helium",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
         "stylix": "stylix",
