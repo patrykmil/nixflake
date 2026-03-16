@@ -1,9 +1,11 @@
 { pkgs, ... }:
 {
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
+  # virtualisation.docker.rootless = {
+  #   enable = true;
+  #   setSocketVariable = true;
+  # };
+
+  virtualisation.docker.enable = true;
 
   environment.systemPackages = with pkgs; [
     docker
@@ -11,7 +13,7 @@
     lazydocker
   ];
 
-  programs.fish.shellInit = ''
-    set -x DOCKER_HOST unix:///run/user/(id -u)/docker.sock
-  '';
+  # programs.fish.shellInit = ''
+  #   set -x DOCKER_HOST unix:///run/user/(id -u)/docker.sock
+  # '';
 }
