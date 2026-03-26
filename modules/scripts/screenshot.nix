@@ -8,12 +8,15 @@
       SLURP="${pkgs.slurp}/bin/slurp"
       WF="${pkgs.wf-recorder}/bin/wf-recorder"
       NOTIFY="${pkgs.libnotify}/bin/notify-send"
+      TESSERACT="${pkgs.tesseract}/bin/tesseract"
 
       outputDir="$HOME/Screencapture"
       mkdir -p "$outputDir"
       pidFile="/tmp/screencapture_record.pid"
 
       operation=$1
+      subcommand=$2
+      language=''${3:-eng}
       mode=''${2:-area}
 
       case "$operation" in
@@ -92,11 +95,47 @@
               ;;
           esac
           ;;
+        extract)
+          if [ "$subcommand" != "area" ]; then
+            echo "Invalid subcommand for extract: $subcommand"
+            echo "Usage: $0 extract area {eng|pl}"
+            exit 1
+          fi
+
+          outputFile="$(mktemp).png"
+          geometry="$("$SLURP")"
+          "$GRIM" -g "$geometry" "$outputFile" || exit 1
+
+          case "$language" in
+            eng)
+              ocrText="$("$TESSERACT" "$outputFile" stdout 2>/dev/null)" && \
+              echo -n "$ocrText" | wl-copy
+              ;;
+            pl)
+              ocrText="$("$TESSERACT" -l pol "$outputFile" stdout 2>/dev/null)"
+              if [ $? -eq 0 ]; then
+                echo -n "$ocrText" | wl-copy
+              else
+                "$NOTIFY" -t 3000 -u critical \
+                  "OCR failed - Polish language pack may not be installed"
+              fi
+              ;;
+            *)
+              echo "Invalid language: $language"
+              echo "Usage: $0 extract area {eng|pl}"
+              rm -f "$outputFile"
+              exit 1
+              ;;
+          esac
+
+          rm -f "$outputFile"
+          ;;
         *)
           echo "Invalid operation: $operation"
-          echo "Usage: screencapture {shot|record} [mode]"
+          echo "Usage: screencapture {shot|record|extract} [mode]"
           echo "Modes for shot: all, monitor, area"
           echo "Modes for record: all, area"
+          echo "Modes for extract: area {eng|pl}"
           exit 1
           ;;
       esac

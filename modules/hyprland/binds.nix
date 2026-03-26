@@ -12,7 +12,6 @@
 
     bind = [
       "SUPER,T,exec,$TERMINAL"
-      "SUPER SHIFT,T,exec, [float] $TERMINAL"
       "SUPER,B,exec,$BROWSER"
       "SUPER,E,exec,$FILES"
       "SUPER,Y,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
@@ -65,6 +64,8 @@
       ",print,exec, screencapture shot all"
       "SUPER SHIFT,S,exec, screencapture shot area"
       "SUPER SHIFT,D,exec, screencapture record area"
+      "SUPER SHIFT,T,exec, screencapture extract area pl"
+      "SUPER CTRL SHIFT,T,exec, screencapture extract area eng"
       "SUPER SHIFT,C,exec,hyprpicker -a -q -r"
     ];
 
