@@ -9,6 +9,14 @@
       sensitivity = -0.5
     }
     device {
+      name = compx-vxe-r1-pro-max-consumer-control-1
+      sensitivity = -0.5
+    }
+    device {
+      name = compx-vxe-r1-pro-max-1
+      sensitivity = -0.5
+    }
+    device {
       name = dell09ed:00-27c6:01e0-touchpad
       sensitivity = 0.1
     }
