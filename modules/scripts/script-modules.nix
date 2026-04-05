@@ -3,6 +3,7 @@
   imports = [
     ./screenshot.nix
     ./monitor-toggle.nix
+    ./getenv.nix
   ];
 
   home.packages = [
