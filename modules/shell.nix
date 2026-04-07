@@ -73,5 +73,10 @@ in
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
+    config = {
+      warn_timeout = 0;
+      hide_env_diffs = true;
+      log_filter = "^(un)?loading";
+    };
   };
 }
