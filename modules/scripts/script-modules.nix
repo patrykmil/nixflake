@@ -4,6 +4,7 @@
     ./screenshot.nix
     ./monitor-toggle.nix
     ./getenv.nix
+    ./zipignore.nix
   ];
 
   home.packages = [
