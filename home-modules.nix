@@ -25,7 +25,7 @@
         # "rofi.nix"
         # "wofi.nix"
         # "wofi-power-menu.nix"
-        "vicinae.nix"
+        "vicinae/vicinae.nix"
 
         # "gammastep.nix"
 

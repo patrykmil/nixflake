@@ -14,7 +14,7 @@
   stylix = {
     enable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/atelier-dune.yaml";
 
     # image = ../../wallpapers/pacman-nord.jpg;
     # polarity = "dark";
@@ -52,11 +52,11 @@
       enable = true;
       light = "Papirus-Light";
       dark = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders;
-      # package = pkgs.catppuccin-papirus-folders.override {
-      #   flavor = "mocha";
-      #   accent = "blue";   # Change to your desired accent color
-      # };
+      # package = pkgs.catppuccin-papirus-folders;
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "latte";
+        accent = "green";
+      };
     };
 
   };

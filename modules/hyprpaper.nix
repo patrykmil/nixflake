@@ -10,7 +10,7 @@ in
       ipc = "on";
       wallpaper = lib.mkDefault {
         monitor = "";
-        path = "${flakeDir}/wallpapers/pacman-nord.jpg";
+        path = "${flakeDir}/wallpapers/20201d.jpg";
       };
     };
   };
