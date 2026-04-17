@@ -20,9 +20,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    plugins = with pkgs.hyprlandPlugins; [
-      hyprscrolling
-    ];
     settings.xwayland.force_zero_scaling = true;
   };
 }
