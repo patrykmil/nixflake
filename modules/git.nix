@@ -6,7 +6,7 @@
         email = "patryk.miler@student.pk.edu.pl";
         name = "patrykmil";
       };
-      core.editor = "hx";
+      core.editor = "code --wait";
       pull.rebase = "true";
       init.defaultBranch = "main";
       alias = {

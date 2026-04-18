@@ -25,7 +25,7 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "code";
+    EDITOR = "code --wait";
     TERMINAL = "wezterm";
   };
 
