@@ -8,7 +8,8 @@
         "hyprland/hyprland.nix"
         "hypridle.nix"
         "hyprpaper.nix"
-        # "dank-material-shell.nix"
+        "vicinae/vicinae.nix"
+        "waybar/waybar.nix"
         "notifications.nix"
 
         "wezterm.nix"
@@ -17,21 +18,9 @@
         "git.nix"
         "jj.nix"
 
-        "waybar/waybar.nix"
-        # "hyprpanel/hyprpanel.nix"
-
         "scripts/script-modules.nix"
-
-        # "rofi.nix"
-        # "wofi.nix"
-        # "wofi-power-menu.nix"
-        "vicinae/vicinae.nix"
-
-        # "gammastep.nix"
-
-        "stylix.nix"
-
         "webapps.nix"
+        "stylix.nix"
         "mime.nix"
       ];
 
