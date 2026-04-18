@@ -5,6 +5,7 @@
     ./monitor-toggle.nix
     ./getenv.nix
     ./zipignore.nix
+    ./unstore.nix
   ];
 
   home.packages = [
