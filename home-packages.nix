@@ -64,7 +64,7 @@ in
           zed-editor-fhs
           megacmd
           jetbrains.datagrip
-          cisco-packet-tracer_9
+          httptoolkit
         ];
         laptop = with pkgs; [
           bluetuith
