@@ -3,24 +3,24 @@
     general = {
       gaps_in = 5;
       gaps_out = "10";
-      border_size = 1;
+      border_size = 2;
       resize_on_border = false;
       allow_tearing = false;
       layout = "dwindle";
     };
 
     decoration = {
-      rounding = 5;
+      rounding = 2;
       rounding_power = 3;
       active_opacity = 1.0;
-      inactive_opacity = 0.9;
+      inactive_opacity = 1.0;
       shadow = {
         enabled = true;
         range = 4;
         render_power = 3;
       };
       blur = {
-        enabled = true;
+        enabled = false;
         size = 8;
         passes = 1;
         vibrancy = 0.1696;

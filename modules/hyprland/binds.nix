@@ -4,7 +4,7 @@
     "$BROWSER" = "brave";
     "$TERMINAL" = "wezterm";
     "$FILES" = "nemo";
-    
+
     binds = {
       allow_workspace_cycles = true;
       workspace_back_and_forth = true;
@@ -56,9 +56,19 @@
       "SUPER SHIFT,8,movetoworkspace,8"
       "SUPER SHIFT,9,movetoworkspace,9"
       "SUPER SHIFT,0,movetoworkspace,10"
+      "SUPER CTRL SHIFT,1,movetoworkspacesilent,1"
+      "SUPER CTRL SHIFT,2,movetoworkspacesilent,2"
+      "SUPER CTRL SHIFT,3,movetoworkspacesilent,3"
+      "SUPER CTRL SHIFT,4,movetoworkspacesilent,4"
+      "SUPER CTRL SHIFT,5,movetoworkspacesilent,5"
+      "SUPER CTRL SHIFT,6,movetoworkspacesilent,6"
+      "SUPER CTRL SHIFT,7,movetoworkspacesilent,7"
+      "SUPER CTRL SHIFT,8,movetoworkspacesilent,8"
+      "SUPER CTRL SHIFT,9,movetoworkspacesilent,9"
+      "SUPER CTRL SHIFT,0,movetoworkspacesilent,10"
       "SUPER,mouse_down,workspace,e+1"
       "SUPER,mouse_up,workspace,e-1"
-      "Alt,Tab,workspace,previous"
+      "Alt,Tab,workspace,previous_per_monitor"
 
       # Screenshots
       ",print,exec, screencapture shot all"
