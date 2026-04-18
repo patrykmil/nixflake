@@ -15,12 +15,22 @@
     enable = true;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/atelier-dune.yaml";
+    override = {
+      base0D = "#40a02b";
+    };
 
     # image = ../../wallpapers/pacman-nord.jpg;
     # polarity = "dark";
 
     targets = {
-      gtk.enable = true;
+      gtk = {
+        enable = true;
+        extraCss = ''
+          .dialog-action-area > .text-button {
+            color: @dialog_fg_color;
+          }
+        '';
+      };
       wezterm.enable = false;
       waybar.font = "serif";
       vicinae.enable = false;
