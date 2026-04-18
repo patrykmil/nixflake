@@ -1,0 +1,11 @@
+{
+    "$schema": "https://opencode.ai/tui.json",
+    "theme": "system",
+    "keybinds": {
+        "leader": "ctrl+x",
+        "app_exit": "<leader>q",
+        "session_new": "<leader>c",
+        "session_compact": "none",
+        "command_list": "<leader>p"
+    }
+}

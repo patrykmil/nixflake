@@ -44,7 +44,6 @@ in
         celluloid
         alacritty
         vscode-fhs
-        opencode
         teams-for-linux
 
         libreoffice-still

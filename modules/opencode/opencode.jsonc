@@ -1,0 +1,13 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "plugin": [
+        "@mohak34/opencode-notifier@latest",
+        "opencode-mystatus"
+    ],
+    "command": {
+        "mystatus": {
+            "description": "Query quota usage for all AI accounts.",
+            "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
+        }
+    }
+}

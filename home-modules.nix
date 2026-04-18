@@ -17,6 +17,7 @@
         "helix.nix"
         "git.nix"
         "jj.nix"
+        "opencode/opencode.nix"
 
         "scripts/script-modules.nix"
         "webapps.nix"
