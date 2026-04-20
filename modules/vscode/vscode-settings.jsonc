@@ -1,0 +1,272 @@
+{
+    "update.mode": "none",
+    "workbench.productIconTheme": "material-product-icons",
+    "material-icon-theme.activeIconPack": "roblox",
+    "material-icon-theme.rootFolders.color": "#90a4ae",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.files.color": "#26a69a",
+    "material-icon-theme.folders.customClones": [
+        {
+            "name": "web-app",
+            "base": "folder-public",
+            "color": "blue-700",
+            "folderNames": [
+                "webapp"
+            ]
+        },
+        {
+            "name": "web-extension",
+            "base": "folder-public",
+            "color": "purple-700",
+            "folderNames": [
+                "extension"
+            ]
+        },
+        {
+            "name": "notes",
+            "base": "docs",
+            "color": "pink-700",
+            "folderNames": [
+                "notes"
+            ]
+        },
+        {
+            "name": "laptop",
+            "base": "desktop",
+            "color": "green-300",
+            "folderNames": [
+                "laptop"
+            ]
+        }
+    ],
+    // "editor.fontFamily": "FiraCode Nerd Font Mono",
+    // "editor.fontFamily": "MesloLGL Nerd Font",
+    // "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "CaskaydiaMono Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    // "editor.guides.indentation": true,
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#a5d8ff",
+        "editorBracketHighlight.foreground2": "#d0bfff",
+        "editorBracketHighlight.foreground3": "#38d9a9",
+        "editorBracketHighlight.foreground4": "#ffec99",
+        "editorBracketHighlight.foreground5": "#228be6",
+        "editorBracketHighlight.foreground6": "#be4bdb",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#fa5252",
+        "[poimandres-storm]": {
+            "sideBar.border": "#add7ff",
+            "editorGroup.border": "#add7ff",
+            "panel.border": "#add7ff",
+            "terminal.border": "#add7ff",
+            // "activityBar.border": "#add7ff",
+            // "titleBar.border": "#add7ff",
+            // "statusBar.border": "#add7ff",
+            "tab.activeForeground": "#add7ff",
+        },
+    },
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": true,
+    "prettier.trailingComma": "es5",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 88,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "ruff.lineLength": 112,
+    "ruff.lint.select": [
+        "E",
+        "F",
+        "W",
+        "I",
+        "N"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    // Rust
+    "files.readonlyInclude": {
+        "**/.cargo/registry/src/**/*.rs": true,
+        "**/.cargo/git/checkouts/**/*.rs": true,
+        "**/lib/rustlib/src/rust/library/**/*.rs": true,
+    },
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        // "editor.formatOnType": true,
+        "editor.formatOnSave": true
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnType": true
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "excalidraw.theme": "light",
+    "remote.SSH.suppressWindowsSshWarning": true,
+    "remote.SSH.remotePlatform": {
+        "torus.uck.pk.edu.pl": "linux",
+        "20.215.41.96": "linux",
+        "192.168.8.127": "linux"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "files.autoSave": "onFocusChange",
+    "code-runner.executorMap": {
+        "python": "python",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "makefile.configureOnOpen": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "note",
+            "color": "#474747",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": ">",
+            "color": "#ffec99",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "[csv]": {
+        "editor.inlayHints.maximumLength": 0
+    },
+    "[dynamic csv]": {
+        "editor.inlayHints.maximumLength": 0
+    },
+    "[dotenv]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[properties]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[nix]": {
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "[dart]": {
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+    },
+    "database-client.autoSync": true,
+    // Git lens
+    "gitlens.defaultDateFormat": "H:m, D MMM YYYY",
+    "gitlens.defaultDateShortFormat": "D.MM.YY",
+    "gitlens.defaultTimeFormat": "H:m",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.command": "gitlens.openFileOnRemote",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.scopes": [
+        "containers",
+        "document"
+    ],
+    "gitlens.statusBar.format": "${message}, ${agoOrDate}",
+    "gitlens.statusBar.command": "gitlens.showQuickFileHistory",
+    "terminal.integrated.gpuAcceleration": "off",
+    "workbench.sideBar.location": "right",
+    "git.suggestSmartCommit": false,
+    "ts.updateImportsOnFileMove.enabled": "always",
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "git.allowForcePush": true,
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.largeFileOptimizations": false,
+    "latex-workshop.latex.autoClean.run": "onSucceeded",
+    "latex-workshop.formatting.latex": "tex-fmt",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.interval": 5000,
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "[bibtex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "chat.viewSessions.orientation": "stacked",
+    "markdown-preview-enhanced.previewTheme": "one-dark.css",
+    "chat.tools.terminal.autoApprove": {
+        "sed": true
+    },
+    "chat.tips.enabled": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "redhat.telemetry.enabled": false,
+}

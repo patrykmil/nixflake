@@ -18,6 +18,7 @@
         "git.nix"
         "jj.nix"
         "opencode/opencode.nix"
+        "vscode/vscode.nix"
 
         "scripts/script-modules.nix"
         "webapps.nix"

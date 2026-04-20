@@ -44,7 +44,6 @@ in
         geeqie
         celluloid
         alacritty
-        vscode-fhs
         teams-for-linux
 
         libreoffice-still
