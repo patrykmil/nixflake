@@ -4,6 +4,9 @@
   lib,
   ...
 }:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   programs.vicinae = {
     enable = true;
@@ -14,5 +17,5 @@
   };
 
   xdg.configFile."vicinae/settings.json".source =
-    config.lib.file.mkOutOfStoreSymlink "/home/ptrk/flakes/modules/vicinae/vicinae.json";
+    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/vicinae/vicinae.json";
 }
