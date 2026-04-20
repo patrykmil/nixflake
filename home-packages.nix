@@ -40,6 +40,7 @@ in
         trashy
         nethogs
 
+        qdirstat
         geeqie
         celluloid
         alacritty
@@ -64,6 +65,7 @@ in
           megacmd
           jetbrains.datagrip
           httptoolkit
+          cisco-packet-tracer_9
         ];
         laptop = with pkgs; [
           bluetuith
