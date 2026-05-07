@@ -31,6 +31,7 @@
           "coolercontrol.nix"
           "games.nix"
           "waydroid.nix"
+          "tailscale.nix"
         ];
         laptop = map mod [
           "bluetooth.nix"
