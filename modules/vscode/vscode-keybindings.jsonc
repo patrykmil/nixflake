@@ -213,5 +213,13 @@
     {
         "key": "ctrl+9",
         "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "editor.action.selectToBracket"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
     }
 ]
