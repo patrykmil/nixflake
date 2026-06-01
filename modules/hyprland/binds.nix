@@ -26,7 +26,6 @@
       "SUPER,TAB,exec, vicinae vicinae://extensions/vicinae/wm/switch-windows"
 
       "SUPER,P,pseudo,"
-      "SUPER,J,togglesplit,"
 
       "SUPER,M,exec,hyprctl keyword general:layout master"
       "SUPER,D,exec,hyprctl keyword general:layout dwindle"
