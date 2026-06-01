@@ -122,6 +122,8 @@
     },
     "github.copilot.enable": {
         "*": true,
+        "plaintext": false,
+        "markdown": true,
         "scminput": false
     },
     "git.confirmSync": false,
@@ -257,7 +259,7 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "chat.viewSessions.orientation": "stacked",
-    "markdown-preview-enhanced.previewTheme": "one-light.css",
+    "markdown-preview-enhanced.previewTheme": "atom-light.css",
     "chat.tools.terminal.autoApprove": {
         "sed": true
     },
@@ -274,7 +276,10 @@
     "[terraform]": {
         "editor.defaultFormatter": "hashicorp.terraform"
     },
-    "markdown-preview-enhanced.codeBlockTheme": "one-light.css",
+    "markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
     "markdown-preview-enhanced.chromePath": "/home/ptrk/.nix-profile/bin/brave",
     "gitlens.codeLens.enabled": false,
+    "markdown-preview-enhanced.revealjsTheme": "serif.css",
+    "gitlens.hovers.enabled": false,
+    "gitlens.hovers.currentLine.enabled": false,
 }
