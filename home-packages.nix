@@ -39,6 +39,7 @@ in
         appimage-run
         trashy
         nethogs
+        puppeteer-cli
 
         qdirstat
         geeqie
