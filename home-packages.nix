@@ -1,5 +1,6 @@
 {
   pkgs,
+  pkgs-unstable,
   hostName,
   inputs,
   ...
@@ -11,12 +12,13 @@ in
 {
   home.packages =
     let
+      common-unstable = with pkgs-unstable; [
+        brave
+      ];
+
       common = with pkgs; [
         nixfmt
-        bun
         python313
-
-        brave
 
         hyprsunset
         hyprpicker
@@ -36,7 +38,6 @@ in
         wifitui
         playerctl
         pwvucontrol
-        appimage-run
         trashy
         nethogs
         puppeteer-cli
@@ -63,7 +64,6 @@ in
           helium-browser
           zed-editor-fhs
           megacmd
-          jetbrains.datagrip
           httptoolkit
         ];
         laptop = with pkgs; [
@@ -72,7 +72,7 @@ in
         ];
       };
     in
-    common ++ (hostSpecific.${hostName} or [ ]);
+    common ++ common-unstable ++ (hostSpecific.${hostName} or [ ]);
 
   xdg.desktopEntries =
     let
