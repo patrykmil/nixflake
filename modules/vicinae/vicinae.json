@@ -22,6 +22,11 @@
    "launcher_window": {
       "opacity": 1
    },
+   "favorites": [
+      "power:power-off",
+      "power:suspend",
+      "clipboard:history"
+   ],
    "providers": {
       "applications": {
          "preferences": {
@@ -29,6 +34,12 @@
          }
       },
       "clipboard": {
+         "preferences": {
+            "encryption": true,
+            "eraseOnStartup": false,
+            "ignorePasswords": true,
+            "monitoring": true
+         },
          "entrypoints": {
             "history": {
                "preferences": {
@@ -111,6 +122,34 @@
                "preferences": {
                   "confirm": false
                }
+            }
+         }
+      },
+      "system": {
+         "entrypoints": {
+            "toggle-mute": {
+               "enabled": false
+            },
+            "volume-0": {
+               "enabled": false
+            },
+            "volume-100": {
+               "enabled": false
+            },
+            "volume-25": {
+               "enabled": false
+            },
+            "volume-50": {
+               "enabled": false
+            },
+            "volume-75": {
+               "enabled": false
+            },
+            "volume-down": {
+               "enabled": false
+            },
+            "volume-up": {
+               "enabled": false
             }
          }
       },
