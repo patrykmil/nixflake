@@ -13,7 +13,7 @@
         "locale.nix"
         "login.nix"
         "media.nix"
-        "hyprland.nix"
+        "hyprland/hyprland.nix"
         "keyring.nix"
         "polkit.nix"
         "printing.nix"

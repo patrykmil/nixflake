@@ -5,7 +5,7 @@
       mod = path: ./modules + ("/" + path);
 
       common = map mod [
-        "hyprland/hyprland.nix"
+        "hyprland/hyprland-hm.nix"
         "hypridle.nix"
         "hyprpaper.nix"
         "vicinae/vicinae.nix"
