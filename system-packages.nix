@@ -42,6 +42,7 @@
     nerd-fonts.caskaydia-mono
     nerd-fonts.meslo-lg
     nerd-fonts.arimo
+    noto-fonts-cjk-sans
     excalifont
     material-symbols
   ];
