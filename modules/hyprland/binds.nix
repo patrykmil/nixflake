@@ -70,7 +70,8 @@
       "Alt,Tab,workspace,previous_per_monitor"
 
       # Screenshots
-      ",print,exec, screencapture shot all"
+      ",print,exec, screencapture shot monitor"
+      "SUPER,print,exec, screencapture shot all"
       "SUPER SHIFT,S,exec, screencapture shot area"
       "SUPER SHIFT,D,exec, screencapture record area"
       "SUPER SHIFT,T,exec, screencapture extract area pl"
