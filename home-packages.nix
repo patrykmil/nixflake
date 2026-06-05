@@ -18,7 +18,6 @@ in
       ];
 
       common = with pkgs; [
-        nixfmt
         python313
 
         hyprsunset
@@ -26,6 +25,7 @@ in
         grim
         slurp
 
+        nixfmt
         nix-tree
         fastfetch
         ripgrep

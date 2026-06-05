@@ -27,9 +27,7 @@
       ];
 
       hostSpecific = {
-        desktop = map mod [
-          # "helium.nix"
-        ];
+        desktop = map mod [ ];
         laptop = map mod [ ];
       };
     in

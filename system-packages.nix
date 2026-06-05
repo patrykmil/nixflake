@@ -26,9 +26,7 @@
       ];
 
       hostSpecific = {
-        desktop = with pkgs; [
-          android-tools
-        ];
+        desktop = with pkgs; [ ];
         laptop = [ ];
       };
     in
