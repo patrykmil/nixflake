@@ -1,6 +1,7 @@
 {
   pkgs,
   pkgs-unstable,
+  pkgs-master,
   hostName,
   inputs,
   ...
@@ -12,7 +13,7 @@ in
 {
   home.packages =
     let
-      common-unstable = with pkgs-unstable; [
+      common-unstable = with pkgs-master; [
         brave
       ];
 

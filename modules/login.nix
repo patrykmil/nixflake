@@ -1,10 +1,5 @@
 { user, inputs, ... }:
 {
-  disabledModules = [ "services/display-managers/gdm.nix" ];
-
-  imports = [
-    "${inputs.nixpkgs-gdm-fix}/nixos/modules/services/display-managers/gdm.nix"
-  ];
 
   services.xserver.enable = true;
 
@@ -16,7 +11,7 @@
   #   enable = true;
   #   user = user;
   # };
-  
+
   services.xserver.xkb = {
     layout = "pl";
     variant = "";

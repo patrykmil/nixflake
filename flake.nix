@@ -5,7 +5,7 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-gdm-fix.url = "github:nixos/nixpkgs/7fdb15681cb5daa386e25abe7ce611d2744ecc83";
+    nixpkgs-master.url = "github:nixos/nixpkgs/master";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -41,6 +41,7 @@
       self,
       nixpkgs,
       nixpkgs-unstable,
+      nixpkgs-master,
       home-manager,
       ...
     }@inputs:
@@ -58,6 +59,11 @@
         config.allowUnfree = true;
       };
 
+      pkgs-master = import nixpkgs-master {
+        system = hostSystem;
+        config.allowUnfree = true;
+      };
+
       mkNixosConfig =
         host: configPath:
         nixpkgs.lib.nixosSystem {
@@ -70,6 +76,7 @@
               monitors
               fonts
               pkgs-unstable
+              pkgs-master
               ;
             system = hostSystem;
             hostName = host;
@@ -88,7 +95,7 @@
                   monitors
                   fonts
                   pkgs-unstable
-                  ;
+                  pkgs-master;
                 hostName = host;
                 system = hostSystem;
                 hostMonitors = monitors.${host};
