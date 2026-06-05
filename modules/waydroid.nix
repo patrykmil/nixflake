@@ -6,6 +6,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    android-tools
     lzip
     inputs.waydroid-script.packages.${pkgs.system}.default
   ];
