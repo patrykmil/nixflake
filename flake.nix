@@ -66,9 +66,8 @@
 
       mkNixosConfig =
         host: configPath:
-        nixpkgs.lib.nixosSystem {
-          system = hostSystem;
-          specialArgs = {
+        let
+          commonArgs = {
             inherit
               inputs
               homeStateVersion
@@ -82,24 +81,16 @@
             hostName = host;
             hostMonitors = monitors.${host};
           };
+        in
+        nixpkgs.lib.nixosSystem {
+          system = hostSystem;
+          specialArgs = commonArgs;
           modules = [
             configPath
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
-              home-manager.extraSpecialArgs = {
-                inherit
-                  inputs
-                  homeStateVersion
-                  user
-                  monitors
-                  fonts
-                  pkgs-unstable
-                  pkgs-master;
-                hostName = host;
-                system = hostSystem;
-                hostMonitors = monitors.${host};
-              };
+              home-manager.extraSpecialArgs = commonArgs;
               home-manager.backupFileExtension = "backup";
               home-manager.users.${user} = import ./home.nix;
             }
