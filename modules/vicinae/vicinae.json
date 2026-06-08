@@ -23,7 +23,6 @@
       "opacity": 1
    },
    "favorites": [
-      "power:power-off",
       "power:suspend",
       "clipboard:history"
    ],
