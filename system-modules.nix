@@ -20,7 +20,6 @@
         "kernel.nix"
         "files.nix"
         "localsend.nix"
-        "brave-policies.nix"
         "vms.nix"
         "docker.nix"
       ];
