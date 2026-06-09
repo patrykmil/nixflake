@@ -70,6 +70,7 @@ in
         laptop = with pkgs; [
           bluetuith
           brightnessctl
+          wtype
         ];
       };
     in

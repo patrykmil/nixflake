@@ -77,6 +77,9 @@
       "SUPER SHIFT,T,exec, screencapture extract area pl"
       "SUPER CTRL SHIFT,T,exec, screencapture extract area eng"
       "SUPER SHIFT,C,exec,hyprpicker -a -q -r"
+
+      ",Control_R,exec, wtype -M ctrl -k c -m ctrl"
+      ",ISO_Level3_Shift,exec, wtype -M ctrl -k v -m ctrl"
     ];
 
     bindm = [
