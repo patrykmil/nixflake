@@ -45,7 +45,7 @@ in
 
         qdirstat
         geeqie
-        celluloid
+        cine
         alacritty
         teams-for-linux
 

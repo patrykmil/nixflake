@@ -19,8 +19,8 @@
       "inode/directory" = [ "nemo.desktop" ];
       "application/x-gnome-saved-search" = [ "nemo.desktop" ];
 
-      "video/" = [ "io.github.celluloid_player.Celluloid.desktop" ];
-      "audio/" = [ "io.github.celluloid_player.Celluloid.desktop" ];
+      "video/" = [ "io.github.diegopvlk.Cine.desktop" ];
+      "audio/" = [ "io.github.diegopvlk.Cine.desktop" ];
     };
   };
 
