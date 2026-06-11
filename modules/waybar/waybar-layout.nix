@@ -10,7 +10,7 @@ in
       "hyprland/workspaces"
     ];
     modules-center = [
-      "hyprland/window"
+      # "hyprland/window"
     ];
     modules-right = [
       # "custom/monitor-toggle"

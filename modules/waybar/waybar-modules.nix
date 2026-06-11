@@ -68,6 +68,16 @@ in
   "hyprland/workspaces" = {
     move-to-monitor = true;
     all-outputs = true;
+    format = "[{icon}] {windows}";
+    format-window-separator = " ";
+    workspace-taskbar = {
+      enable = true;
+      update-active-window = true;
+      format = "{icon} {title:.24}";
+      icon-size = 16;
+      icon-theme = "Adwaita";
+      # on-click-window = "${flakeDir}/modules/waybar/focus-window.sh {address} {button}";
+    };
   };
 
   "custom/monitor-toggle" = {
@@ -89,7 +99,7 @@ in
       "󱊣"
     ];
     tooltip = true;
-    tooltip-format = ''{time}'';
+    tooltip-format = "{time}";
     max-length = 25;
   };
 

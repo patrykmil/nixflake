@@ -32,7 +32,9 @@
         '';
       };
       wezterm.enable = false;
-      waybar.font = "serif";
+      waybar = {
+        font = "serif";
+      };
       vicinae.enable = false;
       # hyprpaper.enable = lib.mkDefault false;
     };
@@ -69,5 +71,26 @@
       };
     };
 
+  };
+
+  programs.waybar = {
+    style = lib.mkAfter ''
+      #workspaces .taskbar-window.active {
+        color: @base0B;
+      }
+      .modules-left #workspaces button.focused,
+      .modules-left #workspaces button.active,
+      .modules-center #workspaces button.focused,
+      .modules-center #workspaces button.active,
+      .modules-right #workspaces button.focused,
+      .modules-right #workspaces button.active {
+        border-bottom: 0;
+      }
+      .modules-left #workspaces button:hover,
+      .modules-center #workspaces button:hover,
+      .modules-right #workspaces button:hover {
+        background-color: inherit;
+      }
+    '';
   };
 }
