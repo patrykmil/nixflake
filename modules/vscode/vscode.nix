@@ -1,9 +1,9 @@
-{ pkgs-master, config, ... }:
+{ pkgs-unstable, config, ... }:
 let
   flakeDir = "${config.home.homeDirectory}/flakes";
 in
 {
-  home.packages = with pkgs-master; [
+  home.packages = with pkgs-unstable; [
     vscode-fhs
     (pkgs.writeShellScriptBin "updateCodeExtensionsList" ''
       #!/usr/bin/env bash

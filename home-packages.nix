@@ -13,7 +13,7 @@ in
 {
   home.packages =
     let
-      common-unstable = with pkgs-master; [
+      common-unstable = with pkgs-unstable; [
         brave
       ];
 
