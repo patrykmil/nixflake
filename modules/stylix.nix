@@ -24,19 +24,22 @@
 
     targets = {
       gtk = {
-        enable = true;
+        enable = false;
         extraCss = ''
           .dialog-action-area > .text-button {
             color: @dialog_fg_color;
           }
         '';
       };
+      qt.enable = false;
       wezterm.enable = false;
-      waybar = {
-        font = "serif";
-      };
+      fish.enable = false;
       vicinae.enable = false;
-      # hyprpaper.enable = lib.mkDefault false;
+      hyprland.enable = false;
+      helix.enable = false;
+      # waybar = {
+      #   font = "serif";
+      # };
     };
 
     cursor = {

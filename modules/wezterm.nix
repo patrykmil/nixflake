@@ -16,6 +16,7 @@
 
     extraConfig = ''
       return {
+        color_scheme = "Noctalia",
         font = wezterm.font("${fonts.monospace}"),
         command_palette_rows = 5,
         window_close_confirmation = "NeverPrompt",
