@@ -1,0 +1,147 @@
+[audio]
+enable_overdrive = true
+
+[bar.default]
+center = [ "active_window" ]
+end = [ "tray", "network", "group:g2", "brightness", "screenshot", "clock" ]
+margin_edge = 0
+margin_ends = 0
+position = "bottom"
+radius = 0
+shadow = false
+start = [ "group:g1", "workspaces" ]
+thickness = 35
+widget_spacing = 10
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "session", "control-center" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "volume", "input_volume" ]
+    opacity = 1.0
+    padding = 6.0
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "wallpaper"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 300.0
+
+[location]
+address = "Kraków, Poland"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-2" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "DP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+[notification]
+position = "bottom_right"
+
+[osd.kinds]
+media = false
+volume = false
+
+[shell]
+clipboard_enabled = false
+corner_radius_scale = 0.30000000447034836
+polkit_agent = true
+screen_time_enabled = true
+
+    [shell.panel]
+    floating_offset = 6
+    open_near_click_control_center = true
+
+    [shell.screenshot]
+    directory = "/home/ptrk/Screencapture"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Everforest"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+directory = "/home/ptrk/flakes/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
+
+    [wallpaper.last]
+    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
+
+[widget.custom_button_2]
+type = "custom_button"
+
+[widget.input_volume]
+mute_color = "on_surface"
+show_label = false
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+mute_color = "on_surface"
+
+[widget.workspaces]
+active_pill_size = 1.8
+capsule_radius = 2
+inactive_pill_size = 1.8
+occupied_color = "on_secondary"
+scale = 1.2

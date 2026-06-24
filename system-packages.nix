@@ -1,6 +1,7 @@
 {
   pkgs,
   hostName,
+  inputs,
   ...
 }:
 {
@@ -23,6 +24,7 @@
         cmake
 
         lm_sensors
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
       ];
 
       hostSpecific = {

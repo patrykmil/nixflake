@@ -6,11 +6,12 @@
 
       common = map mod [
         "hyprland/hyprland-hm.nix"
-        "hypridle.nix"
-        "hyprpaper.nix"
+        # "hypridle.nix"
+        # "hyprpaper.nix"
         "vicinae/vicinae.nix"
-        "waybar/waybar.nix"
-        "notifications.nix"
+        # "waybar/waybar.nix"
+        # "notifications.nix"
+        "noctalia/noctalia.nix"
 
         "wezterm.nix"
         "shell.nix"

@@ -14,8 +14,10 @@
       "SUPER,T,exec,$TERMINAL"
       "SUPER,B,exec,$BROWSER"
       "SUPER,E,exec,$FILES"
-      "SUPER,Y,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
-      "SUPER,N,exec,swaync-client -t"
+      # "SUPER,Y,exec,pkill waybar || nohup waybar > /dev/null 2>&1 &"
+      "SUPER,Y,exec,noctalia msg bar-toggle"
+      # "SUPER,N,exec,swaync-client -t"
+      "SUPER,N,exec,noctalia msg panel-open control-center notifications"
 
       "SUPER,Q,killactive,"
       "SUPER,F,togglefloating,"

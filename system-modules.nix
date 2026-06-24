@@ -15,7 +15,7 @@
         "media.nix"
         "hyprland/hyprland.nix"
         "keyring.nix"
-        "polkit.nix"
+        # "polkit.nix"
         "printing.nix"
         "kernel.nix"
         "files.nix"

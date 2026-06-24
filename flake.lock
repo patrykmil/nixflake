@@ -280,6 +280,26 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1782306741,
+        "narHash": "sha256-1xOCw73oIbhRaZoYEBP/0TkbLOp9fAV0k9n9KJPSGbs=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "rev": "8fb123a4ffe7ec8e7849f89e9d43de84c3b35361",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "type": "github"
+      }
+    },
     "nur": {
       "inputs": {
         "flake-parts": [
@@ -313,6 +333,7 @@
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-unstable": "nixpkgs-unstable",
+        "noctalia": "noctalia",
         "stylix": "stylix",
         "waydroid-script": "waydroid-script",
         "zen-browser": "zen-browser"
