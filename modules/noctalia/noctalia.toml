@@ -1,3 +1,30 @@
+[theme]
+builtin = "Eldritch"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "helix", "hyprland", "qt", "wezterm" ]
+    community_ids = [ "vicinae" ]
+
+[wallpaper]
+directory = "/home/ptrk/wallpapers"
+transition = [ "fade" ]
+
+    [wallpaper.automation]
+    interval_seconds = 600
+    order = "alphabetical"
+
+    [wallpaper.default]
+    path = "/home/ptrk/wallpapers/mountains/15.jpg"
+
+    [wallpaper.last]
+    path = "/home/ptrk/wallpapers/mountains/15.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/ptrk/wallpapers/mountains/15.jpg"
+    
 [audio]
 enable_overdrive = true
 
@@ -107,24 +134,6 @@ screen_time_enabled = true
     [shell.screenshot]
     directory = "/home/ptrk/Screencapture"
 
-[theme]
-builtin = "Noctalia"
-community_palette = "Everforest"
-mode = "dark"
-source = "community"
-wallpaper_scheme = "m3-content"
-
-[wallpaper]
-directory = "/home/ptrk/flakes/wallpapers"
-
-    [wallpaper.default]
-    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
-
-    [wallpaper.last]
-    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
-
-    [wallpaper.monitors.DP-2]
-    path = "/home/ptrk/flakes/wallpapers/20201d.jpg"
 
 [widget.custom_button_2]
 type = "custom_button"
@@ -145,3 +154,9 @@ capsule_radius = 2
 inactive_pill_size = 1.8
 occupied_color = "on_secondary"
 scale = 1.2
+
+[hooks]
+wallpaper_changed = "wallpaperSchedule"
+
+[plugins]
+enabled = []
