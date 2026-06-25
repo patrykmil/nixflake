@@ -2,33 +2,44 @@
   config,
   pkgs,
   lib,
-  inputs,
-  system,
   hostName,
   ...
 }:
+let
+  windowsEntry = {
+    desktop = ''
+      /Windows
+        protocol: efi
+        path: uuid(1545fd47-f059-4727-9266-85e9581ec2e9):/EFI/Microsoft/Boot/bootmgfw.efi
+    '';
+  };
+in
 {
-  imports = [
-    inputs.distro-grub-themes.nixosModules.${system}.default
-  ];
-
   boot.loader = {
     timeout = 30;
-    grub = {
+    limine = {
       enable = true;
       efiSupport = true;
-      useOSProber = true;
-      device = "nodev";
-      default = "saved";
+      style = {
+        wallpapers = [ ];
+        backdrop = "000000";
+      };
+      extraEntries = windowsEntry.${hostName} or "";
+      secureBoot = lib.mkIf (hostName == "desktop") {
+        enable = true;
+        autoGenerateKeys = true;
+        autoEnrollKeys = {
+          enable = true;
+          extraArgs = [
+            "--microsoft"
+            "--firmware-builtin"
+          ];
+        };
+      };
     };
     efi = {
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot";
     };
-  };
-
-  distro-grub-themes = {
-    enable = true;
-    theme = "nixos";
   };
 }
