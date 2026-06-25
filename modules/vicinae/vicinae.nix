@@ -17,5 +17,5 @@ in
   };
 
   xdg.configFile."vicinae/settings.json".source =
-    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/vicinae/vicinae.json";
+    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/vicinae/vicinae.jsonc";
 }
