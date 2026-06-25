@@ -107,7 +107,8 @@
             },
             "logout": {
                "preferences": {
-                  "confirm": false
+                  "confirm": false,
+                  "customProgram": "hyprctl dispatch exit"
                }
             },
             "power-off": {
