@@ -2,6 +2,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
+      "systemctl --user import-environment WAYLAND_DISPLAY"
       "noctalia"
     ]
     ++ (

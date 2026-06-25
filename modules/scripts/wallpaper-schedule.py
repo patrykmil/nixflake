@@ -10,10 +10,18 @@ def get_current_hour() -> int:
 
 def get_current_wallpaper() -> tuple[str, str, str]:
     result = subprocess.run(["noctalia", "msg", "wallpaper-get"], capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"Error: noctalia wallpaper-get failed: {result.stderr.strip()}")
+        raise SystemExit(1)
     wallpaper = result.stdout.strip()
+    if not wallpaper:
+        print("Error: noctalia wallpaper-get returned empty output")
+        raise SystemExit(1)
     wallpaper_dir = wallpaper.rsplit("/", 1)[0]
-    wallpaper_file = wallpaper.rsplit("/", 1)[-1].split(".")[0]
-    wallpaper_extension = wallpaper.rsplit("/", 1)[-1].split(".")[1]
+    filename = wallpaper.rsplit("/", 1)[-1]
+    parts = filename.split(".")
+    wallpaper_file = parts[0]
+    wallpaper_extension = parts[1] if len(parts) > 1 else ""
     return wallpaper_dir, wallpaper_file, wallpaper_extension
 
 

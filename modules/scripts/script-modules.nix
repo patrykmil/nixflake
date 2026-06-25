@@ -26,6 +26,8 @@ in
   systemd.user.services.wallpaper-schedule = {
     Unit = {
       Description = "Set wallpaper based on current hour";
+      After = [ "graphical-session.target" ];
+      PartOf = [ "graphical-session.target" ];
     };
     Service = {
       Type = "oneshot";
