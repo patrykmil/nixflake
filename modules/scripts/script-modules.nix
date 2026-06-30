@@ -20,6 +20,9 @@ in
     (pkgs.writeScriptBin "idleInhibitor" ''
       exec "${toString ./.}/idle-inhibitor.py" "$@"
     '')
+    (pkgs.writeScriptBin "wallpaperFill" ''
+      exec "${toString ./.}/fill-wallpapers.py" "$@"
+    '')
     wallpaperSchedule
   ];
 
