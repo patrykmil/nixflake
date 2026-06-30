@@ -4,7 +4,7 @@ charliermarsh.ruff
 cweijan.vscode-database-client2
 esbenp.prettier-vscode
 github.codespaces
-github.copilot-chat
+hashicorp.terraform
 james-yu.latex-workshop
 jnoortheen.nix-ide
 maattdd.gitless
@@ -29,13 +29,6 @@ pkief.material-icon-theme
 pkief.material-product-icons
 pmndrs.pmndrs
 pomdtr.excalidraw-editor
-redhat.java
 shd101wyy.markdown-preview-enhanced
 tomoki1207.pdf
-vscjava.vscode-gradle
-vscjava.vscode-java-debug
-vscjava.vscode-java-dependency
-vscjava.vscode-java-pack
-vscjava.vscode-java-test
-vscjava.vscode-maven
 zhuangtongfa.material-theme
