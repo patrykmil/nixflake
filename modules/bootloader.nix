@@ -10,7 +10,7 @@ let
     desktop = ''
       /Windows
         protocol: efi
-        path: uuid(1545fd47-f059-4727-9266-85e9581ec2e9):/EFI/Microsoft/Boot/bootmgfw.efi
+        path: uuid(f91e2a5c-d2dc-434e-8445-88d5fdc49a8f):/EFI/Microsoft/Boot/bootmgfw.efi
     '';
   };
 in
