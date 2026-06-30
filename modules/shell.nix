@@ -42,6 +42,8 @@ in
     functions = {
       fish_greeting = "";
     };
+
+    shellInit = "devenv hook fish | source";
   };
 
   programs.fzf = {

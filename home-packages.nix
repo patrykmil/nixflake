@@ -66,6 +66,7 @@ in
           zed-editor-fhs
           megacmd
           httptoolkit
+          devenv
         ];
         laptop = with pkgs; [
           bluetuith
