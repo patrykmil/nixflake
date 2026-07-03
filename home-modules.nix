@@ -17,7 +17,7 @@
         "shell.nix"
         "helix.nix"
         "git.nix"
-        "jj.nix"
+        # "jj.nix"
         "opencode/opencode.nix"
         "vscode/vscode.nix"
 

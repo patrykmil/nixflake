@@ -37,12 +37,12 @@ in
         mtr
         wl-clipboard
         wifitui
-        playerctl
-        pwvucontrol
         trashy
         nethogs
         puppeteer-cli
+        playerctl
 
+        pwvucontrol
         qdirstat
         geeqie
         cine
@@ -61,12 +61,7 @@ in
           obs-studio
           devenv
           krita
-          zen-browser
-          helium-browser
-          zed-editor-fhs
           megacmd
-          httptoolkit
-          devenv
         ];
         laptop = with pkgs; [
           bluetuith
