@@ -22,6 +22,7 @@
         "localsend.nix"
         "vms.nix"
         "docker.nix"
+        "dns.nix"
       ];
 
       hostSpecific = {
