@@ -8,10 +8,10 @@
   
   programs.virt-manager.enable = true;
   
-  services = {
-    qemuGuest.enable = true;
-    spice-vdagentd.enable = true;
-  };
+  # services = {
+  #   qemuGuest.enable = true;
+  #   spice-vdagentd.enable = true;
+  # };
 
   networking.firewall.trustedInterfaces = [ "virbr0" ];
 }

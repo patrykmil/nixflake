@@ -62,6 +62,7 @@ in
           devenv
           krita
           megacmd
+          helium-browser
         ];
         laptop = with pkgs; [
           bluetuith

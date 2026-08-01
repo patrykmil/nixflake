@@ -88,6 +88,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.diagnosticMode": "workspace",
     // Rust
     "files.readonlyInclude": {
         "**/.cargo/registry/src/**/*.rs": true,
