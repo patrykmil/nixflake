@@ -23,6 +23,7 @@
         "vms.nix"
         "docker.nix"
         "dns.nix"
+        "sops.nix"
       ];
 
       hostSpecific = {
