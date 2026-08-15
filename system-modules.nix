@@ -23,7 +23,7 @@
         "vms.nix"
         "docker.nix"
         # "dns.nix"
-        "sops.nix"
+        # "sops.nix"
       ];
 
       hostSpecific = {
@@ -31,7 +31,7 @@
           "nvidia.nix"
           "coolercontrol.nix"
           "games.nix"
-          "waydroid.nix"
+          # "waydroid.nix"
           "tailscale.nix"
         ];
         laptop = map mod [
