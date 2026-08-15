@@ -27,10 +27,10 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    waydroid-script = {
-      url = "github:casualsnek/waydroid_script";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # waydroid-script = {
+    #   url = "github:casualsnek/waydroid_script";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     noctalia = {
       url = "github:noctalia-dev/noctalia";
@@ -42,9 +42,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+    # sops-nix = {
+    #   url = "github:Mic92/sops-nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    gloview = {
+      url = "github:fedsfarm/gloview";
     };
 
   };
@@ -56,7 +60,7 @@
       nixpkgs-unstable,
       nixpkgs-master,
       home-manager,
-      sops-nix,
+      # sops-nix,
       ...
     }@inputs:
 
@@ -102,7 +106,7 @@
           modules = [
             configPath
             home-manager.nixosModules.home-manager
-            sops-nix.nixosModules.sops
+            # sops-nix.nixosModules.sops
             {
               home-manager.useGlobalPkgs = true;
               home-manager.extraSpecialArgs = commonArgs;

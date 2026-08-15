@@ -25,7 +25,7 @@
 
       "SUPER,R,exec, vicinae toggle"
       "SUPER,V,exec, vicinae vicinae://launch/clipboard/history"
-      "SUPER,TAB,exec, vicinae vicinae://launch/wm/switch-windows"
+      # "SUPER,TAB,exec, vicinae vicinae://launch/wm/switch-windows"
 
       "SUPER,P,pseudo,"
 

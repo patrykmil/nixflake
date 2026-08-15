@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgs-unstable,
   lib,
   hostName,
   ...
@@ -20,11 +21,13 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    package = pkgs-unstable.hyprland;
     settings.xwayland.force_zero_scaling = true;
     configType = "hyprlang";
   };
 
   wayland.windowManager.hyprland.extraConfig = ''
     source = noctalia.conf
+    source = gloview.conf
   '';
 }

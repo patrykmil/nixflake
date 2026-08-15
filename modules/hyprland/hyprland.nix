@@ -1,7 +1,8 @@
 
-{ pkgs, hostName, ... }:
+{ pkgs, pkgs-unstable, hostName, ... }:
 {
   programs.hyprland.enable = true;
+  programs.hyprland.package = pkgs-unstable.hyprland;
   programs.hyprland.xwayland.enable = true;
   environment.sessionVariables = {
     QT_QPA_PLATFORMTHEME = "gtk2";
