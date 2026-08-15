@@ -22,7 +22,7 @@
         "localsend.nix"
         "vms.nix"
         "docker.nix"
-        "dns.nix"
+        # "dns.nix"
         "sops.nix"
       ];
 
