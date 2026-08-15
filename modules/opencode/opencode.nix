@@ -1,9 +1,9 @@
-{ pkgs, config, ... }:
+{ pkgs-unstable, config, ... }:
 let
   flakeDir = "${config.home.homeDirectory}/flakes";
 in
 {
-  home.packages = with pkgs; [
+  home.packages = with pkgs-unstable; [
     opencode
   ];
 

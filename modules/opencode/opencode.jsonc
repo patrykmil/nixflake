@@ -2,12 +2,32 @@
     "$schema": "https://opencode.ai/config.json",
     "plugin": [
         "@mohak34/opencode-notifier@latest",
-        "opencode-mystatus"
     ],
-    "command": {
-        "mystatus": {
-            "description": "Query quota usage for all AI accounts.",
-            "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
+    "model": "opencode/deepseek-v4-flash-free",
+    "small_model": "opencode/deepseek-v4-flash-free",
+    "agent": {
+        "Minimal": {
+            "description": "Minimal prompt",
+            "mode": "primary",
+            "prompt": "{file:./prompts/minimal.txt}"
+        }
+    },
+    "provider": {
+        "modal": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "Modal",
+            "options": {
+                "baseURL": "{env:MODAL_URL}",
+                "headers": {
+                    "Modal-Key": "{env:MODAL_KEY}",
+                    "Modal-Secret": "{env:MODAL_SECRET}"
+                }
+            },
+            "models": {
+                "kimi-k3": {
+                    "name": "Kimi K3"
+                }
+            }
         }
     }
 }
