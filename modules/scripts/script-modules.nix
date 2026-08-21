@@ -23,6 +23,9 @@ in
     (pkgs.writeScriptBin "wallpaperFill" ''
       exec "${toString ./.}/fill-wallpapers.py" "$@"
     '')
+    (pkgs.writeScriptBin "list-updates" ''
+      exec "${toString ./.}/list-updates.py" "$@"
+    '')
     wallpaperSchedule
   ];
 
@@ -55,4 +58,5 @@ in
   xdg.configFile."fish/completions/idleInhibitor.fish".source = ./completions/idleInhibitor.fish;
   xdg.configFile."fish/completions/screencapture.fish".source = ./completions/screencapture.fish;
   xdg.configFile."fish/completions/monitorToggle.fish".source = ./completions/monitorToggle.fish;
+  xdg.configFile."fish/completions/list-updates.fish".source = ./completions/list-updates.fish;
 }
