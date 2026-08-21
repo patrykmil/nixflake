@@ -29,5 +29,13 @@
                 }
             }
         }
+    },
+    "permission": {
+        "external_directory": {
+            "*": "deny",
+            "/tmp/opencode/*": "allow",
+            "~/.config/*": "allow",
+            "/nix/*": "allow"
+        }
     }
 }
