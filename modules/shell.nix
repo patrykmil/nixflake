@@ -30,11 +30,14 @@ in
         {
           ss = "sudo nixos-rebuild switch --flake ${flakeDir}#desktop";
           st = "sudo nixos-rebuild test --flake ${flakeDir}#desktop";
+          sb = "sudo nixos-rebuild boot --flake ${flakeDir}#desktop";
         }
       else if hostName == "laptop" then
         {
           ss = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop";
+          ssr = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop --build-host ptrk@desktop";
           st = "sudo nixos-rebuild test --flake ${flakeDir}#laptop";
+          sb = "sudo nixos-rebuild boot --flake ${flakeDir}#laptop";
         }
       else
         { }
