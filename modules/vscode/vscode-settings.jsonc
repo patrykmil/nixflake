@@ -260,7 +260,7 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "chat.viewSessions.orientation": "stacked",
-    "markdown-preview-enhanced.previewTheme": "atom-light.css",
+    "markdown-preview-enhanced.previewTheme": "one-dark.css",
     "chat.tools.terminal.autoApprove": {
         "sed": true
     },
@@ -277,10 +277,10 @@
     "[terraform]": {
         "editor.defaultFormatter": "hashicorp.terraform"
     },
-    "markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
+    "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
     "markdown-preview-enhanced.chromePath": "/home/ptrk/.nix-profile/bin/brave",
     "gitlens.codeLens.enabled": false,
-    "markdown-preview-enhanced.revealjsTheme": "serif.css",
+    "markdown-preview-enhanced.revealjsTheme": "night.css",
     "gitlens.hovers.enabled": false,
     "gitlens.hovers.currentLine.enabled": false,
 }

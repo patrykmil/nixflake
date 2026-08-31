@@ -11,6 +11,7 @@
 {
    "$schema": "https://vicinae.com/schemas/config.json",
    "pop_to_root_on_close": true,
+   "encrypt_sensitive_data": true,
    "favicon_service": "twenty",
    "search_files_in_root": false,
    "font": {
