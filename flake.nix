@@ -51,6 +51,8 @@
       url = "github:fedsfarm/gloview";
     };
 
+    # hermes-agent.url = "github:NousResearch/hermes-agent";
+
   };
 
   outputs =

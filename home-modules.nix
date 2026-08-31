@@ -28,7 +28,9 @@
       ];
 
       hostSpecific = {
-        desktop = map mod [ ];
+        desktop = map mod [
+          # "hermes.nix"
+        ];
         laptop = map mod [ ];
       };
     in

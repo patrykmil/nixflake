@@ -4,33 +4,6 @@
         "@mohak34/opencode-notifier@latest",
         "@dietrichgebert/ponytail"
     ],
-    "model": "opencode/deepseek-v4-flash-free",
-    "small_model": "opencode/deepseek-v4-flash-free",
-    "agent": {
-        "Minimal": {
-            "description": "Minimal prompt",
-            "mode": "primary",
-            "prompt": "{file:./prompts/minimal.txt}"
-        }
-    },
-    "provider": {
-        "modal": {
-            "npm": "@ai-sdk/openai-compatible",
-            "name": "Modal",
-            "options": {
-                "baseURL": "{env:MODAL_URL}",
-                "headers": {
-                    "Modal-Key": "{env:MODAL_KEY}",
-                    "Modal-Secret": "{env:MODAL_SECRET}"
-                }
-            },
-            "models": {
-                "kimi-k3": {
-                    "name": "Kimi K3"
-                }
-            }
-        }
-    },
     "permission": {
         "external_directory": {
             "*": "deny",
