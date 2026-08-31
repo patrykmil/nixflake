@@ -24,6 +24,7 @@
         "docker.nix"
         # "dns.nix"
         # "sops.nix"
+        "tailscale.nix"
       ];
 
       hostSpecific = {
@@ -32,10 +33,10 @@
           "coolercontrol.nix"
           "games.nix"
           # "waydroid.nix"
-          "tailscale.nix"
         ];
         laptop = map mod [
           "bluetooth.nix"
+          "battery.nix"
         ];
       };
     in

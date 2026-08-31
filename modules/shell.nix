@@ -42,9 +42,10 @@ in
     functions = {
       fish_greeting = "";
     };
-
-    shellInit = "devenv hook fish | source";
-  };
+  }
+  // (
+    if hostName == "desktop" then { shellInit = "devenv hook fish | source"; } else { shellInit = ""; }
+  );
 
   programs.fzf = {
     enable = true;
