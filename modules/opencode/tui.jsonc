@@ -3,9 +3,13 @@
     "theme": "system",
     "keybinds": {
         "leader": "ctrl+x",
-        "app_exit": "<leader>q",
+        "app_exit": ["<leader>q", "ctrl+o"],
         "session_new": "<leader>c",
         "session_compact": "none",
-        "command_list": "<leader>p"
+        "command_list": "<leader>p",
+        "agent_cycle": "tab",
+        "agent_cycle_reverse": "none",
+        "variant_cycle": "shift+tab",
+        "variant_list": "<leader>n"
     }
 }
