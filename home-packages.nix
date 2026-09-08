@@ -63,6 +63,7 @@ in
           krita
           megacmd
           helium-browser
+          zen-browser
         ];
         laptop = with pkgs; [
           bluetuith
