@@ -6,7 +6,7 @@
     ],
     "permission": {
         "external_directory": {
-            "*": "deny",
+            "*": "ask",
             "/tmp/opencode/*": "allow",
             "~/.config/*": "allow",
             "/nix/*": "allow"
