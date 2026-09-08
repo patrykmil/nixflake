@@ -7,7 +7,7 @@
     extraGroups = [
       "wheel"
       "networkmanager"
-      "docker"
+      # "docker"
       "kvm"
       "adbusers"
       "libvirtd"
