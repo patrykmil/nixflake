@@ -6,17 +6,12 @@
   hostName,
   ...
 }:
+let
+  flakeDir = "${config.home.homeDirectory}/flakes";
+in
 {
   imports = [
-    ./monitors.nix
-    ./inputs.nix
-    ./look.nix
-    ./layouts.nix
-    ./binds.nix
-    ./window-rules.nix
-    ./autostart.nix
     ./plugins.nix
-    ./sensitivity.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -26,8 +21,9 @@
     configType = "hyprlang";
   };
 
-  wayland.windowManager.hyprland.extraConfig = ''
-    source = noctalia.conf
-    source = gloview.conf
-  '';
+  xdg.configFile."hypr/hyprland-common.lua".source =
+    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/hyprland/hyprland-common.lua";
+
+  xdg.configFile."hypr/hyprland.lua".source =
+    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/hyprland/hyprland-${hostName}.lua";
 }
