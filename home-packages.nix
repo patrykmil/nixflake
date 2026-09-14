@@ -48,6 +48,8 @@ in
         cine
         alacritty
         teams-for-linux
+        filen-cli
+        filen-desktop
 
         libreoffice-still
         hunspell
