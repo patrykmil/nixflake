@@ -12,6 +12,7 @@
         "networking.nix"
         "locale.nix"
         "login.nix"
+        "atk.nix"
         "media.nix"
         "hyprland/hyprland.nix"
         "keyring.nix"
