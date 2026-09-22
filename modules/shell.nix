@@ -24,20 +24,14 @@ in
       remove = "trash list | tac | fzf --multi | awk '{$1=$1;print}' | rev | cut -d ' ' -f1 | rev | xargs trash empty --match=exact --force";
       emptytrash = "trash empty";
 
+      ss = "sudo nixos-rebuild switch --flake ${flakeDir}#${hostName}";
+      st = "sudo nixos-rebuild test --flake ${flakeDir}#${hostName}";
+      sb = "sudo nixos-rebuild boot --flake ${flakeDir}#${hostName}";
     }
     // (
-      if hostName == "desktop" then
+      if hostName != "desktop" then
         {
-          ss = "sudo nixos-rebuild switch --flake ${flakeDir}#desktop";
-          st = "sudo nixos-rebuild test --flake ${flakeDir}#desktop";
-          sb = "sudo nixos-rebuild boot --flake ${flakeDir}#desktop";
-        }
-      else if hostName == "laptop" then
-        {
-          ss = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop";
-          ssr = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop --build-host ptrk@desktop";
-          st = "sudo nixos-rebuild test --flake ${flakeDir}#laptop";
-          sb = "sudo nixos-rebuild boot --flake ${flakeDir}#laptop";
+          ssr = "sudo nixos-rebuild switch --flake ${flakeDir}#${hostName} --build-host ptrk@desktop";
         }
       else
         { }
