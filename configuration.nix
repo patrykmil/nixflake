@@ -9,7 +9,7 @@
 
 {
   imports = [
-    ./hosts/${hostName}/hardware-configuration.nix
+    ./hosts/${hostName}-hardware.nix
     ./system-packages.nix
     ./system-modules.nix
   ];

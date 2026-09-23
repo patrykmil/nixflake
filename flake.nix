@@ -83,9 +83,16 @@
         config.allowUnfree = true;
       };
 
+      hosts = {
+        dt0 = "desktop";
+        lt0 = "laptop";
+        lt1 = "laptop";
+      };
+
       mkNixosConfig =
         host: configPath:
         let
+          hostClass = hosts.${host};
           commonArgs = {
             inherit
               inputs
@@ -98,7 +105,8 @@
               ;
             system = hostSystem;
             hostName = host;
-            hostMonitors = monitors.${host};
+            inherit hostClass;
+            hostMonitors = monitors.${hostClass};
           };
         in
         nixpkgs.lib.nixosSystem {
@@ -119,7 +127,7 @@
     in
 
     {
-      nixosConfigurations = nixpkgs.lib.genAttrs [ "laptop" "desktop" ] (
+      nixosConfigurations = nixpkgs.lib.genAttrs (builtins.attrNames hosts) (
         host: mkNixosConfig host ./configuration.nix
       );
     };

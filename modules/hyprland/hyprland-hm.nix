@@ -3,7 +3,7 @@
   pkgs,
   pkgs-unstable,
   lib,
-  hostName,
+  hostClass,
   ...
 }:
 let
@@ -25,5 +25,5 @@ in
     config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/hyprland/hyprland-common.lua";
 
   xdg.configFile."hypr/hyprland.lua".source =
-    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/hyprland/hyprland-${hostName}.lua";
+    config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/hyprland/hyprland-${hostClass}.lua";
 }

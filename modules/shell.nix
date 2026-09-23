@@ -2,6 +2,7 @@
   config,
   pkgs,
   hostName,
+  hostClass,
   ...
 }:
 let
@@ -29,9 +30,9 @@ in
       sb = "sudo nixos-rebuild boot --flake ${flakeDir}#${hostName}";
     }
     // (
-      if hostName != "desktop" then
+      if hostClass != "desktop" then
         {
-          ssr = "sudo nixos-rebuild switch --flake ${flakeDir}#${hostName} --build-host ptrk@desktop";
+          ssr = "sudo nixos-rebuild switch --flake ${flakeDir}#${hostName} --build-host ptrk@dt0";
         }
       else
         { }
@@ -41,7 +42,7 @@ in
     };
   }
   // (
-    if hostName == "desktop" then { shellInit = "devenv hook fish | source"; } else { shellInit = ""; }
+    if hostClass == "desktop" then { shellInit = "devenv hook fish | source"; } else { shellInit = ""; }
   );
 
   programs.fzf = {
@@ -56,11 +57,11 @@ in
 
   programs.btop = {
     enable = true;
-    package = if hostName == "desktop" then pkgs.btop.override { cudaSupport = true; } else pkgs.btop;
+    package = if hostClass == "desktop" then pkgs.btop.override { cudaSupport = true; } else pkgs.btop;
     settings = {
       graph_symbol = "block";
     }
-    // (if hostName == "desktop" then { shown_boxes = "cpu mem net proc gpu0"; } else { });
+    // (if hostClass == "desktop" then { shown_boxes = "cpu mem net proc gpu0"; } else { });
   };
 
   programs.eza = {

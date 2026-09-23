@@ -1,6 +1,6 @@
 {
   pkgs,
-  hostName,
+  hostClass,
   fonts,
   ...
 }:
@@ -25,7 +25,7 @@
         tab_max_width = 25,
 
         ${
-          if hostName == "desktop" then
+          if hostClass == "desktop" then
             ''
               enable_scroll_bar = true,
               tab_bar_at_bottom = true,

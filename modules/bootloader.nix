@@ -2,7 +2,7 @@
   config,
   pkgs,
   lib,
-  hostName,
+  hostClass,
   ...
 }:
 let
@@ -24,8 +24,8 @@ in
         wallpapers = [ ];
         backdrop = "000000";
       };
-      extraEntries = windowsEntry.${hostName} or "";
-      secureBoot = lib.mkIf (hostName == "desktop") {
+      extraEntries = windowsEntry.${hostClass} or "";
+      secureBoot = lib.mkIf (hostClass == "desktop") {
         enable = true;
         autoGenerateKeys = true;
         autoEnrollKeys = {

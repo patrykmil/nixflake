@@ -2,7 +2,7 @@
   pkgs,
   pkgs-unstable,
   pkgs-master,
-  hostName,
+  hostClass,
   inputs,
   ...
 }:
@@ -74,7 +74,7 @@ in
         ];
       };
     in
-    common ++ common-unstable ++ (hostSpecific.${hostName} or [ ]);
+    common ++ common-unstable ++ (hostSpecific.${hostClass} or [ ]);
 
   xdg.desktopEntries =
     let
@@ -121,5 +121,5 @@ in
         };
       };
     in
-    commonDesktopEntries // (hostEntries.${hostName} or { });
+    commonDesktopEntries // (hostEntries.${hostClass} or { });
 }

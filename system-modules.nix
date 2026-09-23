@@ -1,4 +1,4 @@
-{ hostName, ... }:
+{ hostClass, ... }:
 {
   imports =
     let
@@ -41,5 +41,5 @@
         ];
       };
     in
-    common ++ (hostSpecific.${hostName} or [ ]);
+    common ++ (hostSpecific.${hostClass} or [ ]);
 }

@@ -1,6 +1,6 @@
 {
   pkgs,
-  hostName,
+  hostClass,
   inputs,
   ...
 }:
@@ -33,7 +33,7 @@
         laptop = [ ];
       };
     in
-    common ++ (hostSpecific.${hostName} or [ ]);
+    common ++ (hostSpecific.${hostClass} or [ ]);
 
   services.xserver.excludePackages = [ pkgs.xterm ];
 

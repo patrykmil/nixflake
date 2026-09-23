@@ -1,4 +1,4 @@
-{ hostName, hostMonitors, ... }:
+{ hostClass, hostMonitors, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
@@ -43,7 +43,7 @@
       }
     ]
     ++ (
-      if hostName == "desktop" then
+      if hostClass == "desktop" then
         [
           {
             name = "windowrule-pwvucontrol";
@@ -76,7 +76,7 @@
       "f[1],gapsin:0, gapsout:0"
     ]
     ++ (
-      if hostName == "desktop" then
+      if hostClass == "desktop" then
         [
           "1,monitor:${hostMonitors.primary}"
         ]

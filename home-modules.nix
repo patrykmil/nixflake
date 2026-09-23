@@ -1,4 +1,4 @@
-{ hostName, ... }:
+{ hostClass, ... }:
 {
   imports =
     let
@@ -34,5 +34,5 @@
         laptop = map mod [ ];
       };
     in
-    common ++ (hostSpecific.${hostName} or [ ]);
+    common ++ (hostSpecific.${hostClass} or [ ]);
 }

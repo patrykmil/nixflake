@@ -1,4 +1,4 @@
-{ hostName, hostMonitors, ... }:
+{ hostClass, hostMonitors, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     monitor = [
@@ -7,7 +7,7 @@
       "eDP-1,1920x1080@60,0x0,1.2"
     ];
 
-    workspace = (if hostName == "desktop" then [ "1,monitor:${hostMonitors.primary}" ] else [ ]) ++ [
+    workspace = (if hostClass == "desktop" then [ "1,monitor:${hostMonitors.primary}" ] else [ ]) ++ [
       # Smart gaps/borders thingy part 1
       "w[tv1],gapsin:0, gapsout:0"
       "f[1],gapsin:0, gapsout:0"

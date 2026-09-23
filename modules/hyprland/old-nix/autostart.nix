@@ -1,4 +1,4 @@
-{ pkgs, hostName, ... }:
+{ pkgs, hostClass, ... }:
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
@@ -7,11 +7,11 @@
       "wallpaperSchedule"
     ]
     ++ (
-      if hostName == "desktop" then
+      if hostClass == "desktop" then
         [
           "sleep 1 && bright 50 4000"
         ]
-      else if hostName == "laptop" then
+      else if hostClass == "laptop" then
         [
           "sleep 1 && bright 100 4600"
         ]

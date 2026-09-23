@@ -1,5 +1,5 @@
 
-{ pkgs, pkgs-unstable, hostName, ... }:
+{ pkgs, pkgs-unstable, hostClass, ... }:
 {
   programs.hyprland.enable = true;
   programs.hyprland.package = pkgs-unstable.hyprland;
@@ -12,7 +12,7 @@
     MOZ_ENABLE_WAYLAND = "1";
   }
   // (
-    if hostName == "laptop" then
+    if hostClass == "laptop" then
       {
         ELECTRON_ENABLE_WAYLAND = "1";
         # GDK_BACKEND = "wayland";
