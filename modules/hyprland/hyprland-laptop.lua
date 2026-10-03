@@ -7,3 +7,6 @@ require("hyprland-common")
 hl.on("hyprland.start", function()
   hl.exec_cmd("sleep 1 && bright 100 4600")
 end)
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

@@ -283,4 +283,5 @@
     "markdown-preview-enhanced.revealjsTheme": "night.css",
     "gitlens.hovers.enabled": false,
     "gitlens.hovers.currentLine.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
 }
