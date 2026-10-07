@@ -40,10 +40,10 @@ in
     functions = {
       fish_greeting = "";
     };
-  }
-  // (
-    if hostClass == "desktop" then { shellInit = "devenv hook fish | source"; } else { shellInit = ""; }
-  );
+  };
+  # // (
+  #   if hostClass == "desktop" then { shellInit = "devenv hook fish | source"; } else { shellInit = ""; }
+  # );
 
   programs.fzf = {
     enable = true;

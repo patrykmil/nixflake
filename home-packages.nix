@@ -59,13 +59,13 @@ in
 
       hostSpecific = {
         desktop = with pkgs; [
-          toybox
           obs-studio
-          devenv
           krita
-          megacmd
-          helium-browser
-          zen-browser
+          # toybox
+          # devenv
+          # megacmd
+          # helium-browser
+          # zen-browser
         ];
         laptop = with pkgs; [
           bluetuith
