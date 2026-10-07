@@ -29,6 +29,7 @@
 
       hostSpecific = {
         desktop = map mod [
+          "umbriel/umbriel-hm.nix"
           # "hermes.nix"
         ];
         laptop = map mod [ ];

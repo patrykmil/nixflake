@@ -168,7 +168,7 @@ source = "wallpaper"
 wallpaper_scheme = "soft"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "helix", "hyprland", "qt", "wezterm" ]
+    builtin_ids = [ "gtk3", "gtk4", "helix", "hyprland", "qt", "umbriel", "wezterm" ]
     community_ids = [ "opencode", "zen-browser", "vicinae" ]
 
 [wallpaper]

@@ -1,0 +1,21 @@
+# HOST: DESKTOP — mirrors modules/hyprland/hyprland-desktop.lua.
+# Pinning workspace 1 to DP-2 has no Umbriel equivalent (workspaces are
+# per-output); skipped. `bright 50 4000` is hyprctl-based; use `sunsetr set`.
+
+[[window_rule]]
+match.app_id = "^(com\\.saivert\\.pwvucontrol)$"
+default_floating = true
+default_floating_size_px = { width = 1060, height = 570 }
+
+[[window_rule]]
+match.app_id = "^(wifitui)$"
+default_floating = true
+default_floating_size_px = { width = 600, height = 720 }
+
+[[window_rule]]
+match.app_id = "^(localsend_app)$"
+default_floating = true
+default_floating_size_px = { width = 700, height = 900 }
+default_position = { x = 0, y = 0, anchor = "center" }
+# hyprland uses absolute moves (850,470 / 1315,315 / center); center keeps
+# them resolution-independent.

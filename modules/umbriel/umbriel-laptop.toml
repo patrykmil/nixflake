@@ -1,0 +1,7 @@
+# HOST: LAPTOP — mirrors modules/hyprland/hyprland-laptop.lua.
+# `bright 100 4600` is hyprctl-based; use `sunsetr set` instead.
+
+[environment]
+ELECTRON_ENABLE_WAYLAND = "1"
+QT_QPA_PLATFORM = "wayland"
+NIXOS_OZONE_WL = "1"

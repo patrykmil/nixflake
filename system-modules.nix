@@ -33,6 +33,7 @@
           "nvidia.nix"
           "coolercontrol.nix"
           "games.nix"
+          "umbriel/umbriel.nix"
           # "waydroid.nix"
         ];
         laptop = map mod [
