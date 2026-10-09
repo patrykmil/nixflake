@@ -15,11 +15,23 @@ end)
 
 -- ========== SENSITIVITY ==========
 
+-- G403
 hl.device({ name = "logitech-g403-1", sensitivity = -0.5 })
+
+-- VXE R1 PRO MAX
 hl.device({ name = "compx-vxe-nordicmouse-1k-dongle-1", sensitivity = -0.5 })
-hl.device({ name = "compx-vxe-r1-pro-max-consumer-control-1", sensitivity = -0.5 })
 hl.device({ name = "compx-vxe-r1-pro-max-1", sensitivity = -0.5 })
+
+-- VXE R1 S
+hl.device({ name = "compx-vxe-r1-s-nk-1", sensitivity = -0.5 })
+hl.device({ name = "compx-nk-mouse-nano-dongle-1", sensitivity = -0.5 })
+hl.device({ name = "vxe-r1-s-bt-mouse", sensitivity = -0.5 })
+
+-- Touchpad Dell stary - lt0
 hl.device({ name = "dell09ed:00-27c6:01e0-touchpad", sensitivity = 0.1 })
+
+-- Touchpad Dell nowy - lt1
+hl.device({ name = "dell0b20:00-06cb:ce26-touchpad", sensitivity = 0.1 })
 
 -- ========== NOCTALIA ==========
 local noctalia_ok, noctalia = pcall(require, "noctalia")
