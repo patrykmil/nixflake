@@ -30,7 +30,7 @@
 
       hostSpecific = {
         desktop = with pkgs; [ ];
-        laptop = [ ];
+        laptop = with pkgs; [ ];
       };
     in
     common ++ (hostSpecific.${hostClass} or [ ]);

@@ -38,6 +38,7 @@
         laptop = map mod [
           "bluetooth.nix"
           "battery.nix"
+          "vmware.nix"
         ];
       };
     in
