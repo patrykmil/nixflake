@@ -23,12 +23,12 @@
         use_fancy_tab_bar = false,
         hide_tab_bar_if_only_one_tab = true,
         tab_max_width = 25,
+        enable_scroll_bar = true,
+        tab_bar_at_bottom = true,
 
         ${
           if hostClass == "desktop" then
             ''
-              enable_scroll_bar = true,
-              tab_bar_at_bottom = true,
             ''
           else
             "         
