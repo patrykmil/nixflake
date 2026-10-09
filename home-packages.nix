@@ -71,6 +71,8 @@ in
           bluetuith
           brightnessctl
           wtype
+          gcc
+          gnumake
         ];
       };
     in
