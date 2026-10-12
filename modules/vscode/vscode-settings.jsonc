@@ -267,7 +267,9 @@
     "chat.tips.enabled": false,
     "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.editorAssociations": {
-        "git-rebase-todo": "default"
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "git-rebase-todo": "default",
+        "*.pdf": "pdf.preview"
     },
     "redhat.telemetry.enabled": false,
     "azureTerraform.survey": {
