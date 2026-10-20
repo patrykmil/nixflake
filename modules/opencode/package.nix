@@ -1,6 +1,6 @@
 { lib, stdenv, fetchurl, autoPatchelfHook }:
 let
-  version = "2.0.27";
+  version = "2.1.1";
   target = {
     "x86_64-linux" = "linux-x64";
     "aarch64-linux" = "linux-arm64";
@@ -13,7 +13,7 @@ stdenv.mkDerivation {
   src = fetchurl {
     # Upstream publishes v2 only via npm (@opencode/cli-*-* tarballs).
     url = "https://registry.npmjs.org/@opencode/cli-${target}/-/cli-${target}-${version}.tgz";
-    hash = "sha256-djUUInp7skKK8dX1ksAdcnqGb3v/Mgj9Xp79hUKdgTk=";
+    hash = "sha256-ZFkQV+pZPpoRN01GMMIkmTDY8zWYrws+AhN0k4YKsXs=";
   };
 
   dontStrip = true;

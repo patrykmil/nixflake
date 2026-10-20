@@ -11,5 +11,8 @@
             "~/.config/*": "allow",
             "/nix/*": "allow"
         }
+    },
+    "websearch": {
+      "provider": "random"
     }
 }
