@@ -156,10 +156,10 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 -- NOTE: SUPER+P is bound twice upstream (pin above, pseudo below); last wins.
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 
--- Layout switchers
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl keyword general:layout master"))
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("hyprctl keyword general:layout dwindle"))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprctl keyword general:layout scrolling"))
+-- Layout switchers 
+hl.bind(mainMod .. " + M", function() hl.config({ general = { layout = "master" } }) end)
+hl.bind(mainMod .. " + D", function() hl.config({ general = { layout = "dwindle" } }) end)
+hl.bind(mainMod .. " + S", function() hl.config({ general = { layout = "scrolling" } }) end)
 
 -- Focus
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))

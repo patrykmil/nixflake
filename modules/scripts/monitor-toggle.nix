@@ -12,15 +12,15 @@
       POS_RIGHT="1920x0"
 
       disable_monitor() {
-          hyprctl keyword monitor "$HDMI,disable"
+          hyprctl eval "hl.monitor({ output = \"$HDMI\", disabled = true })"
           "$NOTIFY" -t 5000 -u normal "Monitor disabled" "$HDMI"
       }
 
       enable_monitor() {
           local pos="$1"
-          hyprctl keyword monitor "$HDMI,1920x1080@60,$pos,1"
+          hyprctl eval "hl.monitor({ output = \"$HDMI\", mode = \"1920x1080@60\", position = \"$pos\", scale = 1 })"
           if hyprctl monitors | grep -q "$HDMI"; then
-            hyprctl dispatch dpms on "$HDMI"
+            hyprctl eval "hl.dispatch(hl.dsp.dpms({ action = \"on\", monitor = \"$HDMI\" }))"
           fi
           "$NOTIFY" -t 5000 -u normal "Monitor enabled" "$HDMI"
       }
@@ -33,7 +33,7 @@
               enable_monitor "$POS_RIGHT"
               ;;
           mirror)
-              hyprctl keyword monitor "$HDMI,preferred,auto,1,mirror,$PRIMARY"
+              hyprctl eval "hl.monitor({ output = \"$HDMI\", mode = \"preferred\", position = \"auto\", scale = 1, mirror = \"$PRIMARY\" })"
               "$NOTIFY" -t 5000 -u normal "Monitor mirrored" "$HDMI"
               ;;
           toggle|"")
