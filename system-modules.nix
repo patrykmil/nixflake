@@ -30,7 +30,7 @@
 
       hostSpecific = {
         desktop = map mod [
-          "nvidia.nix"
+          "intel-gpu.nix"
           "coolercontrol.nix"
           "games.nix"
           "umbriel/umbriel.nix"
