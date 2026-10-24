@@ -11,13 +11,4 @@
     wireplumber.enable = true;
     jack.enable = true;
   };
-
-  xdg.portal = {
-    enable = true;
-    config.common = {
-      # default = "hyprland";
-      default = [ "hyprland" "gtk" ];
-      # "org.freedesktop.portal.ScreenCast" = "gtk";
-    };
-  };
 }

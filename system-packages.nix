@@ -12,7 +12,6 @@
 
         xdg-utils
         xwayland-satellite
-        pkgs-unstable.xdg-desktop-portal-gtk
 
         pipewire
         wireplumber

@@ -14,6 +14,7 @@
         "login.nix"
         "atk.nix"
         "media.nix"
+        "portal.nix"
         "hyprland/hyprland.nix"
         "keyring.nix"
         # "polkit.nix"
