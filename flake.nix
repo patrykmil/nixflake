@@ -38,6 +38,7 @@
 
     gloview = {
       url = "github:fedsfarm/gloview";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     # hermes-agent.url = "github:NousResearch/hermes-agent";
