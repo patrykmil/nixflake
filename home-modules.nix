@@ -11,7 +11,7 @@
         "vicinae/vicinae.nix"
         # "waybar/waybar.nix"
         # "notifications.nix"
-        "noctalia/noctalia.nix"
+        "noctalia/noctalia-hm.nix"
 
         "wezterm.nix"
         "shell.nix"

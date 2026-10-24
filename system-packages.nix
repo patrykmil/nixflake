@@ -1,6 +1,5 @@
 {
   pkgs,
-  pkgs-unstable,
   hostClass,
   ...
 }:
@@ -23,7 +22,6 @@
         cmake
 
         lm_sensors
-        pkgs-unstable.noctalia
         adw-gtk3
       ];
 

@@ -1,12 +1,6 @@
-{ inputs, pkgs-unstable, ... }:
+{ inputs, ... }:
 {
-  imports = [
-    "${inputs.nixpkgs-unstable}/nixos/modules/programs/wayland/umbriel.nix"
-  ];
+  imports = [ inputs.umbriel.nixosModules.default ];
 
-  programs.umbriel = {
-    enable = true;
-    package = pkgs-unstable.umbriel;
-    portalPackage = pkgs-unstable.xdg-desktop-portal-umbriel;
-  };
+  programs.umbriel.enable = true;
 }

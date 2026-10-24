@@ -15,6 +15,7 @@
         "atk.nix"
         "media.nix"
         "portal.nix"
+        "noctalia/noctalia-system.nix"
         "hyprland/hyprland.nix"
         "keyring.nix"
         # "polkit.nix"

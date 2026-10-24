@@ -4,7 +4,7 @@ let
 in
 {
 
-  xdg.configFile."noctalia/settings.toml".source =
+  xdg.configFile."noctalia/config.toml".source =
     config.lib.file.mkOutOfStoreSymlink "${flakeDir}/modules/noctalia/noctalia.toml";
 
 }

@@ -41,6 +41,9 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
+    noctalia.url = "github:noctalia-dev/noctalia/cachix";
+    umbriel.url = "github:noctalia-dev/umbriel/cachix";
+
     # hermes-agent.url = "github:NousResearch/hermes-agent";
 
   };
