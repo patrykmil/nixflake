@@ -10,9 +10,9 @@
       common = with pkgs; [
         home-manager
 
-        xdg-desktop-portal-hyprland
         xdg-utils
         xwayland-satellite
+        pkgs-unstable.xdg-desktop-portal-gtk
 
         pipewire
         wireplumber

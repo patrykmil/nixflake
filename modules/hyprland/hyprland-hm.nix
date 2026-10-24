@@ -17,6 +17,7 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs-unstable.hyprland;
+    portalPackage = null;
     settings.xwayland.force_zero_scaling = true;
     configType = "hyprlang";
   };

@@ -1,9 +1,13 @@
 
 { pkgs, pkgs-unstable, hostClass, ... }:
 {
-  programs.hyprland.enable = true;
-  programs.hyprland.package = pkgs-unstable.hyprland;
-  programs.hyprland.xwayland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    package = pkgs-unstable.hyprland;
+    xwayland.enable = true;
+    portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
+  };
+
   environment.sessionVariables = {
     QT_QPA_PLATFORMTHEME = "gtk2";
     XDG_CURRENT_DESKTOP = "Hyprland";
