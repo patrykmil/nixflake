@@ -18,5 +18,10 @@
         com = "!f() { git add . && git commit -m \"$1\"; }; f";
       };
     };
+    extraConfig = {
+      "url \"git@github.com:\"" = {
+        insteadOf = "https://github.com/";
+      };
+    };
   };
 }
