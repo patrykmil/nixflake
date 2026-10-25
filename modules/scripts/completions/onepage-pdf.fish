@@ -1,0 +1,5 @@
+complete -c onepage-pdf -s h -l help -d "Show help"
+complete -c onepage-pdf -l width -r -f -a "A4 tabloid" -d "Paper width (default: A4)"
+complete -c onepage-pdf -l orientation -r -f -a "portrait landscape" -d "Orientation (default: portrait)"
+complete -c onepage-pdf -l no-left-margin -d "Remove the left PDF margin"
+complete -c onepage-pdf -l split -d "Paginate onto standard-sized pages"

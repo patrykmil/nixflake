@@ -11,6 +11,7 @@ in
     ./getenv.nix
     ./zipignore.nix
     ./unstore.nix
+    ./onepage-pdf/onepage-pdf.nix
   ];
 
   home.packages = [
@@ -59,4 +60,5 @@ in
   xdg.configFile."fish/completions/screencapture.fish".source = ./completions/screencapture.fish;
   xdg.configFile."fish/completions/monitorToggle.fish".source = ./completions/monitorToggle.fish;
   xdg.configFile."fish/completions/list-updates.fish".source = ./completions/list-updates.fish;
+  xdg.configFile."fish/completions/onepage-pdf.fish".source = ./completions/onepage-pdf.fish;
 }
