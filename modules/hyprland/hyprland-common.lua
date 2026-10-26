@@ -8,8 +8,8 @@ local files = "nemo"
 -- Host-specific extras (e.g. bright) live in the per-host file.
 
 hl.on("hyprland.start", function()
-  hl.exec_cmd("hyprsunset")
   hl.exec_cmd("noctalia")
+  hl.exec_cmd("hyprsunset")
   hl.exec_cmd("wallpaperSchedule")
 end)
 
