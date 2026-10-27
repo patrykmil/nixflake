@@ -26,10 +26,10 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    # waydroid-script = {
-    #   url = "github:casualsnek/waydroid_script";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    waydroid-script = {
+      url = "github:casualsnek/waydroid_script";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # sops-nix = {
     #   url = "github:Mic92/sops-nix";

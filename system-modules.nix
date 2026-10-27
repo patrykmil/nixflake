@@ -36,7 +36,7 @@
           "coolercontrol.nix"
           "games.nix"
           "umbriel/umbriel.nix"
-          # "waydroid.nix"
+          "waydroid.nix"
         ];
         laptop = map mod [
           "bluetooth.nix"
