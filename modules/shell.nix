@@ -57,11 +57,9 @@ in
 
   programs.btop = {
     enable = true;
-    package = if hostClass == "desktop" then pkgs.btop.override { cudaSupport = true; } else pkgs.btop;
     settings = {
       graph_symbol = "block";
-    }
-    // (if hostClass == "desktop" then { shown_boxes = "cpu mem net proc gpu0"; } else { });
+    };
   };
 
   programs.eza = {
