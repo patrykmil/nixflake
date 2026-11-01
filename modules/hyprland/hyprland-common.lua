@@ -20,6 +20,8 @@ hl.device({ name = "logitech-g403-1", sensitivity = -0.5 })
 
 -- VXE R1 PRO MAX
 hl.device({ name = "compx-vxe-nordicmouse-1k-dongle-1", sensitivity = -0.5 })
+hl.device({ name = "compx-vxe-nordicmouse-1k-dongle-2", sensitivity = -0.5 })
+hl.device({ name = "compx-vxe-nordicmouse-1k-dongle-3", sensitivity = -0.5 })
 hl.device({ name = "compx-vxe-r1-pro-max-1", sensitivity = -0.5 })
 
 -- VXE R1 S
