@@ -2,7 +2,7 @@
 {
   boot = lib.mkMerge [
     { kernelPackages = pkgs-unstable.linuxPackages_7_3; }
-    (lib.mkIf (hostName == "desktop") {
+    (lib.mkIf (hostName == "dt0") {
       extraModulePackages = [ pkgs-unstable.linuxKernel.packages.linux_7_3.it87 ];
       kernelModules = [ "it87" ];
       extraModprobeConfig = ''
