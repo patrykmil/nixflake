@@ -1,4 +1,13 @@
-{ pkgs, hostName, ... }:
+{ pkgs-unstable, hostName, lib, ... }:
 {
-  boot.kernelPackages = pkgs.linuxPackages_6_18;
+  boot = lib.mkMerge [
+    { kernelPackages = pkgs-unstable.linuxPackages_7_3; }
+    (lib.mkIf (hostName == "desktop") {
+      extraModulePackages = [ pkgs-unstable.linuxKernel.packages.linux_7_3.it87 ];
+      kernelModules = [ "it87" ];
+      extraModprobeConfig = ''
+        options it87 ignore_resource_conflict=1 force_id=0x8686
+      '';
+    })
+  ];
 }

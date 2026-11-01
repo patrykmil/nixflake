@@ -17,14 +17,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-    };
+    # zen-browser = {
+    #   url = "github:youwen5/zen-browser-flake";
+    # };
 
-    helium = {
-      url = "github:amaanq/helium-flake";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
+    # helium = {
+    #   url = "github:amaanq/helium-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
+    # };
 
     waydroid-script = {
       url = "github:casualsnek/waydroid_script";

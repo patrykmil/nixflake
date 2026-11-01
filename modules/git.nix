@@ -5,6 +5,9 @@
       user = {
         email = "patryk.miler@student.pk.edu.pl";
         name = "patrykmil";
+        "url \"git@github.com:\"" = {
+          insteadOf = "https://github.com/";
+        };
       };
       core.editor = "code --wait";
       pull.rebase = "true";
@@ -16,11 +19,6 @@
         unadd = "restore --staged";
         wdiff = "diff -w --word-diff=color --ignore-space-at-eol";
         com = "!f() { git add . && git commit -m \"$1\"; }; f";
-      };
-    };
-    extraConfig = {
-      "url \"git@github.com:\"" = {
-        insteadOf = "https://github.com/";
       };
     };
   };
